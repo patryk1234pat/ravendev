@@ -1,0 +1,132 @@
+@use './colors' as *;
+
+*,
+*::after,
+*::before {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+html,
+body {
+	font-family: 'Poppins', sans-serif;
+}
+
+html {
+	font-size: 62.5%;
+	scroll-behavior: smooth;
+	scroll-padding-top: 8rem;
+}
+
+a {
+	text-decoration: none;
+}
+
+img {
+	height: auto;
+}
+
+input,
+button,
+textarea,
+select {
+	font-family: inherit;
+}
+
+button {
+	border: none;
+	cursor: pointer;
+}
+
+textarea {
+	resize: vertical;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+.wrapper {
+	margin: 0 auto;
+	width: 100%;
+	max-width: 1200px;
+}
+
+.header {
+	position: relative;
+	top: 0;
+	left: 0;
+
+	background: linear-gradient(145deg, $main-color, $gradient-color 96%);
+	color: $secondary-color;
+
+	.wrapper {
+		padding: 0 2rem 0 2rem;
+		width: 100%;
+	}
+	.logo {
+		height: 12rem;
+		width: 100%;
+		&__clickable {
+			height: 100%;
+			width: 50%;
+			display: flex;
+			align-items: center;
+			cursor: pointer;
+			img {
+				height: 40%;
+			}
+		}
+	}
+
+	&__text {
+		margin-top: 5rem;
+		h1 {
+			font-size: 3rem;
+			font-weight: 800;
+			margin-bottom: 3rem;
+		}
+
+		p {
+			font-size: 1.4rem;
+			margin-bottom: 3rem;
+		}
+
+		.header-button {
+			border-radius: 0.5rem;
+			width: 15rem;
+			height: 4rem;
+			font-size: 1.2rem;
+			font-weight: 600;
+			font-family: 'Open Sans', sans-serif;
+			background-color: #fff;
+			letter-spacing: 1px;
+		}
+	}
+
+	.swoosh {
+		position: relative;
+		transform: scaleX(-1);
+		width: 100vw;
+
+		.one {
+			width: 100%;
+		}
+		.two {
+			position: absolute;
+			top: 0;
+			left: 0;
+			height: 20rem;
+			margin-left: 2rem;
+		}
+	}
+	z-index: 0;
+}
+main {
+	position: relative;
+	top: -5px;
+	z-index: 10;
+	background-color: white;
+}
