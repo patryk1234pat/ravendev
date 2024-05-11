@@ -207,7 +207,7 @@ table {
   position: fixed;
   top: 0;
   right: -101%;
-  height: 100svh;
+  height: 100vh;
   width: 60%;
   display: flex;
   justify-content: center;
