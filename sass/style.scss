@@ -334,8 +334,7 @@ main {
 		}
 
 		.items {
-			
-			.item { 
+			.item {
 				margin: 6rem 0;
 				img {
 					height: 7rem;
@@ -350,5 +349,99 @@ main {
 				}
 			}
 		}
+	}
+}
+
+.pricing {
+	width: 100%;
+	.wrapper {
+		padding: 0 2rem;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		text-align: start;
+		img {
+			height: 30rem;
+			margin-bottom: 2rem;
+		}
+
+		h2 {
+			color: $black;
+			font-size: 2.7rem;
+			margin-bottom: 1rem;
+			span {
+				color: $h2-blue-color;
+			}
+		}
+		h3 {
+			position: relative;
+			margin-top: 3rem;
+			font-size: 1.9rem;
+			display: flex;
+			align-items: center;
+			color: $lighter-black;
+		}
+		p {
+			margin-top: 1rem;
+			font-size: 1.6rem;
+			color: $text-color-dark;
+		}
+
+		.items {
+			.item {
+				padding-left: 4rem;
+				::before {
+					content: url('/img/icons/check-icon.svg');
+					position: absolute;
+
+					left: -40px;
+					height: 3rem;
+					width: 3rem;
+				}
+			}
+		}
+	}
+}
+
+.portfolio {
+	padding-top: 6rem;
+	width: 100%;
+	text-align: center;
+	h2 {
+		color: $black;
+		font-size: 2.7rem;
+		margin-bottom: 1rem;
+		span {
+			color: $h2-blue-color;
+		}
+	}
+	.wrapper {
+		padding: 0 2rem;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		.graphic-group {
+			width: 16rem;
+			height: 3rem;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			margin-bottom: 3rem;
+
+			img {
+				height: 100%;
+				margin: 0 1rem;
+			}
+			.dash {
+				width: 50px;
+				border-bottom: 1px dashed $h2-blue-color;
+			}
+		}
+
+		.items {
+			.item {
+				text-align: start;
+			}
+		} 
 	}
 }
