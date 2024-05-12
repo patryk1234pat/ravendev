@@ -361,7 +361,7 @@ main {
 		flex-direction: column;
 		align-items: center;
 		text-align: start;
-		img {
+		.piggybank-img {
 			height: 30rem;
 			margin-bottom: 2rem;
 		}
@@ -399,6 +399,7 @@ main {
 					top: -2px;
 					height: 3rem;
 					width: 3rem;
+					
 					img {
 						height: 100%;
 						width: 100%;
@@ -646,14 +647,17 @@ main {
 	position: relative;
 	top: 0;
 	left: 0;
-
+	font-size: 1.6rem;
 	background: linear-gradient(145deg, $main-color, $gradient-color 96%);
 	color: $secondary-color;
 
-	.wrapper {
-		padding: 0 2rem 0 2rem;
-		width: 100%;
+	.swoosh {
+		position: relative;
+		.one {
+			width: 100%;
+		}
 	}
+
 	.logo {
 		height: 12rem;
 		width: 100%;
@@ -669,12 +673,45 @@ main {
 		}
 	}
 
-	.swoosh {
-		position: relative;
-		.one {
-			width: 100%;
+	.wrapper {
+		padding: 0 2rem 0 2rem;
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		.contact {
+			margin: 2rem 0;
+
+			a {
+				text-decoration: none;
+				color: $secondary-color;
+			}
 		}
+		h2 {
+			font-size: 2.4rem;
+			margin: 2rem 0;
+		}
+
+		hr {
+			margin-bottom: 2rem;
+			width: 50%;
+		}
+
+		a {
+			color: $secondary-color;
+			margin-bottom: 2rem;
+		}
+
 	}
+	.brand {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin-top: 3rem;
+		height: 4rem;
+		font-size: 1.1rem;
+		background-color: #333;
+	}
+	
 
 
 	.color-scheme-btn {

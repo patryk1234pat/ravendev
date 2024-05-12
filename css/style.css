@@ -335,7 +335,7 @@ main {
   align-items: center;
   text-align: start;
 }
-.pricing .wrapper img {
+.pricing .wrapper .piggybank-img {
   height: 30rem;
   margin-bottom: 2rem;
 }
@@ -600,11 +600,14 @@ main {
   position: relative;
   top: 0;
   left: 0;
+  font-size: 1.6rem;
   background: linear-gradient(145deg, #001099, #3ad9ff 96%);
   color: #fff;
 }
-.footer .wrapper {
-  padding: 0 2rem 0 2rem;
+.footer .swoosh {
+  position: relative;
+}
+.footer .swoosh .one {
   width: 100%;
 }
 .footer .logo {
@@ -621,11 +624,39 @@ main {
 .footer .logo__clickable img {
   height: 40%;
 }
-.footer .swoosh {
-  position: relative;
-}
-.footer .swoosh .one {
+.footer .wrapper {
+  padding: 0 2rem 0 2rem;
   width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.footer .wrapper .contact {
+  margin: 2rem 0;
+}
+.footer .wrapper .contact a {
+  text-decoration: none;
+  color: #fff;
+}
+.footer .wrapper h2 {
+  font-size: 2.4rem;
+  margin: 2rem 0;
+}
+.footer .wrapper hr {
+  margin-bottom: 2rem;
+  width: 50%;
+}
+.footer .wrapper a {
+  color: #fff;
+  margin-bottom: 2rem;
+}
+.footer .brand {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3rem;
+  height: 4rem;
+  font-size: 1.1rem;
+  background-color: #333;
 }
 .footer .color-scheme-btn {
   position: absolute;
