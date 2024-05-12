@@ -365,14 +365,12 @@ main {
   font-size: 1.9rem;
   color: #1d2124;
 }
-.pricing .wrapper .items .item__icon {
+.pricing .wrapper .items .item img {
+  position: relative;
+  bottom: 2px;
   margin: 3rem 1rem 0 0;
-  height: 3rem;
   width: 3rem;
-}
-.pricing .wrapper .items .item__icon img {
   height: 3rem;
-  width: 3rem;
 }
 
 .portfolio {
