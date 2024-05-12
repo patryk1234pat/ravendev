@@ -8,6 +8,7 @@
 
 html,
 body {
+  color-scheme: only light;
   font-family: "Poppins", sans-serif;
 }
 
@@ -363,11 +364,14 @@ main {
 }
 .pricing .wrapper .items .item .icon {
   position: absolute;
-  background-image: url("/img/icons/speed-icon.svg");
   left: 0;
   top: -2px;
   height: 3rem;
   width: 3rem;
+}
+.pricing .wrapper .items .item .icon img {
+  height: 100%;
+  width: 100%;
 }
 
 .portfolio {
@@ -488,7 +492,28 @@ main {
 .aboutme .wrapper p {
   font-size: 1.8rem;
   color: #646464;
+  margin-bottom: 5rem;
 }
 .aboutme .wrapper p a {
   color: #43b7ff;
+}
+.aboutme .wrapper h3 {
+  font-size: 1.9rem;
+  margin-bottom: 1rem;
+  color: #1d2124;
+}
+.aboutme .wrapper h4 {
+  font-size: 1.6rem;
+  color: #999;
+  font-weight: normal;
+  letter-spacing: 2px;
+}
+.aboutme .wrapper .owner-photo {
+  background-color: #55beff;
+  border-radius: 8px;
+  margin-bottom: 6rem;
+}
+.aboutme .wrapper .owner-photo img {
+  width: 100%;
+  border-radius: 8px 35%;
 }/*# sourceMappingURL=style.css.map */

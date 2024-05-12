@@ -10,6 +10,7 @@
 
 html,
 body {
+	color-scheme: only light;
 	font-family: 'Poppins', sans-serif;
 }
 
@@ -393,11 +394,14 @@ main {
 
 				.icon {
 					position: absolute;
-					background-image: url('/img/icons/speed-icon.svg');
 					left: 0;
 					top: -2px;
 					height: 3rem;
 					width: 3rem;
+					img {
+						height: 100%;
+						width: 100%;
+					}
 				}
 			}
 		}
@@ -528,8 +532,29 @@ main {
 		p {
 			font-size: 1.8rem;
 			color: $text-color-dark;
+			margin-bottom: 5rem;
 			a {
 				color: $h2-blue-color;
+			}
+		}
+		h3 {
+			font-size: 1.9rem;
+			margin-bottom: 1rem;
+			color: $lighter-black;
+		}
+		h4 {
+			font-size: 1.6rem;
+			color: #999;
+			font-weight: normal;
+			letter-spacing: 2px;
+		}
+		.owner-photo {
+			background-color: #55beff;
+			border-radius: 8px;
+			margin-bottom: 6rem;
+			img {
+				width: 100%;
+				border-radius: 8px 35%;
 			}
 		}
 	}
