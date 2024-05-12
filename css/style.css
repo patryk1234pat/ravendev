@@ -594,4 +594,86 @@ main {
   padding: 1.5rem 3rem;
   margin: 1rem 0;
   font-weight: 600;
+}
+
+.footer {
+  position: relative;
+  top: 0;
+  left: 0;
+  background: linear-gradient(145deg, #001099, #3ad9ff 96%);
+  color: #fff;
+}
+.footer .wrapper {
+  padding: 0 2rem 0 2rem;
+  width: 100%;
+}
+.footer .logo {
+  height: 12rem;
+  width: 100%;
+}
+.footer .logo__clickable {
+  height: 100%;
+  width: 50%;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+.footer .logo__clickable img {
+  height: 40%;
+}
+.footer .swoosh {
+  position: relative;
+}
+.footer .swoosh .one {
+  width: 100%;
+}
+.footer .color-scheme-btn {
+  position: absolute;
+  top: 8rem;
+  right: 0;
+  width: 7rem;
+  height: 7rem;
+  background: none;
+  border: 1px solid transparent;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  color: #fff;
+}
+.footer .color-scheme-btn p {
+  margin-top: 2rem;
+  font-size: 1.1rem;
+}
+.footer .color-scheme-btn__box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 3rem;
+  height: 3rem;
+  transform: rotate(90deg);
+}
+.footer .color-scheme-btn__pill {
+  position: relative;
+  width: 4rem;
+  height: 1.6rem;
+  background-color: #e6e6e6;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+}
+.footer .color-scheme-btn .color-scheme-btn__circle {
+  position: absolute;
+  left: 0;
+  height: 2.2rem;
+  width: 2.2rem;
+  border-radius: 50%;
+  background-color: #fff;
+  box-shadow: 0px 0px 3px 0px black;
+  transition: left 0.3s;
+}
+.footer .color-scheme-btn .color-scheme-btn__circle--active {
+  left: 2rem;
 }/*# sourceMappingURL=style.css.map */
