@@ -263,7 +263,6 @@ table {
 main {
   position: relative;
   top: -5px;
-  z-index: 10;
   background-color: #fff;
 }
 
