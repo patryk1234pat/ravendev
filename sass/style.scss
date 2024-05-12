@@ -391,9 +391,9 @@ main {
 			.item {
 				padding-left: 4rem;
 				::after {
-					content: url(/img/icons/check-icon.svg);
+					content: '';
 					position: absolute;
-					
+					background-image: url('/img/icons/check-icon.svg');
 					left: -40px;
 					height: 3rem;
 					width: 3rem;
@@ -406,9 +406,9 @@ main {
 
 .portfolio {
 	padding-top: 6rem;
-	width: 100%;
 	text-align: center;
-	h2 {
+	width: 100%;
+	h2 { 
 		color: $black;
 		font-size: 2.7rem;
 		margin-bottom: 1rem;
@@ -420,6 +420,7 @@ main {
 		padding: 0 2rem;
 		display: flex;
 		flex-direction: column;
+		
 		align-items: center;
 		.graphic-group {
 			width: 16rem;
