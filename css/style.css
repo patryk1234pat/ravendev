@@ -10,6 +10,9 @@ html,
 body {
   color-scheme: only light;
   font-family: "Poppins", sans-serif;
+}
+
+body {
   overflow-x: hidden;
 }
 
@@ -257,11 +260,6 @@ table {
   display: none;
 }
 
-.disable-scroll {
-  overflow: hidden;
-  height: 100%;
-}
-
 main {
   position: relative;
   top: -5px;
@@ -332,7 +330,6 @@ main {
   padding: 0 2rem;
   display: flex;
   flex-direction: column;
-  align-items: center;
   text-align: start;
 }
 .pricing .wrapper .piggybank-img {
@@ -355,6 +352,7 @@ main {
 .pricing .wrapper .items .item {
   display: flex;
   flex-direction: row;
+  margin: 2.5rem 0;
 }
 .pricing .wrapper .items .item__text {
   display: flex;
@@ -705,4 +703,9 @@ main {
 }
 .footer .color-scheme-btn .color-scheme-btn__circle--active {
   left: 2rem;
+}
+
+.disable-scroll {
+  overflow: hidden;
+  height: 100%;
 }/*# sourceMappingURL=style.css.map */
