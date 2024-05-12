@@ -353,26 +353,26 @@ main {
   color: #646464;
 }
 .pricing .wrapper .items .item {
-  padding-left: 4rem;
-  position: relative;
+  display: flex;
+  flex-direction: row;
 }
-.pricing .wrapper .items .item h3 {
+.pricing .wrapper .items .item__text {
+  display: flex;
+  flex-direction: column;
+}
+.pricing .wrapper .items .item__text h3 {
   margin-top: 3rem;
   font-size: 1.9rem;
-  display: flex;
-  align-items: center;
   color: #1d2124;
 }
-.pricing .wrapper .items .item .icon {
-  position: absolute;
-  left: 0;
-  top: -2px;
+.pricing .wrapper .items .item__icon {
+  margin: 3rem 1rem 0 0;
   height: 3rem;
   width: 3rem;
 }
-.pricing .wrapper .items .item .icon img {
-  height: 100%;
-  width: 100%;
+.pricing .wrapper .items .item__icon img {
+  height: 3rem;
+  width: 3rem;
 }
 
 .portfolio {
