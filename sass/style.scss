@@ -394,7 +394,7 @@ main {
 
 				.icon {
 					position: absolute;
-					background-image: url('/img/icons/check-icon.svg');
+					background-image: url('/img/icons/speed-icon.svg');
 					left: 0;
 					top: -2px;
 					height: 3rem;
@@ -474,6 +474,7 @@ main {
 				p {
 					font-size: 1.8rem;
 					color: $text-color-dark;
+					line-height: 3rem;
 				}
 				button {
 					color: $secondary-color;
@@ -484,6 +485,52 @@ main {
 					margin: 1rem 0;
 					font-weight: 600;
 				}
+			}
+		}
+	}
+}
+
+.aboutme {
+	padding-top: 6rem;
+	text-align: center;
+	width: 100%;
+	h2 {
+		color: $black;
+		font-size: 2.7rem;
+		margin-bottom: 1rem;
+		span {
+			color: $h2-blue-color;
+		}
+	}
+	.wrapper {
+		padding: 0 2rem;
+		display: flex;
+		flex-direction: column;
+
+		align-items: center;
+		.graphic-group {
+			width: 16rem;
+			height: 3rem;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			margin-bottom: 3rem;
+
+			img {
+				height: 100%;
+				margin: 0 1rem;
+			}
+			.dash {
+				width: 50px;
+				border-bottom: 1px dashed $h2-blue-color;
+			}
+		}
+
+		p {
+			font-size: 1.8rem;
+			color: $text-color-dark;
+			a {
+				color: $h2-blue-color;
 			}
 		}
 	}
