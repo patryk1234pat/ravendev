@@ -10,6 +10,7 @@ html,
 body {
   color-scheme: only light;
   font-family: "Poppins", sans-serif;
+  overflow-x: hidden;
 }
 
 html {
@@ -458,6 +459,7 @@ main {
   padding-top: 6rem;
   text-align: center;
   width: 100%;
+  margin-bottom: 10rem;
 }
 .aboutme h2 {
   color: #121212;
@@ -510,10 +512,86 @@ main {
 }
 .aboutme .wrapper .owner-photo {
   background-color: #55beff;
-  border-radius: 8px;
+  border-radius: 8px 25%;
   margin-bottom: 6rem;
 }
 .aboutme .wrapper .owner-photo img {
   width: 100%;
   border-radius: 8px 35%;
+}
+
+.blog {
+  padding-top: 6rem;
+  text-align: center;
+  width: 100%;
+}
+.blog h2 {
+  color: #121212;
+  font-size: 2.7rem;
+  margin-bottom: 1rem;
+}
+.blog h2 span {
+  color: #43b7ff;
+}
+.blog .wrapper {
+  padding: 0 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.blog .wrapper .graphic-group {
+  width: 16rem;
+  height: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 3rem;
+}
+.blog .wrapper .graphic-group img {
+  height: 100%;
+  margin: 0 1rem;
+}
+.blog .wrapper .graphic-group .dash {
+  width: 50px;
+  border-bottom: 1px dashed #43b7ff;
+}
+.blog .wrapper .items {
+  font-weight: 400;
+}
+.blog .wrapper .items .item {
+  display: flex;
+  margin-bottom: 7rem;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: start;
+  height: 60rem;
+  width: 100%;
+  max-width: 38rem;
+  box-shadow: 0 0 25px 15px rgba(0, 0, 0, 0.1);
+  padding: 5rem 2.5rem;
+  border-radius: 0.8rem;
+  border-top: 5px solid #43b7ff;
+}
+.blog .wrapper .items .item img {
+  width: 100%;
+  height: 16rem;
+  margin-bottom: 3rem;
+  border-radius: 0.8rem;
+}
+.blog .wrapper .items .item h3 {
+  font-size: 2.5rem;
+}
+.blog .wrapper .items .item p {
+  font-size: 1.8rem;
+  color: #646464;
+  line-height: 3rem;
+}
+.blog .wrapper .items .item button {
+  color: #fff;
+  background: linear-gradient(90deg, #43b7ff 0, #00ddf6 100%);
+  border-radius: 3px;
+  width: 60%;
+  padding: 1.5rem 3rem;
+  margin: 1rem 0;
+  font-weight: 600;
 }/*# sourceMappingURL=style.css.map */
