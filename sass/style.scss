@@ -287,7 +287,7 @@ main {
 	position: relative;
 	top: -5px;
 	z-index: 10;
-	background-color: white;
+	background-color: $secondary-color;
 }
 
 .about {
@@ -373,14 +373,7 @@ main {
 				color: $h2-blue-color;
 			}
 		}
-		h3 {
-			position: relative;
-			margin-top: 3rem;
-			font-size: 1.9rem;
-			display: flex;
-			align-items: center;
-			color: $lighter-black;
-		}
+
 		p {
 			margin-top: 1rem;
 			font-size: 1.6rem;
@@ -390,14 +383,22 @@ main {
 		.items {
 			.item {
 				padding-left: 4rem;
-				::after {
-					content: '';
+				position: relative;
+				h3 {
+					margin-top: 3rem;
+					font-size: 1.9rem;
+					display: flex;
+					align-items: center;
+					color: $lighter-black;
+				}
+
+				.icon {
 					position: absolute;
 					background-image: url('/img/icons/check-icon.svg');
-					left: -40px;
+					left: 0;
+					top: -2px;
 					height: 3rem;
 					width: 3rem;
-					z-index: 100;
 				}
 			}
 		}
@@ -408,7 +409,7 @@ main {
 	padding-top: 6rem;
 	text-align: center;
 	width: 100%;
-	h2 { 
+	h2 {
 		color: $black;
 		font-size: 2.7rem;
 		margin-bottom: 1rem;
@@ -420,7 +421,7 @@ main {
 		padding: 0 2rem;
 		display: flex;
 		flex-direction: column;
-		
+
 		align-items: center;
 		.graphic-group {
 			width: 16rem;
@@ -441,9 +442,49 @@ main {
 		}
 
 		.items {
+			font-weight: 400;
 			.item {
+				display: flex;
+				margin-bottom: 7rem;
+				flex-direction: column;
+				justify-content: space-between;
 				text-align: start;
+				height: 60rem;
+				width: 100%;
+				max-width: 38rem;
+				box-shadow: 0 0 25px 15px rgba(0, 0, 0, 0.1);
+				padding: 5rem 2.5rem;
+				border-radius: 0.8rem;
+				border-bottom: 5px solid $h2-blue-color;
+				img {
+					width: 100%;
+					height: 16rem;
+					margin-bottom: 3rem;
+				}
+
+				h3 {
+					font-size: 1.9rem;
+				}
+				h4 {
+					font-size: 1.6rem;
+					color: #999;
+					font-weight: normal;
+				}
+
+				p {
+					font-size: 1.8rem;
+					color: $text-color-dark;
+				}
+				button {
+					color: $secondary-color;
+					background: linear-gradient(90deg, #43b7ff 0, #00ddf6 100%);
+					border-radius: 3px;
+					width: 50%;
+					padding: 1.5rem 3rem;
+					margin: 1rem 0;
+					font-weight: 600;
+				}
 			}
-		} 
+		}
 	}
 }
