@@ -5,8 +5,10 @@ const colorSchemeBtn2 = document.querySelector('.color-scheme-btn2');
 const colorSchemeBtnPill = document.querySelector('.color-scheme-btn__circle');
 const nav = document.querySelector('.nav-mobile');
 const navBackground = document.querySelector('.nav-mobile-background');
-const colorSchemeBtnTextDark = document.querySelector('.dark-text');
-const colorSchemeBtnTextLight = document.querySelector('.light-text');
+const colorSchemeBtnTextDark = document.querySelector('.dark');
+const colorSchemeBtnTextLight = document.querySelector('.light');
+const colorSchemeBtn2TextDark = document.querySelector('.dark-text');
+const colorSchemeBtn2TextLight = document.querySelector('.light-text');
 
 const swooshLight = document.querySelector('.one-light');
 const swooshDark = document.querySelector('.one-dark');
@@ -27,6 +29,8 @@ const enableDarkMode = () => {
 
 	colorSchemeBtnTextDark.classList.remove('d-none');
 	colorSchemeBtnTextLight.classList.add('d-none');
+	colorSchemeBtn2TextDark.classList.remove('d-none');
+	colorSchemeBtn2TextLight.classList.add('d-none');
 };
 
 const disableDarkMode = () => {
@@ -40,6 +44,8 @@ const disableDarkMode = () => {
 
 	colorSchemeBtnTextDark.classList.add('d-none');
 	colorSchemeBtnTextLight.classList.remove('d-none');
+	colorSchemeBtn2TextDark.classList.add('d-none');
+	colorSchemeBtn2TextLight.classList.remove('d-none');
 };
 
 if (darkMode == 'enabled') {
