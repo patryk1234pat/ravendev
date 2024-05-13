@@ -87,6 +87,9 @@ table {
 .header .logo__clickable img {
   height: 40%;
 }
+.header .logo__clickable .text {
+  display: none;
+}
 .header__text {
   margin-top: 5rem;
 }
