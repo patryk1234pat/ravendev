@@ -286,19 +286,8 @@
 	}
 
 	.footer {
-		position: relative;
-		left: 0;
-		font-size: 1.6rem;
-		background: linear-gradient(145deg, $main-color, $gradient-color 96%);
+		background: linear-gradient(#222, #000);
 		color: $secondary-color;
-		.swoosh {
-			top: -2px;
-			position: relative;
-			overflow: hidden;
-			.one {
-				width: 102%;
-			}
-		}
 
 		.logo {
 			height: 12rem;
@@ -316,127 +305,41 @@
 		}
 
 		.wrapper {
-			padding: 0 2rem 0 2rem;
-			width: 100%;
-			display: flex;
-			flex-direction: column;
-			.contact {
-				margin: 2rem 0;
-
-				a {
-					text-decoration: none;
-					color: $secondary-color;
-				}
-			}
-			h2 {
-				font-size: 2.4rem;
-				margin: 2rem 0;
-			}
-
 			hr {
-				margin-bottom: 2rem;
-				width: 50%;
-			}
-
-			a {
-				color: $secondary-color;
-				margin-bottom: 2rem;
+				border: 1px solid $h2-blue-color;
 			}
 		}
 		.brand {
-			display: flex;
-			justify-content: center;
-			align-items: center;
-			margin-top: 3rem;
-			height: 4rem;
-			font-size: 1.1rem;
-			background-color: #333;
+			background-color: $dark-grey;
 		}
 
 		.lamp {
-			position: absolute;
-			height: 50rem;
-			top: 0;
-			right: 2rem;
-			width: 7rem;
-			display: flex;
-			flex-direction: column;
-			align-items: center;
-
 			.cable {
-				top: 0;
-				height: 30rem;
-				width: 0.4rem;
-				background-color: $secondary-color;
+				background-color: #000;
 			}
 
 			.triangle {
-				border-left: 26px solid transparent;
-				border-right: 26px solid transparent;
-				border-bottom: 26px solid $secondary-color;
-				transform: translateY(-15px);
+				border-bottom: 26px solid #000;
+				z-index: 1;
 			}
 
 			.bulb {
-				height: 20px;
-				width: 20px;
-				border-radius: 50%;
 				background-color: $secondary-color;
-				transform: translateY(-25px);
+				z-index: 0;
+				animation: flicker 5s infinite forwards step-start;
+				background-color: $h2-blue-color;
+				box-shadow: 0px 10px 14px 3px $h2-blue-color;
 			}
 
 			.color-scheme-btn {
-				margin-top: 2rem;
-				width: 100%;
-				height: 7rem;
-				background: none;
-				border: 1px solid transparent;
-				cursor: pointer;
-				display: flex;
-				flex-direction: column;
-				justify-content: space-evenly;
-				align-items: center;
-				color: $secondary-color;
-
-				p {
-					margin-top: 2rem;
-					font-size: 1.1rem;
-				}
-
-				&__box {
-					display: flex;
-					flex-direction: column;
-					justify-content: center;
-					align-items: center;
-					width: 3rem;
-					height: 3rem;
-					transform: rotate(90deg);
-				}
-
 				&__pill {
-					position: relative;
-					width: 4rem;
-					height: 1.6rem;
-					background-color: #e6e6e6;
-					border-radius: 8px;
-					display: flex;
-					align-items: center;
-				}
-				.color-scheme-btn__circle {
-					position: absolute;
-					left: 0;
-					height: 2.2rem;
-					width: 2.2rem;
-					border-radius: 50%;
-					background-color: $secondary-color;
-					box-shadow: 0px 0px 3px 0px black;
-					transition: left 0.3s;
-					&--active {
-						left: 2rem;
-					}
+					background-color: $h2-blue-color;
 				}
 			}
 		}
+	}
+	.d-none {
+		display: none;
 	}
 }
 
@@ -461,5 +364,48 @@
 	10% {
 		box-shadow: 0px 0px 10px 0px $h2-blue-color,
 			inset 0px 0px 10px 0px $h2-blue-color;
+	}
+}
+
+@keyframes flicker {
+	0% {
+		background-color: $h2-blue-color;
+		box-shadow: 0px 10px 14px 3px $h2-blue-color;
+	}
+	1% {
+		background-color: $secondary-color;
+        box-shadow: 0px 0px 0px 0px $h2-blue-color;
+	}
+	2% {
+		background-color: $h2-blue-color;
+		box-shadow: 0px 10px 14px 3px $h2-blue-color;
+	}
+	8% {
+		background-color: $secondary-color;
+        box-shadow: 0px 0px 0px 0px $h2-blue-color;
+	}
+	9% {
+		background-color: $h2-blue-color;
+		box-shadow: 0px 10px 14px 3px $h2-blue-color;
+	}
+	25% {
+		background-color: $secondary-color;
+        box-shadow: 0px 0px 0px 0px $h2-blue-color;
+	}
+	26% {
+		background-color: $h2-blue-color;
+		box-shadow: 0px 10px 14px 3px $h2-blue-color;
+	}
+	47% {
+		background-color: $secondary-color;
+        box-shadow: 0px 0px 0px 0px $h2-blue-color;
+	}
+	48% {
+		background-color: $h2-blue-color;
+		box-shadow: 0px 10px 14px 3px $h2-blue-color;
+	}
+	100% {
+		background-color: $h2-blue-color;
+		box-shadow: 0px 10px 14px 3px $h2-blue-color;
 	}
 }

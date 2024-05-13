@@ -531,6 +531,7 @@ main {
   padding-top: 6rem;
   text-align: center;
   width: 100%;
+  z-index: 5;
 }
 .blog h2 {
   color: #121212;
@@ -611,12 +612,12 @@ main {
   color: #fff;
 }
 .footer .swoosh {
-  top: -2px;
+  top: -5px;
   position: relative;
   overflow: hidden;
 }
-.footer .swoosh .one {
-  width: 102%;
+.footer .swoosh .one, .footer .swoosh .twos {
+  width: 103%;
 }
 .footer .logo {
   height: 12rem;
@@ -742,4 +743,8 @@ main {
 }
 .footer .lamp .color-scheme-btn .color-scheme-btn__circle--active {
   left: 2rem;
+}
+
+.d-none {
+  display: none;
 }/*# sourceMappingURL=style.css.map */
