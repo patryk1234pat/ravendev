@@ -47,7 +47,7 @@
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
-  color: #fff;
+  color: #43b7ff;
 }
 .dark-mode .header .color-scheme-btn__box {
   display: flex;
@@ -61,7 +61,7 @@
   position: relative;
   width: 4rem;
   height: 1.6rem;
-  background-color: #e6e6e6;
+  background-color: #43b7ff;
   border-radius: 8px;
   display: flex;
   align-items: center;
@@ -75,8 +75,6 @@
   background-color: #fff;
   box-shadow: 0px 0px 3px 0px black;
   transition: left 0.3s;
-}
-.dark-mode .header .color-scheme-btn .color-scheme-btn__circle--active {
   left: 2rem;
 }
 .dark-mode .header .burger-btn--active .burger-btn__bar1,
@@ -199,6 +197,7 @@
   border: 1px solid #43b7ff;
   box-shadow: 0px -13px 35px -16px #43b7ff;
   border-top: 5px solid #43b7ff;
+  background-color: #1b1b1b;
 }
 .dark-mode .blog .wrapper .items .item h3 {
   color: #43b7ff;
@@ -250,8 +249,12 @@
   background-color: #43b7ff;
   box-shadow: 0px 10px 14px 3px #43b7ff;
 }
-.dark-mode .footer .lamp .color-scheme-btn__pill {
+.dark-mode .footer .lamp .color-scheme-btn2__pill {
   background-color: #43b7ff;
+}
+.dark-mode .footer .lamp .color-scheme-btn2__circle {
+  left: 2rem;
+  background-color: #fff;
 }
 .dark-mode .d-none {
   display: none;

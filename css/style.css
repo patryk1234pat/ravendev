@@ -107,6 +107,7 @@ table {
   font-weight: 600;
   font-family: "Open Sans", sans-serif;
   background-color: #fff;
+  transition: background-color 0.3s;
 }
 .header .swoosh {
   position: relative;
@@ -193,9 +194,6 @@ table {
   background-color: #fff;
   box-shadow: 0px 0px 3px 0px black;
   transition: left 0.3s;
-}
-.header .color-scheme-btn .color-scheme-btn__circle--active {
-  left: 2rem;
 }
 .header .burger-btn--active .burger-btn__bar1,
 .header .burger-btn--active .burger-btn__bar2,
@@ -696,7 +694,7 @@ main {
   background-color: #fff;
   transform: translateY(-25px);
 }
-.footer .lamp .color-scheme-btn {
+.footer .lamp .color-scheme-btn2 {
   margin-top: 2rem;
   width: 100%;
   height: 7rem;
@@ -709,11 +707,11 @@ main {
   align-items: center;
   color: #fff;
 }
-.footer .lamp .color-scheme-btn p {
+.footer .lamp .color-scheme-btn2 p {
   margin-top: 2rem;
   font-size: 1.1rem;
 }
-.footer .lamp .color-scheme-btn__box {
+.footer .lamp .color-scheme-btn2__box {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -722,7 +720,7 @@ main {
   height: 3rem;
   transform: rotate(90deg);
 }
-.footer .lamp .color-scheme-btn__pill {
+.footer .lamp .color-scheme-btn2__pill {
   position: relative;
   width: 4rem;
   height: 1.6rem;
@@ -731,7 +729,7 @@ main {
   display: flex;
   align-items: center;
 }
-.footer .lamp .color-scheme-btn .color-scheme-btn__circle {
+.footer .lamp .color-scheme-btn2__circle {
   position: absolute;
   left: 0;
   height: 2.2rem;
@@ -740,9 +738,6 @@ main {
   background-color: #fff;
   box-shadow: 0px 0px 3px 0px black;
   transition: left 0.3s;
-}
-.footer .lamp .color-scheme-btn .color-scheme-btn__circle--active {
-  left: 2rem;
 }
 
 .d-none {
