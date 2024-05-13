@@ -1,11 +1,33 @@
+const body = document.querySelector('body');
 const burgerBtn = document.querySelector('.burger-btn');
 const colorSchemeBtn = document.querySelector('.color-scheme-btn');
 const colorSchemeBtnPill = document.querySelector('.color-scheme-btn__circle');
 const nav = document.querySelector('.nav-mobile');
 const navBackground = document.querySelector('.nav-mobile-background');
-const body = document.querySelector('body');
 const colorSchemeBtnTextDark = document.querySelector('.dark');
 const colorSchemeBtnTextLight = document.querySelector('.light');
+const swooshLight = document.querySelector('.one-light')
+const swooshDark = document.querySelector('.one-dark')
+
+let darkMode = localStorage.getItem("darkMode");
+
+const enableDarkMode = () => {
+    body.classList.add("dark-mode");
+    localStorage.setItem("darkMode", "enabled")
+	swooshLight.classList.add('d-none');
+	swooshDark.classList.remove('d-none')
+}
+
+const disableDarkMode = () => {
+    body.classList.remove("dark-mode");
+    localStorage.setItem("darkMode", null)
+	swooshDark.classList.add('d-none')
+	swooshLight.classList.remove('d-none');
+}
+
+if (darkMode == "enabled") {
+    enableDarkMode();
+}
 
 const handleNav = () => {
 	nav.classList.toggle('nav-mobile--active');
@@ -23,3 +45,13 @@ const handleColorScheme = () => {
 burgerBtn.addEventListener('click', handleNav);
 colorSchemeBtn.addEventListener('click', handleColorScheme);
 navBackground.addEventListener('click', handleNav);
+
+
+colorSchemeBtn.addEventListener('click', () => {
+    darkMode = localStorage.getItem("darkMode");
+    if (darkMode !== "enabled") {
+        enableDarkMode();
+    } else {
+        disableDarkMode();
+    }
+})

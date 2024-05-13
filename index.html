@@ -12,9 +12,11 @@
 			rel="stylesheet"
 		/>
 		<link rel="stylesheet" href="./css/style.css" />
+		<link rel="stylesheet" href="./css/dark.css" />
 	</head>
 	<body>
 		<header class="header">
+			<div class="header-background"></div>
 			<button class="burger-btn" aria-label="menu">
 				<div class="burger-btn__box">
 					<div class="burger-btn__bar1"></div>
@@ -31,8 +33,8 @@
 						<div class="color-scheme-btn__circle"></div>
 					</div>
 				</div>
-				<p class="dark">DARK</p>
-				<p class="light d-none">LIGHT</p>
+				<p class="light">CIEMNY</p>
+				<p class="dark d-none">JASNY</p>
 			</button>
 
 			<nav class="nav-mobile d-flex">
@@ -72,7 +74,8 @@
 				</div>
 			</div>
 			<div class="swoosh">
-				<img class="one" src="./img/icons/swoosh.svg" alt="" />
+				<img class="one-light" src="./img/icons/swoosh.svg" alt="" />
+				<img class="one-dark d-none" src="./img/icons/dark-swoosh.svg" alt="" />
 				<img class="two" src="./img/mockup.png" alt="" />
 			</div>
 		</header>
@@ -130,7 +133,8 @@
 				<div class="wrapper">
 					<img class="piggybank-img" src="./img/icons/piggybank.svg" alt="" />
 					<h2>
-						<span>0zł</span> Za Konsultację,<br> Od <span>5000zł </span>Za Stronę.
+						<span>0zł</span> Za Konsultację,<br />
+						Od <span>5000zł </span>Za Stronę.
 					</h2>
 					<p>
 						Cena za standardową 5-stronicową witrynę internetową dla małych
@@ -323,25 +327,30 @@
 			</div>
 
 			<div class="wrapper">
-				<div class="lamp"></div>
-				<button
-					class="color-scheme-btn"
-					aria-label="zmiana koloru strony na ciemny"
-				>
-					<div class="color-scheme-btn__box">
-						<div class="color-scheme-btn__pill">
-							<div class="color-scheme-btn__circle"></div>
+				<div class="lamp">
+					<div class="cable"></div>
+					<div class="triangle"></div>
+					<div class="bulb"></div>
+					<button
+						class="color-scheme-btn"
+						aria-label="zmiana koloru strony na ciemny"
+					>
+						<div class="color-scheme-btn__box">
+							<div class="color-scheme-btn__pill">
+								<div class="color-scheme-btn__circle"></div>
+							</div>
 						</div>
-					</div>
-					<p class="dark">
-						TRYB <br />
-						JASNY
-					</p>
-					<p class="light d-none">
-						TRYB <br />
-						CIEMNY
-					</p>
-				</button>
+						<p class="dark">
+							TRYB <br />
+							JASNY
+						</p>
+						<p class="light d-none">
+							TRYB <br />
+							CIEMNY
+						</p>
+					</button>
+				</div>
+
 				<div class="logo">
 					<div class="logo__clickable">
 						<img
@@ -354,7 +363,7 @@
 					<a href="mailto:patrykkruk58@gmail.com" target="_blank"
 						>patrykkruk58@gmail.com</a
 					>
-					<br />
+					<br /><br />
 					<a href="tel:780179553" target="_blank">TEL: 780179553</a>
 				</div>
 				<h2>Nawigacja</h2>
