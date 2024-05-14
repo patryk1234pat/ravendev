@@ -48,6 +48,8 @@ const disableDarkMode = () => {
 	colorSchemeBtn2TextLight.classList.remove('d-none');
 };
 
+
+
 const handleNav = () => {
 	nav.classList.toggle('nav-mobile--active');
 	burgerBtn.classList.toggle('burger-btn--active');
@@ -74,7 +76,6 @@ colorSchemeBtn2.addEventListener('click', () => {
 		disableDarkMode();
 	}
 });
-
-if (darkMode === 'enabled') {
+if (darkMode == 'enabled') {
 	enableDarkMode();
 }
