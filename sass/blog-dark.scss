@@ -1,0 +1,279 @@
+@use './colors' as *;
+
+.dark-mode {
+	background-color: #000;
+
+    .header-img {
+        background-image: url('/img/galaxy-small.jpg');
+    }
+    .header-background {
+        background-color: rgb(0, 0, 0);
+        opacity: 0.6;
+    }
+
+	.header {
+		color: $secondary-color;
+		.logo {
+			&__clickable {
+				.text {
+					display: block;
+					opacity: 0;
+					position: absolute;
+					font-family: 'Yellowtail';
+					font-size: 2.4rem;
+					bottom: 2rem;
+					left: 12rem;
+					text-wrap: nowrap;
+					width: 12rem;
+					text-shadow: 0 0 10px #43b7ff, 0 0 10px #43b7ff, 0 0 10px #43b7ff,
+						0 0 10px #43b7ff, 0 0 10px #43b7ff;
+					animation: neonGlow 3s 0.3s ease-out forwards;
+				}
+			}
+		}
+
+		.color-scheme-btn {
+			color: $h2-blue-color;
+			&__pill {
+				background-color: $h2-blue-color;
+			}
+			.color-scheme-btn__circle {
+				left: 2rem;
+			}
+		}
+
+		.burger-btn--active {
+			.burger-btn__bar1,
+			.burger-btn__bar2,
+			.burger-btn__bar3 {
+				background-color: $secondary-color;
+			}
+		}
+
+		.nav-mobile {
+			background: linear-gradient(#222, #000);
+
+			ul {
+				li {
+					a {
+						color: $secondary-color;
+					}
+				}
+			}
+		}
+	}
+
+
+
+	.blog {
+        background-color: #000;
+		.wrapper {
+            h1 {
+                color: #fafafa;
+            }
+			.paragraph {
+				color: $secondary-color;
+			}
+
+			
+		}
+
+		button {
+			border: 1px solid $h2-blue-color;
+			background: none;
+			color: $h2-blue-color;
+			animation: glow 2s ease-out infinite alternate;
+		}
+        .items {
+            .item {
+                &__text {
+                    p {
+                        font-size: 1.2rem;
+						color: $secondary-color;
+					}
+                }
+            }
+        }
+	}
+
+	.footer {
+		background: linear-gradient(#222, #000);
+		color: $secondary-color;
+        
+		.wrapper {
+			hr {
+				border: 1px solid $h2-blue-color;
+			}
+		}
+		.brand {
+			background-color: $dark-grey;
+		}
+
+		.lamp {
+			.cable {
+				background-color: #000;
+			}
+
+			.triangle {
+				border-bottom: 26px solid #000;
+				z-index: 1;
+			}
+
+			.bulb {
+				background-color: $secondary-color;
+				z-index: 0;
+				animation: flicker 5s infinite forwards step-start;
+				background-color: $h2-blue-color;
+				box-shadow: 0px 10px 14px 3px $h2-blue-color;
+			}
+
+			.color-scheme-btn2 {
+				&__pill {
+					background-color: $h2-blue-color;
+				}
+
+				&__circle {
+					left: 2rem;
+					background-color: $secondary-color;
+				}
+			}
+		}
+	}
+	.d-none {
+		display: none;
+	}
+}
+
+@keyframes glow {
+	0% {
+		box-shadow: 0px 0px 10px 0px $h2-blue-color,
+			inset 0px 0px 10px 0px $h2-blue-color;
+	}
+	3% {
+		box-shadow: 0px 0px 0px 0px $h2-blue-color,
+			inset 0px 0px 0px 0px $h2-blue-color;
+	}
+
+	6% {
+		box-shadow: 0px 0px 10px 0px $h2-blue-color,
+			inset 0px 0px 10px 0px $h2-blue-color;
+	}
+	8% {
+		box-shadow: 0px 0px 0px 0px $h2-blue-color,
+			inset 0px 0px 0px 0px $h2-blue-color;
+	}
+	10% {
+		box-shadow: 0px 0px 10px 0px $h2-blue-color,
+			inset 0px 0px 10px 0px $h2-blue-color;
+	}
+}
+
+@keyframes flicker {
+	0% {
+		background-color: $h2-blue-color;
+		box-shadow: 0px 10px 14px 3px $h2-blue-color;
+	}
+	1% {
+		background-color: $secondary-color;
+		box-shadow: 0px 0px 0px 0px $h2-blue-color;
+	}
+	2% {
+		background-color: $h2-blue-color;
+		box-shadow: 0px 10px 14px 3px $h2-blue-color;
+	}
+	8% {
+		background-color: $secondary-color;
+		box-shadow: 0px 0px 0px 0px $h2-blue-color;
+	}
+	9% {
+		background-color: $h2-blue-color;
+		box-shadow: 0px 10px 14px 3px $h2-blue-color;
+	}
+	25% {
+		background-color: $secondary-color;
+		box-shadow: 0px 0px 0px 0px $h2-blue-color;
+	}
+	26% {
+		background-color: $h2-blue-color;
+		box-shadow: 0px 10px 14px 3px $h2-blue-color;
+	}
+	47% {
+		background-color: $secondary-color;
+		box-shadow: 0px 0px 0px 0px $h2-blue-color;
+	}
+	48% {
+		background-color: $h2-blue-color;
+		box-shadow: 0px 10px 14px 3px $h2-blue-color;
+	}
+	100% {
+		background-color: $h2-blue-color;
+		box-shadow: 0px 10px 14px 3px $h2-blue-color;
+	}
+}
+
+@keyframes neonGlow {
+	0% {
+		opacity: 0;
+	}
+
+	1% {
+		text-shadow: 0 0 10px #43b7ff, 0 0 10px #43b7ff, 0 0 10px #43b7ff,
+			0 0 10px #43b7ff, 0 0 10px #43b7ff;
+		opacity: 1;
+	}
+
+	2% {
+		text-shadow: none;
+		filter: blur(1px);
+		opacity: 0;
+	}
+
+	3% {
+		text-shadow: 0 0 10px #43b7ff, 0 0 10px #43b7ff, 0 0 10px #43b7ff,
+			0 0 10px #43b7ff, 0 0 10px #43b7ff;
+		opacity: 1;
+	}
+	4% {
+		opacity: 0;
+		text-shadow: none;
+	}
+
+	5% {
+		text-shadow: 0 0 10px #43b7ff, 0 0 10px #43b7ff, 0 0 10px #43b7ff,
+			0 0 10px #43b7ff, 0 0 10px #43b7ff;
+		filter: blur(1px);
+		opacity: 1;
+	}
+
+	6% {
+		opacity: 0;
+		text-shadow: none;
+	}
+
+	7% {
+		text-shadow: 0 0 10px #43b7ff, 0 0 10px #43b7ff, 0 0 10px #43b7ff,
+			0 0 10px #43b7ff, 0 0 10px #43b7ff;
+	}
+	31% {
+		opacity: 1;
+		text-shadow: 0 0 10px #43b7ff, 0 0 10px #43b7ff, 0 0 10px #43b7ff,
+			0 0 10px #43b7ff, 0 0 10px #43b7ff;
+	}
+
+	32% {
+		opacity: 0;
+		text-shadow: none;
+		filter: blur(1px);
+	}
+
+	33% {
+		text-shadow: 0 0 10px #43b7ff, 0 0 10px #43b7ff, 0 0 10px #43b7ff,
+			0 0 10px #43b7ff, 0 0 10px #43b7ff;
+		opacity: 1;
+	}
+
+	100% {
+		text-shadow: 0 0 10px #43b7ff, 0 0 10px #43b7ff, 0 0 10px #43b7ff;
+		opacity: 1;
+	}
+}

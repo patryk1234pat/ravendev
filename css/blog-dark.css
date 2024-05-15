@@ -1,0 +1,210 @@
+.dark-mode {
+  background-color: #000;
+}
+.dark-mode .header-img {
+  background-image: url("/img/galaxy-small.jpg");
+}
+.dark-mode .header-background {
+  background-color: rgb(0, 0, 0);
+  opacity: 0.6;
+}
+.dark-mode .header {
+  color: #fff;
+}
+.dark-mode .header .logo__clickable .text {
+  display: block;
+  opacity: 0;
+  position: absolute;
+  font-family: "Yellowtail";
+  font-size: 2.4rem;
+  bottom: 2rem;
+  left: 12rem;
+  text-wrap: nowrap;
+  width: 12rem;
+  text-shadow: 0 0 10px #43b7ff, 0 0 10px #43b7ff, 0 0 10px #43b7ff, 0 0 10px #43b7ff, 0 0 10px #43b7ff;
+  animation: neonGlow 3s 0.3s ease-out forwards;
+}
+.dark-mode .header .color-scheme-btn {
+  color: #43b7ff;
+}
+.dark-mode .header .color-scheme-btn__pill {
+  background-color: #43b7ff;
+}
+.dark-mode .header .color-scheme-btn .color-scheme-btn__circle {
+  left: 2rem;
+}
+.dark-mode .header .burger-btn--active .burger-btn__bar1,
+.dark-mode .header .burger-btn--active .burger-btn__bar2,
+.dark-mode .header .burger-btn--active .burger-btn__bar3 {
+  background-color: #fff;
+}
+.dark-mode .header .nav-mobile {
+  background: linear-gradient(#222, #000);
+}
+.dark-mode .header .nav-mobile ul li a {
+  color: #fff;
+}
+.dark-mode .blog {
+  background-color: #000;
+}
+.dark-mode .blog .wrapper h1 {
+  color: #fafafa;
+}
+.dark-mode .blog .wrapper .paragraph {
+  color: #fff;
+}
+.dark-mode .blog button {
+  border: 1px solid #43b7ff;
+  background: none;
+  color: #43b7ff;
+  animation: glow 2s ease-out infinite alternate;
+}
+.dark-mode .blog .items .item__text p {
+  font-size: 1.2rem;
+  color: #fff;
+}
+.dark-mode .footer {
+  background: linear-gradient(#222, #000);
+  color: #fff;
+}
+.dark-mode .footer .wrapper hr {
+  border: 1px solid #43b7ff;
+}
+.dark-mode .footer .brand {
+  background-color: #1b1b1b;
+}
+.dark-mode .footer .lamp .cable {
+  background-color: #000;
+}
+.dark-mode .footer .lamp .triangle {
+  border-bottom: 26px solid #000;
+  z-index: 1;
+}
+.dark-mode .footer .lamp .bulb {
+  background-color: #fff;
+  z-index: 0;
+  animation: flicker 5s infinite forwards step-start;
+  background-color: #43b7ff;
+  box-shadow: 0px 10px 14px 3px #43b7ff;
+}
+.dark-mode .footer .lamp .color-scheme-btn2__pill {
+  background-color: #43b7ff;
+}
+.dark-mode .footer .lamp .color-scheme-btn2__circle {
+  left: 2rem;
+  background-color: #fff;
+}
+.dark-mode .d-none {
+  display: none;
+}
+
+@keyframes glow {
+  0% {
+    box-shadow: 0px 0px 10px 0px #43b7ff, inset 0px 0px 10px 0px #43b7ff;
+  }
+  3% {
+    box-shadow: 0px 0px 0px 0px #43b7ff, inset 0px 0px 0px 0px #43b7ff;
+  }
+  6% {
+    box-shadow: 0px 0px 10px 0px #43b7ff, inset 0px 0px 10px 0px #43b7ff;
+  }
+  8% {
+    box-shadow: 0px 0px 0px 0px #43b7ff, inset 0px 0px 0px 0px #43b7ff;
+  }
+  10% {
+    box-shadow: 0px 0px 10px 0px #43b7ff, inset 0px 0px 10px 0px #43b7ff;
+  }
+}
+@keyframes flicker {
+  0% {
+    background-color: #43b7ff;
+    box-shadow: 0px 10px 14px 3px #43b7ff;
+  }
+  1% {
+    background-color: #fff;
+    box-shadow: 0px 0px 0px 0px #43b7ff;
+  }
+  2% {
+    background-color: #43b7ff;
+    box-shadow: 0px 10px 14px 3px #43b7ff;
+  }
+  8% {
+    background-color: #fff;
+    box-shadow: 0px 0px 0px 0px #43b7ff;
+  }
+  9% {
+    background-color: #43b7ff;
+    box-shadow: 0px 10px 14px 3px #43b7ff;
+  }
+  25% {
+    background-color: #fff;
+    box-shadow: 0px 0px 0px 0px #43b7ff;
+  }
+  26% {
+    background-color: #43b7ff;
+    box-shadow: 0px 10px 14px 3px #43b7ff;
+  }
+  47% {
+    background-color: #fff;
+    box-shadow: 0px 0px 0px 0px #43b7ff;
+  }
+  48% {
+    background-color: #43b7ff;
+    box-shadow: 0px 10px 14px 3px #43b7ff;
+  }
+  100% {
+    background-color: #43b7ff;
+    box-shadow: 0px 10px 14px 3px #43b7ff;
+  }
+}
+@keyframes neonGlow {
+  0% {
+    opacity: 0;
+  }
+  1% {
+    text-shadow: 0 0 10px #43b7ff, 0 0 10px #43b7ff, 0 0 10px #43b7ff, 0 0 10px #43b7ff, 0 0 10px #43b7ff;
+    opacity: 1;
+  }
+  2% {
+    text-shadow: none;
+    filter: blur(1px);
+    opacity: 0;
+  }
+  3% {
+    text-shadow: 0 0 10px #43b7ff, 0 0 10px #43b7ff, 0 0 10px #43b7ff, 0 0 10px #43b7ff, 0 0 10px #43b7ff;
+    opacity: 1;
+  }
+  4% {
+    opacity: 0;
+    text-shadow: none;
+  }
+  5% {
+    text-shadow: 0 0 10px #43b7ff, 0 0 10px #43b7ff, 0 0 10px #43b7ff, 0 0 10px #43b7ff, 0 0 10px #43b7ff;
+    filter: blur(1px);
+    opacity: 1;
+  }
+  6% {
+    opacity: 0;
+    text-shadow: none;
+  }
+  7% {
+    text-shadow: 0 0 10px #43b7ff, 0 0 10px #43b7ff, 0 0 10px #43b7ff, 0 0 10px #43b7ff, 0 0 10px #43b7ff;
+  }
+  31% {
+    opacity: 1;
+    text-shadow: 0 0 10px #43b7ff, 0 0 10px #43b7ff, 0 0 10px #43b7ff, 0 0 10px #43b7ff, 0 0 10px #43b7ff;
+  }
+  32% {
+    opacity: 0;
+    text-shadow: none;
+    filter: blur(1px);
+  }
+  33% {
+    text-shadow: 0 0 10px #43b7ff, 0 0 10px #43b7ff, 0 0 10px #43b7ff, 0 0 10px #43b7ff, 0 0 10px #43b7ff;
+    opacity: 1;
+  }
+  100% {
+    text-shadow: 0 0 10px #43b7ff, 0 0 10px #43b7ff, 0 0 10px #43b7ff;
+    opacity: 1;
+  }
+}/*# sourceMappingURL=blog-dark.css.map */
