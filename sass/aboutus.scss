@@ -81,6 +81,7 @@ table {
 	z-index: -1;
 }
 .header {
+	background: none;
 	position: relative;
 	top: 0;
 	left: 0;
@@ -96,6 +97,7 @@ table {
 		position: absolute;
 		height: 12rem;
 		width: 100%;
+		background: none;
 		z-index: 80;
 		&__clickable {
 			height: 100%;
@@ -119,10 +121,12 @@ table {
 		top: 50%;
 		height: 100%;
 		width: 100%;
+		background: none;
 		h1 {
 			font-size: 3.6rem;
 			font-weight: 800;
 			text-align: center;
+			background: none;
 		}
 	}
 
