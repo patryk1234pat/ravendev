@@ -1,4 +1,8 @@
 const body = document.querySelector('.aboutus-body');
+const headerImage = body.querySelector('.header__bg-img');
+const headerImageDark = body.querySelector('.header__bg-img-dark');
+const headerShadow = body.querySelector('.header__bg-shadow');
+const headerShadowDark = body.querySelector('.header__bg-shadow-dark');
 const burgerBtn = body.querySelector('.burger-btn');
 const colorSchemeBtn = body.querySelector('.color-scheme-btn');
 const colorSchemeBtn2 = body.querySelector('.color-scheme-btn2');
@@ -22,8 +26,13 @@ const enableDarkMode = () => {
 	colorSchemeBtnTextLight.classList.add('d-none');
 	colorSchemeBtn2TextDark.classList.remove('d-none');
 	colorSchemeBtn2TextLight.classList.add('d-none');
-	swooshInnerLight.classList.add('d-none')
-	swooshInnerDark.classList.remove('d-none')
+	swooshInnerLight.classList.add('d-none');
+	swooshInnerDark.classList.remove('d-none');
+
+	headerImage.classList.add('d-none');
+	headerImageDark.classList.remove('d-none');
+	headerShadow.classList.add('d-none');
+	headerShadowDark.classList.remove('d-none');
 };
 
 const disableDarkMode = () => {
@@ -37,6 +46,11 @@ const disableDarkMode = () => {
 	colorSchemeBtnTextLight.classList.remove('d-none');
 	colorSchemeBtn2TextDark.classList.add('d-none');
 	colorSchemeBtn2TextLight.classList.remove('d-none');
+
+	headerImage.classList.remove('d-none');
+	headerImageDark.classList.add('d-none');
+	headerShadow.classList.remove('d-none');
+	headerShadowDark.classList.add('d-none');
 };
 
 const handleNav = () => {

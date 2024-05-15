@@ -29,10 +29,10 @@ const enableDarkMode = () => {
 	swooshInnerLight.classList.add('d-none');
 	swooshInnerDark.classList.remove('d-none');
 
-	headerImage.classList.add('d-none')
-	headerImageDark.classList.remove('d-none')
-	headerShadow.classList.add('d-none')
-	headerShadowDark.classList.remove('d-none')
+	headerImage.classList.add('d-none');
+	headerImageDark.classList.remove('d-none');
+	headerShadow.classList.add('d-none');
+	headerShadowDark.classList.remove('d-none');
 };
 
 const disableDarkMode = () => {
@@ -47,10 +47,10 @@ const disableDarkMode = () => {
 	colorSchemeBtn2TextDark.classList.add('d-none');
 	colorSchemeBtn2TextLight.classList.remove('d-none');
 
-	headerImage.classList.remove('d-none')
-	headerImageDark.classList.add('d-none')
-	headerShadow.classList.remove('d-none')
-	headerShadowDark.classList.add('d-none')
+	headerImage.classList.remove('d-none');
+	headerImageDark.classList.add('d-none');
+	headerShadow.classList.remove('d-none');
+	headerShadowDark.classList.add('d-none');
 };
 
 const handleNav = () => {
