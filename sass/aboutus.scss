@@ -17,6 +17,9 @@ body {
 	overflow-x: hidden;
 	background-image: url('/img/forest-small.jpg');
 	background-size: contain;
+	// background-color: #333;
+	width: 100%;
+	height: 100%;
 }
 
 html {
@@ -92,7 +95,6 @@ table {
 	.wrapper {
 		padding: 0 2rem;
 	}
-
 
 	.logo {
 		position: absolute;
