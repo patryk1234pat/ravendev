@@ -13,7 +13,6 @@
 
 	.header {
 		color: $secondary-color;
-
 		.logo {
 			&__clickable {
 				.text {
@@ -64,11 +63,10 @@
 		}
 	}
 
-	main {
-		background-color: #000;
-	}
+
 
 	.aboutme {
+        background-color: #000;
 		h2 {
 			color: $secondary-color;
 			span {
@@ -96,6 +94,7 @@
 	}
 
     .contact-section {
+        background-color: #000;
         .wrapper {
             .items {
                 .item {

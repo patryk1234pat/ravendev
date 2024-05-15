@@ -263,7 +263,8 @@ table {
 .aboutme {
   padding-top: 6rem;
   width: 100%;
-  margin-bottom: 10rem;
+  padding-bottom: 10rem;
+  background-color: #fff;
 }
 .aboutme .wrapper {
   padding: 0 2rem;
@@ -383,12 +384,9 @@ table {
   font-weight: 600;
 }
 
-main {
-  background-color: #fff;
-}
-
 .contact-section {
   padding-bottom: 5rem;
+  background-color: #fff;
 }
 .contact-section .wrapper {
   padding: 0 2rem;

@@ -283,7 +283,8 @@ table {
 .aboutme {
 	padding-top: 6rem;
 	width: 100%;
-	margin-bottom: 10rem;
+	padding-bottom: 10rem;
+	background-color: $secondary-color;
 	.wrapper {
 		padding: 0 2rem;
 		display: flex;
@@ -412,11 +413,9 @@ table {
 	}
 }
 
-main {
-	background-color: $secondary-color;
-}
 .contact-section {
 	padding-bottom: 5rem;
+	background-color: $secondary-color;
 	.wrapper {
 		padding: 0 2rem;
 		display: flex;

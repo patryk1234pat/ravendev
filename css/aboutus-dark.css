@@ -44,7 +44,7 @@
 .dark-mode .header .nav-mobile ul li a {
   color: #fff;
 }
-.dark-mode main {
+.dark-mode .aboutme {
   background-color: #000;
 }
 .dark-mode .aboutme h2 {
@@ -67,6 +67,9 @@
   background: none;
   color: #43b7ff;
   animation: glow 2s ease-out infinite alternate;
+}
+.dark-mode .contact-section {
+  background-color: #000;
 }
 .dark-mode .contact-section .wrapper .items .item__text h3 {
   color: #fff;
