@@ -165,7 +165,7 @@ table {
   justify-content: space-evenly;
   align-items: center;
   color: #fff;
-  z-index: 70;
+  z-index: 80;
 }
 .header .color-scheme-btn__box {
   display: flex;

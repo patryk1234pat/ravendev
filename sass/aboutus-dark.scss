@@ -1,0 +1,430 @@
+@use './colors' as *;
+
+.dark-mode {
+    background-color: #000;
+    .header {
+		color: $secondary-color;
+
+        &__img {
+            background-image: url('/img/galaxy-small.jpg');
+            z-index: 10;
+        }
+        &__background {
+            background-color: rgba(0, 0, 0, 0.6);
+            z-index: 11;
+        }
+
+
+		.logo {
+			&__clickable {
+				.text {
+					display: block;
+					position: absolute;
+					font-family: 'Yellowtail';
+					font-size: 2.4rem;
+					bottom: 2rem;
+					left: 12rem;
+					text-wrap: nowrap;
+                    width: 12rem;
+					text-shadow: 0 0 10px #43b7ff, 0 0 10px #43b7ff, 0 0 10px #43b7ff,
+						0 0 10px #43b7ff, 0 0 10px #43b7ff;
+					animation: neonGlow 3s ease-out forwards;
+				}
+			}
+		}
+
+		.color-scheme-btn {
+			color: $h2-blue-color;
+			&__pill {
+				background-color: $h2-blue-color;
+			}
+			.color-scheme-btn__circle {
+				left: 2rem;
+			}
+		}
+
+		.burger-btn--active {
+			.burger-btn__bar1,
+			.burger-btn__bar2,
+			.burger-btn__bar3 {
+				background-color: $secondary-color;
+			}
+		}
+
+		.nav-mobile {
+			background: linear-gradient(#222, #000);
+
+			ul {
+				li {
+					a {
+						color: $secondary-color;
+					}
+				}
+			}
+		}
+	}
+
+	main {
+		background-color: #000;
+	}
+
+	.about {
+		h2 {
+			color: $secondary-color;
+		}
+		.wrapper {
+			.graphic-group {
+				.dash {
+					border-bottom: 1px dashed $h2-blue-color;
+				}
+			}
+
+			p {
+				color: $secondary-color;
+				a {
+					color: $h2-blue-color;
+				}
+			}
+
+			.items {
+				.item {
+					h3 {
+						color: $h2-blue-color;
+					}
+				}
+			}
+		}
+	}
+
+	.pricing {
+		.wrapper {
+			.piggybank-img {
+				height: 30rem;
+				margin-bottom: 2rem;
+			}
+
+			h2 {
+				color: $secondary-color;
+				span {
+					color: $h2-blue-color;
+				}
+			}
+
+			p {
+				color: $secondary-color;
+			}
+
+			.items {
+				.item {
+					&__text {
+						h3 {
+							color: $h2-blue-color;
+						}
+					}
+				}
+			}
+		}
+	}
+
+	.portfolio {
+		h2 {
+			color: $secondary-color;
+			span {
+				color: $h2-blue-color;
+			}
+		}
+		.wrapper {
+			.graphic-group {
+				.dash {
+					border-bottom: 1px dashed $h2-blue-color;
+				}
+			}
+
+			.items {
+				.item {
+					border: 1px solid $h2-blue-color;
+					box-shadow: 0 0 25px -5px $h2-blue-color;
+					border-radius: 0.8rem;
+					border-bottom: 5px solid $h2-blue-color;
+					background-color: $dark-grey;
+
+					h3 {
+						color: $h2-blue-color;
+					}
+
+					p {
+						color: $secondary-color;
+					}
+					button {
+						border: 1px solid $h2-blue-color;
+						background: none;
+						color: $h2-blue-color;
+						animation: glow 2s ease-out infinite alternate;
+					}
+				}
+			}
+		}
+	}
+
+	.aboutme {
+		h2 {
+			color: $secondary-color;
+			span {
+				color: $h2-blue-color;
+			}
+		}
+		.wrapper {
+			p {
+				color: $secondary-color;
+				a {
+					color: $h2-blue-color;
+				}
+			}
+			h3 {
+				color: $h2-blue-color;
+			}
+		}
+	}
+
+	.blog {
+		h2 {
+			color: $secondary-color;
+			span {
+				color: $h2-blue-color;
+			}
+		}
+		.wrapper {
+			padding: 0 2rem;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			.graphic-group {
+				width: 16rem;
+				height: 3rem;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				margin-bottom: 3rem;
+
+				img {
+					height: 100%;
+					margin: 0 1rem;
+				}
+				.dash {
+					width: 50px;
+					border-bottom: 1px dashed $h2-blue-color;
+				}
+			}
+
+			.items {
+				.item {
+					border: 1px solid $h2-blue-color;
+					box-shadow: 0px -13px 35px -16px $h2-blue-color;
+					border-top: 5px solid $h2-blue-color;
+					background-color: $dark-grey;
+					h3 {
+						color: $h2-blue-color;
+					}
+
+					p {
+						color: $secondary-color;
+					}
+					button {
+						border: 1px solid $h2-blue-color;
+						background: none;
+						color: $h2-blue-color;
+						animation: glow 2s ease-out infinite alternate;
+					}
+				}
+			}
+		}
+	}
+
+	.footer {
+		background: linear-gradient(#222, #000);
+		color: $secondary-color;
+
+		.logo {
+			height: 12rem;
+			width: 100%;
+			&__clickable {
+				height: 100%;
+				width: 50%;
+				display: flex;
+				align-items: center;
+				cursor: pointer;
+				img {
+					height: 40%;
+				}
+			}
+		}
+
+		.wrapper {
+			hr {
+				border: 1px solid $h2-blue-color;
+			}
+		}
+		.brand {
+			background-color: $dark-grey;
+		}
+
+		.lamp {
+			.cable {
+				background-color: #000;
+			}
+
+			.triangle {
+				border-bottom: 26px solid #000;
+				z-index: 1;
+			}
+
+			.bulb {
+				background-color: $secondary-color;
+				z-index: 0;
+				animation: flicker 5s infinite forwards step-start;
+				background-color: $h2-blue-color;
+				box-shadow: 0px 10px 14px 3px $h2-blue-color;
+			}
+
+			.color-scheme-btn2 {
+				&__pill {
+					background-color: $h2-blue-color;
+				}
+
+				&__circle {
+					left: 2rem;
+					background-color: $secondary-color;
+				}
+			}
+		}
+	}
+	.d-none {
+		display: none;
+	}
+}
+
+@keyframes glow {
+	0% {
+		box-shadow: 0px 0px 10px 0px $h2-blue-color,
+			inset 0px 0px 10px 0px $h2-blue-color;
+	}
+	3% {
+		box-shadow: 0px 0px 0px 0px $h2-blue-color,
+			inset 0px 0px 0px 0px $h2-blue-color;
+	}
+
+	6% {
+		box-shadow: 0px 0px 10px 0px $h2-blue-color,
+			inset 0px 0px 10px 0px $h2-blue-color;
+	}
+	8% {
+		box-shadow: 0px 0px 0px 0px $h2-blue-color,
+			inset 0px 0px 0px 0px $h2-blue-color;
+	}
+	10% {
+		box-shadow: 0px 0px 10px 0px $h2-blue-color,
+			inset 0px 0px 10px 0px $h2-blue-color;
+	}
+}
+
+@keyframes flicker {
+	0% {
+		background-color: $h2-blue-color;
+		box-shadow: 0px 10px 14px 3px $h2-blue-color;
+	}
+	1% {
+		background-color: $secondary-color;
+		box-shadow: 0px 0px 0px 0px $h2-blue-color;
+	}
+	2% {
+		background-color: $h2-blue-color;
+		box-shadow: 0px 10px 14px 3px $h2-blue-color;
+	}
+	8% {
+		background-color: $secondary-color;
+		box-shadow: 0px 0px 0px 0px $h2-blue-color;
+	}
+	9% {
+		background-color: $h2-blue-color;
+		box-shadow: 0px 10px 14px 3px $h2-blue-color;
+	}
+	25% {
+		background-color: $secondary-color;
+		box-shadow: 0px 0px 0px 0px $h2-blue-color;
+	}
+	26% {
+		background-color: $h2-blue-color;
+		box-shadow: 0px 10px 14px 3px $h2-blue-color;
+	}
+	47% {
+		background-color: $secondary-color;
+		box-shadow: 0px 0px 0px 0px $h2-blue-color;
+	}
+	48% {
+		background-color: $h2-blue-color;
+		box-shadow: 0px 10px 14px 3px $h2-blue-color;
+	}
+	100% {
+		background-color: $h2-blue-color;
+		box-shadow: 0px 10px 14px 3px $h2-blue-color;
+	}
+}
+
+@keyframes neonGlow {
+	0% {
+		opacity: 0;
+	}
+
+	1% {
+		text-shadow: 0 0 10px #43b7ff, 0 0 10px #43b7ff, 0 0 10px #43b7ff,
+			0 0 10px #43b7ff, 0 0 10px #43b7ff;
+	}
+
+	2% {
+		text-shadow: none;
+		filter: blur(1px);
+	}
+
+	3% {
+		text-shadow: 0 0 10px #43b7ff, 0 0 10px #43b7ff, 0 0 10px #43b7ff,
+			0 0 10px #43b7ff, 0 0 10px #43b7ff;
+	}
+	4% {
+		text-shadow: 0 0 10px #43b7ff, 0 0 10px #43b7ff, 0 0 10px #43b7ff,
+			0 0 10px #43b7ff, 0 0 10px #43b7ff;
+	}
+
+	5% {
+		text-shadow: none;
+		filter: blur(1px);
+	}
+
+	6% {
+		text-shadow: 0 0 10px #43b7ff, 0 0 10px #43b7ff, 0 0 10px #43b7ff,
+			0 0 10px #43b7ff, 0 0 10px #43b7ff;
+	}
+
+	30% {
+		text-shadow: 0 0 10px #43b7ff, 0 0 10px #43b7ff, 0 0 10px #43b7ff,
+			0 0 10px #43b7ff, 0 0 10px #43b7ff;
+	}
+	31% {
+		opacity: 1;
+		text-shadow: 0 0 10px #43b7ff, 0 0 10px #43b7ff, 0 0 10px #43b7ff,
+			0 0 10px #43b7ff, 0 0 10px #43b7ff;
+	}
+
+	32% {
+		text-shadow: none;
+		filter: blur(1px);
+	}
+
+	33% {
+		text-shadow: 0 0 10px #43b7ff, 0 0 10px #43b7ff, 0 0 10px #43b7ff,
+			0 0 10px #43b7ff, 0 0 10px #43b7ff;
+	}
+
+    100% {
+        text-shadow: 0 0 10px #43b7ff, 0 0 10px #43b7ff, 0 0 10px #43b7ff;
+    }
+}

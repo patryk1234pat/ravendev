@@ -1,43 +1,34 @@
-const body = document.querySelector('body');
-const burgerBtn = document.querySelector('.burger-btn');
-const colorSchemeBtn = document.querySelector('.color-scheme-btn');
-const colorSchemeBtn2 = document.querySelector('.color-scheme-btn2');
-const colorSchemeBtnPill = document.querySelector('.color-scheme-btn__circle');
-const nav = document.querySelector('.nav-mobile');
-const navBackground = document.querySelector('.nav-mobile-background');
-const colorSchemeBtnTextDark = document.querySelector('.dark');
-const colorSchemeBtnTextLight = document.querySelector('.light');
-const colorSchemeBtn2TextDark = document.querySelector('.dark-text');
-const colorSchemeBtn2TextLight = document.querySelector('.light-text');
+const body = document.querySelector('.aboutus-body');
+const burgerBtn = body.querySelector('.burger-btn');
+const colorSchemeBtn = body.querySelector('.color-scheme-btn');
+const colorSchemeBtn2 = body.querySelector('.color-scheme-btn2');
+const colorSchemeBtnPill = body.querySelector('.color-scheme-btn__circle');
+const nav = body.querySelector('.nav-mobile');
+const navBackground = body.querySelector('.nav-mobile-background');
+const colorSchemeBtnTextDark = body.querySelector('.dark');
+const colorSchemeBtnTextLight = body.querySelector('.light');
+const colorSchemeBtn2TextDark = body.querySelector('.dark-text');
+const colorSchemeBtn2TextLight = body.querySelector('.light-text');
 
-const swooshLight = document.querySelector('.one-light');
-const swooshDark = document.querySelector('.one-dark');
-const swooshInnerLight = document.querySelector('.swoosh-one');
-const swooshInnerDark = document.querySelector('.swoosh-two');
-const logoDarkModeText = document.querySelector('.asd');
+const swooshInnerLight = body.querySelector('.swoosh-one');
+const swooshInnerDark = body.querySelector('.swoosh-two');
 
 let darkMode = localStorage.getItem('darkMode');
 
 const enableDarkMode = () => {
 	body.classList.add('dark-mode');
 	localStorage.setItem('darkMode', 'enabled');
-	swooshLight.classList.add('d-none');
-	swooshDark.classList.remove('d-none');
-
-	swooshInnerLight.classList.add('d-none');
-	swooshInnerDark.classList.remove('d-none');
-
 	colorSchemeBtnTextDark.classList.remove('d-none');
 	colorSchemeBtnTextLight.classList.add('d-none');
 	colorSchemeBtn2TextDark.classList.remove('d-none');
 	colorSchemeBtn2TextLight.classList.add('d-none');
+	swooshInnerLight.classList.add('d-none')
+	swooshInnerDark.classList.remove('d-none')
 };
 
 const disableDarkMode = () => {
 	body.classList.remove('dark-mode');
 	localStorage.setItem('darkMode', null);
-	swooshDark.classList.add('d-none');
-	swooshLight.classList.remove('d-none');
 
 	swooshInnerLight.classList.remove('d-none');
 	swooshInnerDark.classList.add('d-none');
@@ -47,8 +38,6 @@ const disableDarkMode = () => {
 	colorSchemeBtn2TextDark.classList.add('d-none');
 	colorSchemeBtn2TextLight.classList.remove('d-none');
 };
-
-
 
 const handleNav = () => {
 	nav.classList.toggle('nav-mobile--active');
@@ -76,6 +65,7 @@ colorSchemeBtn2.addEventListener('click', () => {
 		disableDarkMode();
 	}
 });
-if (darkMode == 'enabled') {
+
+if (darkMode === 'enabled') {
 	enableDarkMode();
 }
