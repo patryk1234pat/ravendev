@@ -300,7 +300,8 @@ main {
 		flex-direction: column;
 		padding-bottom: 10rem;
 
-		h1 {
+		h1,
+		h2 {
 			color: $black;
 			line-height: 3.5rem;
 			font-size: 2.8rem;
@@ -308,11 +309,57 @@ main {
 			align-self: self-start;
 			color: $easy-black;
 		}
+
+		.h2 {
+            margin-bottom: 3rem;
+            border-left: 3px solid $h2-blue-color;
+			h2 {
+				font-size: 2.2rem;
+                margin: 0 0 0 2rem;
+				line-height: 2.7rem;
+			}
+		}
+
+        .second-article {
+            margin: 4rem 0 4rem 0;
+        }
+
+        h3 {
+            font-size: 1.6rem;
+            color: $easier-black;
+        }
+
+        ul {
+            display: block;
+            list-style-type: disc;
+            margin-block-start: 1rem;
+            padding-inline-start: 3rcap;
+            unicode-bidi: isolate;
+            margin-bottom: 1rem;
+            li {
+                color: $easier-black;
+                line-height: 2.8rem;
+                font-size: 1.4rem;
+                margin-bottom: 1rem;
+            }
+        }
+
 		.paragraph {
 			width: 100%;
 			font-size: 1.7rem;
 			color: $easier-black;
 			line-height: 2.8rem;
+            margin-bottom: 2.5rem;
+
+            span {
+                color: $h2-blue-color;
+                font-weight: bold;
+            }
+
+            a {
+                text-decoration: underline;
+                color: $h2-blue-color;
+            }
 		}
 
 		.owner-photo {
@@ -363,16 +410,6 @@ main {
 			border: 1px solid $h2-blue-color;
 			margin-top: 1rem;
 			margin-bottom: 3rem;
-		}
-
-		button {
-			color: $secondary-color;
-			background: linear-gradient(90deg, #43b7ff 0, #00ddf6 100%);
-			border-radius: 3px;
-			width: 16rem;
-			padding: 1.5rem 3rem;
-			margin: 3rem 0;
-			font-weight: 600;
 		}
 	}
 }
