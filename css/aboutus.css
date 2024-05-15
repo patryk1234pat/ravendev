@@ -76,12 +76,12 @@ table {
   position: fixed;
   width: 100%;
   height: 25rem;
-  background-color: rgba(0, 48, 107, 0.8);
+  background-color: rgb(0, 48, 107);
+  opacity: 0.8;
   z-index: -1;
 }
 
 .header {
-  background: none;
   position: relative;
   top: 0;
   left: 0;
@@ -96,7 +96,6 @@ table {
   position: absolute;
   height: 12rem;
   width: 100%;
-  background: none;
   z-index: 80;
 }
 .header .logo__clickable {
@@ -118,13 +117,11 @@ table {
   top: 50%;
   height: 100%;
   width: 100%;
-  background: none;
 }
 .header__text h1 {
   font-size: 3.6rem;
   font-weight: 800;
   text-align: center;
-  background: none;
 }
 .header .burger-btn {
   position: absolute;

@@ -5,16 +5,11 @@
   background-image: url("/img/galaxy-small.jpg");
 }
 .dark-mode .header-background {
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgb(0, 0, 0);
+  opacity: 0.6;
 }
 .dark-mode .header {
   color: #fff;
-}
-.dark-mode .header__img {
-  background-image: url("/img/galaxy-small.jpg");
-}
-.dark-mode .header__background {
-  background-color: rgba(0, 0, 0, 0.6);
 }
 .dark-mode .header .logo__clickable .text {
   display: block;

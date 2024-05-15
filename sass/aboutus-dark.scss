@@ -7,17 +7,12 @@
         background-image: url('/img/galaxy-small.jpg');
     }
     .header-background {
-        background-color: rgba(0, 0, 0, 0.8);
+        background-color: rgb(0, 0, 0);
+        opacity: 0.6;
     }
 
 	.header {
 		color: $secondary-color;
-		&__img {
-			background-image: url('/img/galaxy-small.jpg');
-		}
-		&__background {
-			background-color: rgba(0, 0, 0, 0.6);
-		}
 
 		.logo {
 			&__clickable {
