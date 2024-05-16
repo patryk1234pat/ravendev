@@ -3,13 +3,13 @@
 .dark-mode {
 	background-color: #000;
 
-    .header-img {
-        background-image: url('/img/galaxy-small.jpg');
-    }
-    .header-background {
-        background-color: rgb(0, 0, 0);
-        opacity: 0.6;
-    }
+	.header-img {
+		background-image: url('/img/galaxy-small.jpg');
+	}
+	.header-background {
+		background-color: rgb(0, 0, 0);
+		opacity: 0.6;
+	}
 
 	.header {
 		color: $secondary-color;
@@ -63,10 +63,9 @@
 		}
 	}
 
-
-
 	.aboutme {
-        background-color: #000;
+		background-color: #000;
+		box-shadow: 0px -8px 13px 13px rgba(0, 0, 0, 1);
 		h2 {
 			color: $secondary-color;
 			span {
@@ -93,30 +92,30 @@
 		}
 	}
 
-    .contact-section {
-        background-color: #000;
-        .wrapper {
-            .items {
-                .item {
-                    &__text {
-                        h3 {
-                            color: $secondary-color;
-                        }
-    
-                        p {
-                            font-size: 1.6rem;
-                            color: $secondary-color;
-                        }
-                    }
-                }
-            }
-        }
-    }
+	.contact-section {
+		background-color: #000;
+		.wrapper {
+			.items {
+				.item {
+					&__text {
+						h3 {
+							color: $secondary-color;
+						}
+
+						p {
+							font-size: 1.6rem;
+							color: $secondary-color;
+						}
+					}
+				}
+			}
+		}
+	}
 
 	.footer {
 		background: linear-gradient(#222, #000);
 		color: $secondary-color;
-        
+
 		.wrapper {
 			hr {
 				border: 1px solid $h2-blue-color;
