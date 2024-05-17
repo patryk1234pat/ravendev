@@ -111,8 +111,11 @@ table {
 			display: flex;
 			align-items: center;
 			cursor: pointer;
-			img {
+			a {
 				height: 40%;
+				img {
+					height: 100%;
+				}
 			}
 
 			.text {

@@ -109,8 +109,11 @@ table {
 			display: flex;
 			align-items: center;
 			cursor: pointer;
-			img {
+			a {
 				height: 40%;
+				img {
+					height: 100%;
+				}
 			}
 
 			.text {
@@ -290,7 +293,7 @@ table {
 	width: 100%;
 	padding-bottom: 10rem;
 	background-color: $secondary-color;
-    font-size: 1.7rem;
+	font-size: 1.7rem;
 	.wrapper {
 		padding: 0 2rem;
 		display: flex;
@@ -313,17 +316,17 @@ table {
 			width: 100%;
 			color: $text-color-dark;
 			line-height: 2.8rem;
-            
+
 			a {
-                text-decoration: underline;
+				text-decoration: underline;
 				color: $h2-blue-color;
 			}
 		}
-        
-        span {
-            color: $h2-blue-color;
-            font-weight: bold;
-        }
+
+		span {
+			color: $h2-blue-color;
+			font-weight: bold;
+		}
 		.margintop {
 			margin: 2.5rem 0 0 0;
 		}
@@ -356,7 +359,8 @@ table {
 			}
 		}
 
-		.items { margin-bottom: 5rem;
+		.items {
+			margin-bottom: 5rem;
 			.item {
 				display: flex;
 				flex-direction: row;

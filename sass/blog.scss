@@ -109,8 +109,11 @@ table {
 			display: flex;
 			align-items: center;
 			cursor: pointer;
-			img {
+			a {
 				height: 40%;
+				img {
+					height: 100%;
+				}
 			}
 
 			.text {
@@ -365,11 +368,15 @@ main {
 			margin-bottom: 3rem;
 		}
 
-		button {
+		
+		.button {
 			color: $secondary-color;
 			background: linear-gradient(90deg, #43b7ff 0, #00ddf6 100%);
 			border-radius: 3px;
 			width: 16rem;
+			height: 5rem;
+			font-size: 1.33rem;
+			text-align: center;
 			padding: 1.5rem 3rem;
 			margin: 3rem 0;
 			font-weight: 600;

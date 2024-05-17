@@ -13,12 +13,12 @@ body {
 
 body {
   overflow-x: hidden;
+  background-color: #fff;
 }
 
 html {
   font-size: 62.5%;
   scroll-behavior: smooth;
-  scroll-padding-top: 8rem;
 }
 
 a {
@@ -83,8 +83,11 @@ table {
   align-items: center;
   cursor: pointer;
 }
-.header .logo__clickable img {
+.header .logo__clickable a {
   height: 40%;
+}
+.header .logo__clickable a img {
+  height: 100%;
 }
 .header .logo__clickable .text {
   display: none;
@@ -594,13 +597,16 @@ main {
   color: #646464;
   line-height: 3rem;
 }
-.blog .wrapper .items .item button {
+.blog .wrapper .items .item .button {
   color: #fff;
   background: linear-gradient(90deg, #43b7ff 0, #00ddf6 100%);
   border-radius: 3px;
-  width: 60%;
+  width: 16rem;
+  height: 5rem;
+  font-size: 1.26rem;
+  text-align: center;
   padding: 1.5rem 3rem;
-  margin: 1rem 0;
+  margin: 3rem 0;
   font-weight: 600;
 }
 
@@ -612,11 +618,11 @@ main {
   color: #fff;
 }
 .footer .swoosh {
-  top: -5px;
   position: relative;
   overflow: hidden;
 }
-.footer .swoosh .one, .footer .swoosh .twos {
+.footer .swoosh .one,
+.footer .swoosh .twos {
   width: 103%;
 }
 .footer .logo {

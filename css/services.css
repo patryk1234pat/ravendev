@@ -104,8 +104,11 @@ table {
   align-items: center;
   cursor: pointer;
 }
-.header .logo__clickable img {
+.header .logo__clickable a {
   height: 40%;
+}
+.header .logo__clickable a img {
+  height: 100%;
 }
 .header .logo__clickable .text {
   display: none;

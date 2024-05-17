@@ -104,8 +104,11 @@ table {
   align-items: center;
   cursor: pointer;
 }
-.header .logo__clickable img {
+.header .logo__clickable a {
   height: 40%;
+}
+.header .logo__clickable a img {
+  height: 100%;
 }
 .header .logo__clickable .text {
   display: none;
@@ -336,11 +339,14 @@ main {
   margin-top: 1rem;
   margin-bottom: 3rem;
 }
-.blog .wrapper button {
+.blog .wrapper .button {
   color: #fff;
   background: linear-gradient(90deg, #43b7ff 0, #00ddf6 100%);
   border-radius: 3px;
   width: 16rem;
+  height: 5rem;
+  font-size: 1.33rem;
+  text-align: center;
   padding: 1.5rem 3rem;
   margin: 3rem 0;
   font-weight: 600;

@@ -109,8 +109,11 @@ table {
 			display: flex;
 			align-items: center;
 			cursor: pointer;
-			img {
+			a {
 				height: 40%;
+				img {
+					height: 100%;
+				}
 			}
 
 			.text {
@@ -341,6 +344,10 @@ main {
                 line-height: 2.8rem;
                 font-size: 1.4rem;
                 margin-bottom: 1rem;
+				a {
+					text-decoration: underline;
+					color: $h2-blue-color;
+				}
             }
         }
 
