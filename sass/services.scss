@@ -384,15 +384,17 @@ table {
 			}
 		}
 
-		button {
-			color: $h2-blue-color;
+		.button {
+			color: $secondary-color;
+			background: linear-gradient(90deg, #43b7ff 0, #00ddf6 100%);
 			border-radius: 3px;
 			width: 16rem;
-			background: none;
 			padding: 1.5rem 3rem;
 			margin: 3rem 0 10rem 0;
-			border: 2px solid $h2-blue-color;
 			font-weight: 600;
+			height: 5rem;
+			font-size: 1.33rem;
+			text-align: center;
 			align-self: self-start;
 		}
 		.items-two {

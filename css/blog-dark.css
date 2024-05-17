@@ -50,7 +50,7 @@
 .dark-mode .blog .wrapper h2, .dark-mode .blog .wrapper h3, .dark-mode .blog .wrapper li {
   color: #fff;
 }
-.dark-mode .blog button {
+.dark-mode .blog .button {
   border: 1px solid #43b7ff;
   background: none;
   color: #43b7ff;

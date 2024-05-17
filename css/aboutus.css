@@ -377,7 +377,7 @@ table {
 .aboutme .wrapper .items .item p {
   font-size: 1.8rem;
 }
-.aboutme .wrapper button {
+.aboutme .wrapper .button {
   color: #fff;
   background: linear-gradient(90deg, #43b7ff 0, #00ddf6 100%);
   border-radius: 3px;
@@ -385,6 +385,9 @@ table {
   padding: 1.5rem 3rem;
   margin: 6rem 0;
   font-weight: 600;
+  height: 5rem;
+  font-size: 1.33rem;
+  text-align: center;
 }
 
 .contact-section {
