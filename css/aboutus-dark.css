@@ -69,6 +69,18 @@
   color: #43b7ff;
   animation: glow 2s ease-out infinite alternate;
 }
+.dark-mode .aboutme .items-two .item {
+  border: 1px solid #43b7ff;
+  box-shadow: 0px -13px 35px -16px #43b7ff;
+  border-top: 5px solid #43b7ff;
+  background-color: #1b1b1b;
+}
+.dark-mode .aboutme .items-two .item h3 {
+  color: #43b7ff;
+}
+.dark-mode .aboutme .items-two .item p {
+  color: #fff;
+}
 .dark-mode .contact-section {
   background-color: #000;
 }

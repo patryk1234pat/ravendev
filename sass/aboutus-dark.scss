@@ -90,7 +90,23 @@
 			color: $h2-blue-color;
 			animation: glow 2s ease-out infinite alternate;
 		}
+		.items-two {
+			.item {
+				border: 1px solid $h2-blue-color;
+				box-shadow: 0px -13px 35px -16px $h2-blue-color;
+				border-top: 5px solid $h2-blue-color;
+				background-color: $dark-grey;
+				h3 {
+					color: $h2-blue-color;
+				}
+	
+				p {
+					color: $secondary-color;
+				}
+			}
+		}
 	}
+
 
 	.contact-section {
 		background-color: #000;
@@ -101,7 +117,7 @@
 						h3 {
 							color: $secondary-color;
 						}
-
+						
 						p {
 							font-size: 1.6rem;
 							color: $secondary-color;
@@ -111,7 +127,8 @@
 			}
 		}
 	}
-
+	
+	
 	.footer {
 		background: linear-gradient(#222, #000);
 		color: $secondary-color;

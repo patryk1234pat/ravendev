@@ -331,7 +331,7 @@ table {
 			margin: 2.5rem 0 0 0;
 		}
 		.marginbottom {
-			margin: 2.5rem 0 6rem 0;
+			margin: 2.5rem 0 10rem 0;
 		}
 
 		h3 {
@@ -355,12 +355,12 @@ table {
 			img {
 				width: 100%;
 				border-radius: 8px;
-				box-shadow: 0 0 25px 15px rgba(0, 0, 0, 0.1);
+				box-shadow: 0 0 25px 5px rgba(0, 0, 0, 0.1);
 			}
 		}
 
 		.items {
-			margin-bottom: 5rem;
+			margin-bottom: 10rem;
 			.item {
 				display: flex;
 				flex-direction: row;
@@ -385,14 +385,50 @@ table {
 		}
 
 		button {
-			color: $secondary-color;
-			background: linear-gradient(90deg, #43b7ff 0, #00ddf6 100%);
+			color: $h2-blue-color;
 			border-radius: 3px;
 			width: 16rem;
+			background: none;
 			padding: 1.5rem 3rem;
-			margin: 6rem 0;
+			margin: 3rem 0 10rem 0;
+			border: 2px solid $h2-blue-color;
 			font-weight: 600;
+			align-self: self-start;
 		}
+		.items-two {
+			margin-top: 5rem;
+			font-weight: 400;
+			.item {
+				display: flex;
+				margin-bottom: 7rem;
+				flex-direction: column;
+				text-align: start;
+				width: 100%;
+				max-width: 38rem;
+				box-shadow: 0 0 25px 15px rgba(0, 0, 0, 0.1);
+				padding: 5rem 2.5rem;
+				border-radius: 0.8rem;
+				border-top: 5px solid $h2-blue-color;
+				img {
+					width: 5rem;
+					height: 5rem;
+					margin-bottom: 2rem;
+					border-radius: 0.8rem;
+				}
+
+				h3 {
+					font-size: 1.9rem;
+				}
+
+				p {
+					font-size: 1.7rem;
+					color: $text-color-dark;
+					line-height: 3rem;
+				}
+				
+			}
+		}
+
 	}
 }
 
