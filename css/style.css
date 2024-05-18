@@ -75,6 +75,17 @@ table {
 .header .astronaut {
   display: none;
 }
+.header .astronaut2 {
+  position: absolute;
+  background-image: url("/img/icons/astronaut.svg");
+  background-position: center;
+  background-size: contain;
+  top: 0;
+  left: 0;
+  height: 20rem;
+  width: 20rem;
+  z-index: 1000;
+}
 .header .wrapper {
   padding: 0 2rem 0 2rem;
   width: 100%;

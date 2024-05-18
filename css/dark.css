@@ -167,20 +167,11 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #fff;
   background-image: url("/img/icons/astronaut.svg");
   height: 10rem;
   width: 10rem;
   position: absolute;
-  animation: orbit 40s infinite ease-in both;
-}
-.dark-mode .header .astronaut2 {
-  position: absolute;
-  top: 50%;
-  right: 50%;
-  height: 20rem;
-  width: 20rem;
-  background-image: url("/img/icons/checkproicon.svg");
+  animation: orbt 40s infinite ease-in both;
 }
 .dark-mode .header .logo {
   height: 12rem;
