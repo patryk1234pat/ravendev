@@ -165,6 +165,8 @@
 }
 .dark-mode .header .astronaut {
   display: flex;
+  justify-content: center;
+  align-items: center;
   background-color: #fff;
   background-image: url("/img/icons/astronaut.svg");
   height: 10rem;
