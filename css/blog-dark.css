@@ -47,10 +47,12 @@
 .dark-mode .blog .wrapper .paragraph {
   color: #fff;
 }
-.dark-mode .blog .wrapper h2, .dark-mode .blog .wrapper h3, .dark-mode .blog .wrapper li {
+.dark-mode .blog .wrapper h2,
+.dark-mode .blog .wrapper h3,
+.dark-mode .blog .wrapper li {
   color: #fff;
 }
-.dark-mode .blog .button {
+.dark-mode .blog .wrapper .button {
   border: 1px solid #43b7ff;
   background: none;
   color: #43b7ff;
@@ -59,6 +61,21 @@
 .dark-mode .blog .items .item__text p {
   font-size: 1.2rem;
   color: #fff;
+}
+.dark-mode .blog .contact-form {
+  background: linear-gradient(#333, #111);
+  box-shadow: 0 0 25px -5px #43b7ff;
+  border: 1px solid #43b7ff;
+}
+.dark-mode .blog .contact-form h3 {
+  color: #fff;
+}
+.dark-mode .blog .contact-form .contact-box input,
+.dark-mode .blog .contact-form .contact-box textarea {
+  width: 100%;
+  border: 1px solid #ccc;
+  color: #fff;
+  background: linear-gradient(#222, #000);
 }
 .dark-mode .footer {
   background: linear-gradient(#222, #000);

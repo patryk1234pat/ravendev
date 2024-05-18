@@ -370,8 +370,7 @@ main {
 		flex-direction: column;
 		text-align: start;
 		.piggybank-img {
-			height: 30rem;
-			margin-bottom: 2rem;
+			width: 100%;
 		}
 
 		h2 {
@@ -567,8 +566,8 @@ main {
 			justify-content: center;
 			align-items: center;
 			img {
-				width: 90%;
-				height: 95%;
+				width: 98%;
+				height: 98%;
 				border-radius: 30%;
 			}
 		}

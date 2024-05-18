@@ -54,49 +54,66 @@
 		}
 	}
 
-
-
 	.blog {
-        background-color: #000;
+		background-color: #000;
 		box-shadow: 0px -8px 13px 13px rgba(0, 0, 0, 1);
 		.wrapper {
-            h1 {
-                color: #fafafa;
-            }
+			h1 {
+				color: #fafafa;
+			}
 			.paragraph {
 				color: $secondary-color;
 			}
-            h2, h3, li {
-                color: $secondary-color;
-            }
-            
-            
+			h2,
+			h3,
+			li {
+				color: $secondary-color;
+			}
 
-			
+			.button {
+				border: 1px solid $h2-blue-color;
+				background: none;
+				color: $h2-blue-color;
+				animation: glow 2s ease-out infinite alternate;
+			}
 		}
 
-		.button {
-			border: 1px solid $h2-blue-color;
-			background: none;
-			color: $h2-blue-color;
-			animation: glow 2s ease-out infinite alternate;
-		}
-        .items {
-            .item {
-                &__text {
-                    p {
-                        font-size: 1.2rem;
+		.items {
+			.item {
+				&__text {
+					p {
+						font-size: 1.2rem;
 						color: $secondary-color;
 					}
-                }
-            }
-        }
+				}
+			}
+		}
+
+		.contact-form {
+			background: linear-gradient(#333, #111);
+			box-shadow: 0 0 25px -5px #43b7ff;
+			border: 1px solid $h2-blue-color;
+
+			h3 {
+				color: #fff;
+			}
+
+			.contact-box {
+				input,
+				textarea {
+					width: 100%;
+					border: 1px solid #ccc;
+					color: #fff;
+					background: linear-gradient(#222, #000);
+				}
+			}
+		}
 	}
 
 	.footer {
 		background: linear-gradient(#222, #000);
 		color: $secondary-color;
-        
+
 		.wrapper {
 			hr {
 				border: 1px solid $h2-blue-color;
