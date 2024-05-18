@@ -174,14 +174,21 @@
 		}
 		.astronaut {
 			display: flex;
+			background-color: #fff;
+			background-image: url('/img/icons/astronaut.svg');
 			height: 10rem;
 			width: 10rem;
 			position: absolute;
 			animation: orbit 40s infinite ease-in both;
-			img {
-				height: 100%;
-				width: 100%;
-			}
+		}
+
+		.astronaut2 {
+			position: absolute;
+			top: 50%;
+			right: 50%;
+			height: 20rem;
+			width: 20rem;
+			background-image: url('/img/icons/checkproicon.svg');
 		}
 		.logo {
 			height: 12rem;

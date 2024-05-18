@@ -165,14 +165,20 @@
 }
 .dark-mode .header .astronaut {
   display: flex;
+  background-color: #fff;
+  background-image: url("/img/icons/astronaut.svg");
   height: 10rem;
   width: 10rem;
   position: absolute;
   animation: orbit 40s infinite ease-in both;
 }
-.dark-mode .header .astronaut img {
-  height: 100%;
-  width: 100%;
+.dark-mode .header .astronaut2 {
+  position: absolute;
+  top: 50%;
+  right: 50%;
+  height: 20rem;
+  width: 20rem;
+  background-image: url("/img/icons/checkproicon.svg");
 }
 .dark-mode .header .logo {
   height: 12rem;
