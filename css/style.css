@@ -65,6 +65,7 @@ table {
   position: relative;
   top: 0;
   left: 0;
+  overflow: hidden;
   background: linear-gradient(145deg, #001099, #3ad9ff 96%);
   color: #fff;
 }
