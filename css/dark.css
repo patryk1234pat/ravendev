@@ -168,8 +168,6 @@
   height: 10rem;
   width: 10rem;
   position: absolute;
-  animation-name: orbit;
-  animation-duration: 30s;
   animation: orbit 40s infinite ease-in both;
 }
 .dark-mode .header .logo {
