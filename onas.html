@@ -102,8 +102,11 @@
 						internetową, albo mają, ale nie wiedzą, komu zaufać, aby stworzyć
 						coś wielkiego. Dostosowałem więc swój model biznesowy do ich
 						potrzeb, oferując
-						<a href="jaka-jest-roznica-miedzy-recznie-kodowanymi-stronami-internetowymi-a-witrynami-wordpress.html">statyczne strony internetowe</a>, czyli jedyne, czego
-						może potrzebować znaczna większość małych firm.
+						<a
+							href="jaka-jest-roznica-miedzy-recznie-kodowanymi-stronami-internetowymi-a-witrynami-wordpress.html"
+							>statyczne strony internetowe</a
+						>, czyli jedyne, czego może potrzebować znaczna większość małych
+						firm.
 					</p>
 					<h2><span>Jakość</span> Ponad Ilość</h2>
 					<p>
@@ -167,7 +170,11 @@
 								<p>780 179 553</p>
 							</div>
 						</a>
-						<a href="mailto:patrykkruk58@gmail.com" target="_blank" class="item">
+						<a
+							href="mailto:patrykkruk58@gmail.com"
+							target="_blank"
+							class="item"
+						>
 							<img src="./img/icons/email-icon.svg" alt="" />
 							<div class="item__text">
 								<h3>E-mail:</h3>
@@ -175,7 +182,51 @@
 							</div>
 						</a>
 					</div>
+					<form action="mail.php" method="post" class="contact-form">
+						<h3><span>NAPISZ</span> DO NAS</h3>
+						<div class="contact-box">
+							<input
+								type="text"
+								placeholder="Imię"
+								id="name"
+								name="name"
+								required
+							/>
+						</div>
+						<div class="contact-box">
+							<input
+								type="email"
+								placeholder="E-mail"
+								id="email"
+								name="email"
+								required
+							/>
+						</div>
+						<div class="contact-box">
+							<input
+								type="tel"
+								placeholder="Telefon (nie musisz podawać)"
+								id="tel"
+								name="tel"
+							/>
+						</div>
+						<div class="contact-box">
+							<textarea
+								name="msg"
+								placeholder="Tutaj wpisz wiadomość"
+								id="msg"
+								required
+							></textarea>
+						</div>
+						<div class="check">
+							<input class="checkbox" type="checkbox" name="checkbox" id="checkbox" required>
+							<label for="checkbox">Wyrażam zgodę na przetwarzanie danych osobowych zgodnie z ustawą o ochronie danych osobowych w związku z wysłaniem zapytania przez formularz kontaktowy. Podanie danych jest dobrowolne, ale niezbędne do przetworzenia zapytania. Zostałem poinformowany, że przysługuje mi prawo dostępu do swoich danych, możliwości ich poprawiania, żądania zaprzestania ich przetwarzania. Administratorem danych osobowych jest Raven Dev Web Designs.</label>
+						</div>
+						<button class="button">Wyślij</button>
+					</form>
 				</div>
+
+				<p class="msg-status"></p>
 			</section>
 		</main>
 		<footer class="footer">

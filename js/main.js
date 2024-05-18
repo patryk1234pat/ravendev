@@ -18,6 +18,30 @@ const colorSchemeBtn2TextLight = body.querySelector('.light-text');
 const swooshInnerLight = body.querySelector('.swoosh-one');
 const swooshInnerDark = body.querySelector('.swoosh-two');
 
+const msgStatus = document.querySelector('.msg-status');
+
+
+
+
+
+if (document.location.search === '?mail_status=sent') {
+    msgStatus.classList.add('succes')
+    msgStatus.textContent = 'Wiadomość wysłana!'
+
+    setTimeout(() => {
+        msgStatus.classList.remove('succes')
+    }, 3000);
+}
+
+if (document.location.search === '?mail_status=error') {
+    msgStatus.classList.add('error')
+    msgStatus.textContent = 'Wystąpił błąd'
+
+    setTimeout(() => {
+        msgStatus.classList.remove('error')
+    }, 3000);
+}
+
 let darkMode = sessionStorage.getItem('darkMode');
 
 const enableDarkMode = () => {

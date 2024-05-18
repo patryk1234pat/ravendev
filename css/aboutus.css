@@ -265,7 +265,7 @@ table {
 .aboutme {
   padding-top: 6rem;
   width: 100%;
-  padding-bottom: 10rem;
+  padding-bottom: 5rem;
   background-color: #fff;
 }
 .aboutme .wrapper {
@@ -397,12 +397,14 @@ table {
 .contact-section .wrapper {
   padding: 0 2rem;
   display: flex;
-  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 .contact-section .wrapper .items {
   display: flex;
   flex-direction: column;
   align-items: self-start;
+  margin-bottom: 5rem;
 }
 .contact-section .wrapper .items .item {
   display: flex;
@@ -427,6 +429,90 @@ table {
   margin-right: 1rem;
   width: 6rem;
   height: 6rem;
+}
+.contact-section .wrapper .contact-form {
+  position: relative;
+  width: 100%;
+  max-width: 40rem;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  padding-top: 0;
+  padding: 2.5rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 0 29px 0 rgba(0, 0, 0, 0.09);
+  margin-bottom: 50px;
+  margin-top: 2.5rem;
+}
+.contact-section .wrapper .contact-form p {
+  color: #121212;
+  font-size: 1.3rem;
+}
+.contact-section .wrapper .contact-form h3 {
+  color: #1d2124;
+  display: block;
+  font-size: 2.8rem;
+  font-weight: 700;
+  margin-bottom: 2.5rem;
+}
+.contact-section .wrapper .contact-form h3 span {
+  color: #43b7ff;
+  display: inline-block;
+}
+.contact-section .wrapper .contact-form .contact-box {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.contact-section .wrapper .contact-form .contact-box input,
+.contact-section .wrapper .contact-form .contact-box textarea {
+  width: 100%;
+  border: 1px solid #ccc;
+  background: #fff;
+  margin: 0 0 15px;
+  padding: 15px;
+  box-sizing: border-box;
+  border-radius: 0.5rem;
+}
+.contact-section .wrapper .contact-form .contact-box textarea {
+  resize: vertical;
+}
+.contact-section .wrapper .contact-form button {
+  margin: 5rem 0;
+  color: #fff;
+  background: linear-gradient(90deg, #43b7ff 0, #00ddf6 100%);
+  border-radius: 3px;
+  width: 16rem;
+  height: 5rem;
+  font-size: 1.33rem;
+  text-align: center;
+  padding: 1.5rem 3rem;
+  font-weight: 600;
+  align-self: flex-end;
+}
+.contact-section .msg-status {
+  display: none;
+  width: 30rem;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 5rem;
+  padding: 6rem;
+  border-radius: 0.8rem;
+  font-size: 2.4rem;
+  font-weight: bold;
+  opacity: 0.8;
+}
+.contact-section .succes {
+  display: flex;
+  background-color: #55ff00;
+}
+.contact-section .error {
+  display: flex;
+  background-color: tomato;
 }
 
 .d-none {

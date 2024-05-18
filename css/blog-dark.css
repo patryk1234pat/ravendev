@@ -67,6 +67,9 @@
   box-shadow: 0 0 25px -5px #43b7ff;
   border: 1px solid #43b7ff;
 }
+.dark-mode .blog .contact-form label {
+  color: #fff;
+}
 .dark-mode .blog .contact-form h3 {
   color: #fff;
 }
