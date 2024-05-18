@@ -165,6 +165,7 @@
 }
 .dark-mode .header .stars .astronaut {
   display: block;
+  height: 10rem;
   width: 10rem;
   position: absolute;
   animation-name: orbit;
