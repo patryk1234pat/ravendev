@@ -5,6 +5,172 @@
   background: linear-gradient(145deg, #00042f, #2e2e2e 96%);
   color: #fff;
 }
+.dark-mode .header .stars {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.dark-mode .header .stars .star {
+  position: absolute;
+  height: 2px;
+  width: 2px;
+  top: 20%;
+  left: 5%;
+  border-radius: 50%;
+  background-color: #fff;
+}
+.dark-mode .header .stars .late {
+  animation: starFlicker 4s infinite ease-in-out both 0.8s;
+}
+.dark-mode .header .stars .fast {
+  animation: starFlicker 4s infinite ease-in-out both;
+}
+.dark-mode .header .stars .middle {
+  animation: starFlicker 6s infinite ease-in-out both 0.3s;
+}
+.dark-mode .header .stars .shooting-star,
+.dark-mode .header .stars .shooting-star2 {
+  position: absolute;
+  right: 50%;
+  width: 1px;
+  height: 70px;
+  background: #fff;
+  transform: rotate(-25deg);
+}
+.dark-mode .header .stars .shooting-star {
+  top: -13.59%;
+  animation: shootingStar 9s infinite ease-in 1s;
+}
+.dark-mode .header .stars .shooting-star2 {
+  top: -23.59%;
+  animation: shootingStar2 10s infinite ease-in 1.5s;
+}
+.dark-mode .header .stars :nth-child(2) {
+  top: 30%;
+  left: 30%;
+}
+.dark-mode .header .stars :nth-child(3) {
+  top: 55%;
+  left: 55%;
+}
+.dark-mode .header .stars :nth-child(4) {
+  top: 48%;
+  left: 48%;
+}
+.dark-mode .header .stars :nth-child(5) {
+  top: 12%;
+  left: 12%;
+}
+.dark-mode .header .stars :nth-child(6) {
+  top: 61%;
+  left: 61%;
+}
+.dark-mode .header .stars :nth-child(7) {
+  top: 77%;
+  left: 77%;
+}
+.dark-mode .header .stars :nth-child(8) {
+  top: 21%;
+  left: 21%;
+}
+.dark-mode .header .stars :nth-child(9) {
+  top: 34%;
+  left: 100px;
+}
+.dark-mode .header .stars :nth-child(10) {
+  top: 39%;
+  left: 54%;
+}
+.dark-mode .header .stars :nth-child(11) {
+  top: 32%;
+  left: 78%;
+}
+.dark-mode .header .stars :nth-child(12) {
+  top: 10%;
+  left: 90%;
+}
+.dark-mode .header .stars :nth-child(13) {
+  top: 12%;
+  left: 67%;
+}
+.dark-mode .header .stars :nth-child(14) {
+  top: 24%;
+  left: 83%;
+}
+.dark-mode .header .stars :nth-child(15) {
+  top: 27%;
+  left: 85%;
+}
+.dark-mode .header .stars :nth-child(16) {
+  top: 66%;
+  left: 80%;
+}
+.dark-mode .header .stars :nth-child(17) {
+  top: 70%;
+  left: 88%;
+}
+.dark-mode .header .stars :nth-child(18) {
+  top: 72%;
+  left: 54%;
+}
+.dark-mode .header .stars :nth-child(19) {
+  top: 80%;
+  left: 10%;
+}
+.dark-mode .header .stars :nth-child(20) {
+  top: 71%;
+  left: 79%;
+}
+.dark-mode .header .stars :nth-child(21) {
+  top: 24%;
+  left: 43%;
+}
+.dark-mode .header .stars :nth-child(22) {
+  top: 36%;
+  left: 59%;
+}
+.dark-mode .header .stars :nth-child(23) {
+  top: 53%;
+  left: 19%;
+}
+.dark-mode .header .stars :nth-child(24) {
+  top: 71%;
+  left: 30%;
+}
+.dark-mode .header .stars :nth-child(25) {
+  top: 45%;
+  left: 25%;
+}
+.dark-mode .header .stars :nth-child(26) {
+  top: 18%;
+  left: 75%;
+}
+.dark-mode .header .stars :nth-child(27) {
+  top: 50%;
+  left: 60%;
+}
+.dark-mode .header .stars :nth-child(28) {
+  top: 55%;
+  left: 67%;
+}
+.dark-mode .header .stars :nth-child(29) {
+  top: 14%;
+  left: 48%;
+}
+.dark-mode .header .stars :nth-child(30) {
+  top: 20%;
+  left: 57%;
+}
+.dark-mode .header .stars .astronaut {
+  display: block;
+  width: 10rem;
+  position: absolute;
+  animation-name: orbit;
+  animation-duration: 30s;
+  animation: orbit 40s infinite ease-in both;
+}
 .dark-mode .header .logo {
   height: 12rem;
   width: 100%;
@@ -338,5 +504,75 @@
   100% {
     text-shadow: 0 0 10px #43b7ff, 0 0 10px #43b7ff, 0 0 10px #43b7ff;
     opacity: 1;
+  }
+}
+@keyframes starFlicker {
+  0% {
+    opacity: 0.2;
+  }
+  50% {
+    opacity: 0.8;
+  }
+  100% {
+    opacity: 0.2;
+  }
+}
+@keyframes shootingStar {
+  0% {
+    top: -13.59%;
+    right: 60%;
+  }
+  2% {
+    opacity: 0;
+    top: 100%;
+    right: 0;
+  }
+  86% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes shootingStar2 {
+  0% {
+    top: -23.59%;
+    right: 50%;
+  }
+  2% {
+    opacity: 0;
+    top: 100%;
+    right: -17%;
+  }
+  86% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes orbit {
+  0% {
+    top: -10%;
+    left: -20%;
+    transform: rotate(0);
+  }
+  10% {
+    top: 110%;
+    left: 50%;
+    transform: rotate(0);
+  }
+  50% {
+    top: -40%;
+    left: 120%;
+    transform: rotate(360deg);
+  }
+  70% {
+    top: 110%;
+    left: 50%;
+  }
+  100% {
+    top: 110%;
+    left: -20%;
   }
 }/*# sourceMappingURL=dark.css.map */

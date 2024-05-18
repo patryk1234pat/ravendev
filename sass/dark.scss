@@ -5,6 +5,183 @@
 	.header {
 		background: linear-gradient(145deg, #00042f, #2e2e2e 96%);
 		color: $secondary-color;
+
+		.stars {
+			display: block;
+			position: absolute;
+			width: 100%;
+			height: 100%;
+			overflow: hidden;
+
+			.star {
+				position: absolute;
+				height: 2px;
+				width: 2px;
+				top: 20%;
+				left: 5%;
+				border-radius: 50%;
+				background-color: $secondary-color;
+			}
+
+			.late {
+				animation: starFlicker 4s infinite ease-in-out both 0.8s;
+			}
+
+			.fast {
+				animation: starFlicker 4s infinite ease-in-out both;
+			}
+
+			.middle {
+				animation: starFlicker 6s infinite ease-in-out both 0.3s;
+			}
+
+			.shooting-star,
+			.shooting-star2 {
+				position: absolute;
+				right: 50%;
+				width: 1px;
+				height: 70px;
+				background: $secondary-color;
+				transform: rotate(-25deg);
+			}
+
+			.shooting-star {
+				top: -13.59%;
+				animation: shootingStar 9s infinite ease-in 1s;
+			}
+
+			.shooting-star2 {
+				top: -23.59%;
+				animation: shootingStar2 10s infinite ease-in 1.5s;
+			}
+
+			:nth-child(2) {
+				top: 30%;
+				left: 30%;
+			}
+			:nth-child(3) {
+				top: 55%;
+				left: 55%;
+			}
+			:nth-child(4) {
+				top: 48%;
+				left: 48%;
+			}
+			:nth-child(5) {
+				top: 12%;
+				left: 12%;
+			}
+			:nth-child(6) {
+				top: 61%;
+				left: 61%;
+			}
+			:nth-child(7) {
+				top: 77%;
+				left: 77%;
+			}
+			:nth-child(8) {
+				top: 21%;
+				left: 21%;
+			}
+			:nth-child(9) {
+				top: 34%;
+				left: 100px;
+			}
+			:nth-child(10) {
+				top: 39%;
+				left: 54%;
+			}
+			:nth-child(11) {
+				top: 32%;
+				left: 78%;
+			}
+			:nth-child(12) {
+				top: 10%;
+				left: 90%;
+			}
+			:nth-child(13) {
+				top: 12%;
+				left: 67%;
+			}
+			:nth-child(14) {
+				top: 24%;
+				left: 83%;
+			}
+			:nth-child(15) {
+				top: 27%;
+				left: 85%;
+			}
+			:nth-child(16) {
+				top: 66%;
+				left: 80%;
+			}
+			:nth-child(17) {
+				top: 70%;
+				left: 88%;
+			}
+			:nth-child(18) {
+				top: 72%;
+				left: 54%;
+			}
+			:nth-child(19) {
+				top: 80%;
+				left: 10%;
+			}
+			:nth-child(20) {
+				top: 71%;
+				left: 79%;
+			}
+			:nth-child(21) {
+				top: 24%;
+				left: 43%;
+			}
+			:nth-child(22) {
+				top: 36%;
+				left: 59%;
+			}
+			:nth-child(23) {
+				top: 53%;
+				left: 19%;
+			}
+			:nth-child(24) {
+				top: 71%;
+				left: 30%;
+			}
+			:nth-child(25) {
+				top: 45%;
+				left: 25%;
+			}
+			:nth-child(26) {
+				top: 18%;
+				left: 75%;
+			}
+			:nth-child(27) {
+				top: 50%;
+				left: 60%;
+			}
+			:nth-child(28) {
+				top: 55%;
+				left: 67%;
+			}
+			:nth-child(29) {
+				top: 14%;
+				left: 48%;
+			}
+			:nth-child(30) {
+				top: 20%;
+				left: 57%;
+			}
+
+			.astronaut {
+				display: block;
+				width: 10rem;
+				position: absolute;
+				
+				animation-name: orbit;
+				animation-duration: 30s;
+				animation: orbit 40s infinite ease-in both;
+			}
+		}
 		.logo {
 			height: 12rem;
 			width: 100%;
@@ -22,35 +199,35 @@
 					text-wrap: nowrap;
 					text-shadow: 0 0 10px #43b7ff, 0 0 10px #43b7ff, 0 0 10px #43b7ff,
 						0 0 10px #43b7ff, 0 0 10px #43b7ff;
-						animation: neonGlow 3s 0.3s ease-out forwards;
-					}
+					animation: neonGlow 3s 0.3s ease-out forwards;
 				}
 			}
-			
-			&__text {
-				.header-button {
-					border: 1px solid $h2-blue-color;
-					background: none;
-					color: $h2-blue-color;
-					animation: glow 2s ease-out infinite alternate;
-				}
-			}
-			
-			.color-scheme-btn {
-				position: absolute;
-				top: 8rem;
-				right: 0;
-				width: 7rem;
-				height: 7rem;
+		}
+
+		&__text {
+			.header-button {
+				border: 1px solid $h2-blue-color;
 				background: none;
-				border: 1px solid transparent;
-				cursor: pointer;
-				display: flex;
-				flex-direction: column;
-				justify-content: space-evenly;
-				align-items: center;
+				color: $h2-blue-color;
+				animation: glow 2s ease-out infinite alternate;
+			}
+		}
+
+		.color-scheme-btn {
+			position: absolute;
+			top: 8rem;
+			right: 0;
+			width: 7rem;
+			height: 7rem;
+			background: none;
+			border: 1px solid transparent;
+			cursor: pointer;
+			display: flex;
+			flex-direction: column;
+			justify-content: space-evenly;
+			align-items: center;
 			color: $h2-blue-color;
-			
+
 			&__pill {
 				background-color: $h2-blue-color;
 			}
@@ -58,7 +235,7 @@
 				left: 2rem;
 			}
 		}
-		
+
 		.burger-btn--active {
 			.burger-btn__bar1,
 			.burger-btn__bar2,
@@ -66,7 +243,7 @@
 				background-color: $secondary-color;
 			}
 		}
-		
+
 		.nav-mobile {
 			background: linear-gradient(#222, #000);
 
@@ -83,7 +260,7 @@
 	main {
 		background-color: #000;
 	}
-	
+
 	.about {
 		h2 {
 			color: $secondary-color;
@@ -114,7 +291,6 @@
 
 	.pricing {
 		.wrapper {
-
 			h2 {
 				color: $secondary-color;
 				span {
@@ -446,5 +622,81 @@
 	100% {
 		text-shadow: 0 0 10px #43b7ff, 0 0 10px #43b7ff, 0 0 10px #43b7ff;
 		opacity: 1;
+	}
+}
+
+@keyframes starFlicker {
+	0% {
+		opacity: 0.2;
+	}
+	50% {
+		opacity: 0.8;
+	}
+	100% {
+		opacity: 0.2;
+	}
+}
+
+@keyframes shootingStar {
+	0% {
+		top: -13.59%;
+		right: 60%;
+	}
+	2% {
+		opacity: 0;
+		top: 100%;
+		right: 0;
+	}
+	86% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 0;
+	}
+}
+
+@keyframes shootingStar2 {
+	0% {
+		top: -23.59%;
+		right: 50%;
+	}
+	2% {
+		opacity: 0;
+		top: 100%;
+		right: -17%;
+	}
+	86% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 0;
+	}
+}
+
+@keyframes orbit {
+	0% {
+		top: -10%;
+		left: -20%;
+		transform: rotate(0);
+	}
+	10% {
+		top: 110%;
+		left: 50%;
+		transform: rotate(0);
+	}
+	50% {
+		top: -40%;
+		left: 120%;
+		transform: rotate(360deg);
+	}
+
+	70% {
+		top: 110%;
+		left: 50%;
+	}
+
+	100% {
+		top: 110%;
+		left: -20%;
 	}
 }

@@ -71,6 +71,14 @@ table {
 	background: linear-gradient(145deg, $main-color, $gradient-color 96%);
 	color: $secondary-color;
 
+	.stars {
+		display: none;
+	}
+
+	.astronaut {
+		display: none;
+	}
+	
 	.wrapper {
 		padding: 0 2rem 0 2rem;
 		width: 100%;
@@ -813,3 +821,4 @@ main {
 .d-none {
 	display: none;
 }
+
