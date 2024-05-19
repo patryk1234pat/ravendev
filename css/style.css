@@ -99,6 +99,9 @@ table {
 .header .logo__clickable .text {
   display: none;
 }
+.header .logo__clickable .text p {
+  word-wrap: nowrap;
+}
 .header__text {
   margin-top: 5rem;
 }
