@@ -221,17 +221,6 @@
 .dark-mode .header .nav-mobile ul li a {
   color: #fff;
 }
-.dark-mode .astronaut {
-  position: absolute;
-  top: 10rem;
-  left: 10rem;
-  height: 10rem;
-  width: 10rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  z-index: 0;
-}
 .dark-mode main {
   background-color: #000;
 }
