@@ -362,7 +362,7 @@ main {
 .about .wrapper .items .item h3 {
   font-size: 1.9rem;
   color: #1d2124;
-  font-family: "custom800";
+  font-family: "custom700";
 }
 .about .wrapper .items .item p {
   margin-top: 2rem;
@@ -406,7 +406,7 @@ main {
 .pricing .wrapper .items .item__text h3 {
   margin-top: 3rem;
   font-size: 1.9rem;
-  font-family: "custom800";
+  font-family: "custom700";
   color: #1d2124;
 }
 .pricing .wrapper .items .item img {
@@ -474,7 +474,7 @@ main {
 }
 .portfolio .wrapper .items .item h3 {
   font-size: 1.9rem;
-  font-family: "custom800";
+  font-family: "custom700";
 }
 .portfolio .wrapper .items .item h4 {
   font-size: 1.6rem;
@@ -543,7 +543,7 @@ main {
 .aboutme .wrapper h3 {
   font-size: 1.9rem;
   margin-bottom: 1rem;
-  font-family: "custom800";
+  font-family: "custom700";
   color: #1d2124;
 }
 .aboutme .wrapper h4 {
@@ -626,7 +626,7 @@ main {
 }
 .blog .wrapper .items .item h3 {
   font-size: 2.5rem;
-  font-family: "custom800";
+  font-family: "custom700";
 }
 .blog .wrapper .items .item p {
   font-size: 1.8rem;
