@@ -163,15 +163,6 @@
   top: 20%;
   left: 57%;
 }
-.dark-mode .header .stars .astronaut {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 10rem;
-  width: 10rem;
-  position: absolute;
-  animation: orbit 40s infinite ease-in both;
-}
 .dark-mode .header .logo {
   height: 12rem;
   width: 100%;
@@ -228,6 +219,16 @@
 }
 .dark-mode .header .nav-mobile ul li a {
   color: #fff;
+}
+.dark-mode .astronaut {
+  position: absolute;
+  height: 10rem;
+  width: 10rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: orbit 40s infinite both;
+  z-index: 0;
 }
 .dark-mode main {
   background-color: #000;
