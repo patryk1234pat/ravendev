@@ -1,5 +1,36 @@
 @use './colors' as *;
 
+@font-face {
+	font-family: 'custom400';
+	src: url('../assets/fonts/Poppins-Regular.woff') format('woff');
+}
+
+@font-face {
+	font-family: 'custom600';
+	src: url('../assets/fonts/Poppins-SemiBold.woff') format('woff');
+}
+
+@font-face {
+	font-family: 'custom700';
+	src: url('../assets/fonts/Poppins-Bold.woff') format('woff');
+}
+
+@font-face {
+	font-family: 'custom800';
+	src: url('../assets/fonts/Poppins-ExtraBold.woff') format('woff');
+}
+
+@font-face {
+	font-family: 'customOpensans';
+	src: url('../assets/fonts/OpenSans-SemiBold.woff') format('woff');
+}
+
+@font-face {
+	font-family: 'customYellowtail';
+	src: url('../assets/fonts/Yellowtail-Regular.woff') format('woff');
+}
+
+
 *,
 *::after,
 *::before {
@@ -11,7 +42,7 @@
 html,
 body {
 	color-scheme: only light;
-	font-family: 'Poppins', sans-serif;
+	font-family: 'custom400', sans-serif;
 }
 
 body {
@@ -131,7 +162,7 @@ table {
 		width: 100%;
 		p {
 			font-size: 2.6rem;
-			font-weight: 800;
+			font-family: 'custom800';
 			text-align: center;
 		}
 	}
@@ -317,6 +348,7 @@ main {
 			margin-bottom: 3rem;
 			align-self: self-start;
 			color: $easy-black;
+			font-family: 'custom700';
 		}
 
 		.h2 {
@@ -336,6 +368,7 @@ main {
         h3 {
             font-size: 1.6rem;
             color: $easier-black;
+			font-family: 'custom700';
         }
 
         ul {
@@ -366,7 +399,7 @@ main {
 
             span {
                 color: $h2-blue-color;
-                font-weight: bold;
+                font-family: 'custom700';
             }
 
             a {
@@ -478,6 +511,7 @@ main {
 		h2 {
 			font-size: 2.4rem;
 			margin: 2rem 0;
+			font-family: 'custom700';
 		}
 
 		hr {

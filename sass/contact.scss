@@ -1,5 +1,35 @@
 @use './colors' as *;
 
+@font-face {
+	font-family: 'custom400';
+	src: url('../assets/fonts/Poppins-Regular.woff') format('woff');
+}
+
+@font-face {
+	font-family: 'custom600';
+	src: url('../assets/fonts/Poppins-SemiBold.woff') format('woff');
+}
+
+@font-face {
+	font-family: 'custom700';
+	src: url('../assets/fonts/Poppins-Bold.woff') format('woff');
+}
+
+@font-face {
+	font-family: 'custom800';
+	src: url('../assets/fonts/Poppins-ExtraBold.woff') format('woff');
+}
+
+@font-face {
+	font-family: 'customOpensans';
+	src: url('../assets/fonts/OpenSans-SemiBold.woff') format('woff');
+}
+
+@font-face {
+	font-family: 'customYellowtail';
+	src: url('../assets/fonts/Yellowtail-Regular.woff') format('woff');
+}
+
 *,
 *::after,
 *::before {
@@ -11,7 +41,7 @@
 html,
 body {
 	color-scheme: only light;
-	font-family: 'Poppins', sans-serif;
+	font-family: 'custom400', sans-serif;
 }
 
 body {
@@ -131,7 +161,7 @@ table {
 		width: 100%;
 		h1 {
 			font-size: 3.6rem;
-			font-weight: 800;
+			font-family: 'custom800';
 			text-align: center;
 		}
 	}
@@ -316,6 +346,7 @@ main {
 				font-size: 1.8rem;
 				margin: 0 0 0 2rem;
 				line-height: 2.7rem;
+				font-family: 'custom700';
 			}
 			.paragraph {
 				margin: 0 0 0 2rem;
@@ -362,7 +393,7 @@ main {
 				color: #1d2124;
 				display: block;
 				font-size: 2.8rem;
-				font-weight: 700;
+				font-family: 'custom700';
 				margin-bottom: 2.5rem;
 				span {
 					color: $h2-blue-color;
@@ -401,7 +432,7 @@ main {
 				font-size: 1.33rem;
 				text-align: center;
 				padding: 1.5rem 3rem;
-				font-weight: 600;
+				font-family: 'custom600';
 				align-self: flex-end;
 			}
 		}
@@ -418,7 +449,7 @@ main {
 			padding: 6rem;
 			border-radius: 0.8rem;
 			font-size: 2.4rem;
-			font-weight: bold;
+			font-family: 'customOpensans';
 			opacity: 0.8;
 		}
 
@@ -484,6 +515,7 @@ main {
 		h2 {
 			font-size: 2.4rem;
 			margin: 2rem 0;
+			font-family: 'custom700';
 		}
 
 		hr {

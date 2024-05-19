@@ -1,3 +1,27 @@
+@font-face {
+  font-family: "custom400";
+  src: url("../assets/fonts/Poppins-Regular.woff") format("woff");
+}
+@font-face {
+  font-family: "custom600";
+  src: url("../assets/fonts/Poppins-SemiBold.woff") format("woff");
+}
+@font-face {
+  font-family: "custom700";
+  src: url("../assets/fonts/Poppins-Bold.woff") format("woff");
+}
+@font-face {
+  font-family: "custom800";
+  src: url("../assets/fonts/Poppins-ExtraBold.woff") format("woff");
+}
+@font-face {
+  font-family: "customOpensans";
+  src: url("../assets/fonts/OpenSans-SemiBold.woff") format("woff");
+}
+@font-face {
+  font-family: "customYellowtail";
+  src: url("../assets/fonts/Yellowtail-Regular.woff") format("woff");
+}
 *,
 *::after,
 *::before {
@@ -8,8 +32,8 @@
 
 html,
 body {
+  font-family: "custom400", sans-serif;
   color-scheme: only light;
-  font-family: "Poppins", sans-serif;
 }
 
 body {
@@ -122,7 +146,7 @@ table {
 }
 .header__text h1 {
   font-size: 3.6rem;
-  font-weight: 800;
+  font-family: "custom800";
   text-align: center;
 }
 .header .burger-btn {
@@ -285,6 +309,7 @@ table {
   margin-bottom: 2rem;
   align-self: self-start;
   color: #1d2124;
+  font-family: "custom700";
 }
 .aboutme .wrapper h2 span {
   color: #43b7ff;
@@ -313,11 +338,11 @@ table {
   font-size: 1.9rem;
   margin-bottom: 1rem;
   color: #1d2124;
+  font-family: "custom700";
 }
 .aboutme .wrapper h4 {
   font-size: 1.6rem;
   color: #999;
-  font-weight: normal;
   letter-spacing: 2px;
 }
 .aboutme .wrapper .owner-photo {
@@ -378,6 +403,7 @@ table {
 .aboutme .wrapper .items .item h3 {
   font-size: 2.1rem;
   margin-bottom: 1.5rem;
+  font-family: "custom700";
 }
 .aboutme .wrapper .items .item p {
   font-size: 1.8rem;
@@ -389,7 +415,7 @@ table {
   width: 16rem;
   padding: 1.5rem 3rem;
   margin: 6rem 0;
-  font-weight: 600;
+  font-family: "custom600";
   height: 5rem;
   font-size: 1.33rem;
   text-align: center;
@@ -424,6 +450,7 @@ table {
 .contact-section .wrapper .items .item__text h3 {
   font-size: 2.1rem;
   color: #1d2124;
+  font-family: "custom700";
 }
 .contact-section .wrapper .items .item__text p {
   font-size: 1.6rem;
@@ -458,7 +485,7 @@ table {
   color: #1d2124;
   display: block;
   font-size: 2.8rem;
-  font-weight: 700;
+  font-family: "custom700";
   margin-bottom: 2.5rem;
 }
 .contact-section .wrapper .contact-form h3 span {
@@ -493,7 +520,7 @@ table {
   font-size: 1.33rem;
   text-align: center;
   padding: 1.5rem 3rem;
-  font-weight: 600;
+  font-family: "custom600";
   align-self: flex-end;
 }
 .contact-section .msg-status {
@@ -508,7 +535,7 @@ table {
   padding: 6rem;
   border-radius: 0.8rem;
   font-size: 2.4rem;
-  font-weight: bold;
+  font-family: "customOpensans";
   opacity: 0.8;
 }
 .contact-section .succes {
@@ -570,6 +597,7 @@ table {
 .footer .wrapper h2 {
   font-size: 2.4rem;
   margin: 2rem 0;
+  font-family: "custom700";
 }
 .footer .wrapper hr {
   margin-bottom: 2rem;

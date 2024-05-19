@@ -1,5 +1,36 @@
 @use './colors' as *;
 
+
+@font-face {
+	font-family: 'custom400';
+	src: url('../assets/fonts/Poppins-Regular.woff') format('woff');
+}
+
+@font-face {
+	font-family: 'custom600';
+	src: url('../assets/fonts/Poppins-SemiBold.woff') format('woff');
+}
+
+@font-face {
+	font-family: 'custom700';
+	src: url('../assets/fonts/Poppins-Bold.woff') format('woff');
+}
+
+@font-face {
+	font-family: 'custom800';
+	src: url('../assets/fonts/Poppins-ExtraBold.woff') format('woff');
+}
+
+@font-face {
+	font-family: 'customOpensans';
+	src: url('../assets/fonts/OpenSans-SemiBold.woff') format('woff');
+}
+
+@font-face {
+	font-family: 'customYellowtail';
+	src: url('../assets/fonts/Yellowtail-Regular.woff') format('woff');
+}
+
 *,
 *::after,
 *::before {
@@ -11,7 +42,7 @@
 html,
 body {
 	color-scheme: only light;
-	font-family: 'Poppins', sans-serif;
+	font-family: 'custom400', sans-serif;
 }
 
 body {
@@ -130,7 +161,7 @@ table {
 		width: 100%;
 		h1 {
 			font-size: 3.6rem;
-			font-weight: 800;
+			font-family: 'custom800';
 			text-align: center;
 		}
 	}
@@ -312,6 +343,7 @@ table {
 			margin-bottom: 2rem;
 			align-self: self-start;
 			color: $lighter-black;
+			font-family: 'custom700';
 			span {
 				color: $h2-blue-color;
 			}
@@ -330,7 +362,7 @@ table {
 
 		span {
 			color: $h2-blue-color;
-			font-weight: bold;
+			font-family: 'custom700';
 		}
 		.margintop {
 			margin: 2.5rem 0 0 0;
@@ -343,13 +375,9 @@ table {
 			font-size: 1.9rem;
 			margin-bottom: 1rem;
 			color: $lighter-black;
+			font-family: 'custom700';
 		}
-		h4 {
-			font-size: 1.6rem;
-			color: #999;
-			font-weight: normal;
-			letter-spacing: 2px;
-		}
+		
 		.owner-photo {
 			margin-bottom: 5rem;
 			width: 100%;
@@ -377,6 +405,7 @@ table {
 						margin-top: 3rem;
 						font-size: 1.9rem;
 						color: $lighter-black;
+						font-family: 'custom700';
 					}
 				}
 
@@ -397,7 +426,7 @@ table {
 			width: 16rem;
 			padding: 1.5rem 3rem;
 			margin: 3rem 0 10rem 0;
-			font-weight: 600;
+			font-family: 'custom600';
 			height: 5rem;
 			font-size: 1.33rem;
 			text-align: center;
@@ -405,7 +434,6 @@ table {
 		}
 		.items-two {
 			margin-top: 5rem;
-			font-weight: 400;
 			.item {
 				display: flex;
 				margin-bottom: 7rem;
@@ -426,6 +454,7 @@ table {
 
 				h3 {
 					font-size: 1.9rem;
+					font-family: 'custom700';
 				}
 
 				p {
@@ -462,6 +491,7 @@ table {
 					h3 {
 						font-size: 2.1rem;
 						color: $lighter-black;
+						font-family: 'custom700';
 					}
 
 					p {
@@ -532,6 +562,7 @@ table {
 		h2 {
 			font-size: 2.4rem;
 			margin: 2rem 0;
+			font-family: 'custom700';
 		}
 
 		hr {
