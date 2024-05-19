@@ -8,6 +8,7 @@
 
 html,
 body {
+  color-scheme: only light;
   font-family: "Poppins", sans-serif;
 }
 
