@@ -118,6 +118,7 @@ table {
   font-family: "Open Sans", sans-serif;
   background-color: #fff;
   transition: background-color 0.3s;
+  z-index: 0;
 }
 .header .swoosh {
   position: relative;

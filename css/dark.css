@@ -163,14 +163,11 @@
   top: 20%;
   left: 57%;
 }
-.dark-mode .header .astronaut {
+.dark-mode .header .stars .astronaut {
+  position: absolute;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  background-image: url("/img/icons/astronaut.svg");
   height: 10rem;
   width: 10rem;
-  position: absolute;
   animation: orbit 40s infinite ease-in both;
 }
 .dark-mode .header .logo {
