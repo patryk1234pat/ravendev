@@ -238,7 +238,12 @@ table {
   padding: 1rem;
 }
 .header .nav-mobile ul li a {
+  padding: 1rem;
+  width: 100%;
   color: #646464;
+}
+.header .nav-mobile ul .hide {
+  border-right: 4px solid #43b7ff;
 }
 .header .d-flex {
   display: flex;

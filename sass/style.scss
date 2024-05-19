@@ -73,20 +73,9 @@ table {
 
 	.stars {
 		display: none;
-	}
-
-	.astronaut {
-		display: none;
-	}
-	.astronaut2 {
-		position: absolute;
-		background-image: url('/img/icons/astronaut.svg');
-		background-position: center;
-		background-size: contain;
-		top: 0;left: 0;
-		height: 20rem;
-		width: 20rem;
-		z-index: 1000;
+		.astronaut {
+			display: none;
+		}
 	}
 
 	.wrapper {
@@ -277,8 +266,14 @@ table {
 			li {
 				padding: 1rem;
 				a {
+					padding: 1rem;
+					width: 100%;
 					color: $text-color-dark;
 				}
+			}
+
+			.hide {
+				border-right: 4px solid $h2-blue-color;
 			}
 		}
 		z-index: 100;

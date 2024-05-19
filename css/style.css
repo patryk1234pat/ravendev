@@ -72,19 +72,8 @@ table {
 .header .stars {
   display: none;
 }
-.header .astronaut {
+.header .stars .astronaut {
   display: none;
-}
-.header .astronaut2 {
-  position: absolute;
-  background-image: url("/img/icons/astronaut.svg");
-  background-position: center;
-  background-size: contain;
-  top: 0;
-  left: 0;
-  height: 20rem;
-  width: 20rem;
-  z-index: 1000;
 }
 .header .wrapper {
   padding: 0 2rem 0 2rem;
@@ -258,7 +247,12 @@ table {
   padding: 1rem;
 }
 .header .nav-mobile ul li a {
+  padding: 1rem;
+  width: 100%;
   color: #646464;
+}
+.header .nav-mobile ul .hide {
+  border-right: 4px solid #43b7ff;
 }
 .header .d-flex {
   display: flex;

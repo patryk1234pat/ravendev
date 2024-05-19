@@ -163,7 +163,7 @@
   top: 20%;
   left: 57%;
 }
-.dark-mode .header .astronaut {
+.dark-mode .header .stars .astronaut {
   display: flex;
   justify-content: center;
   align-items: center;

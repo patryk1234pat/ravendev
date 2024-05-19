@@ -171,15 +171,15 @@
 				top: 20%;
 				left: 57%;
 			}
-		}
-		.astronaut {
-			display: flex;
-			justify-content: center;
-			align-items: center;
-			height: 10rem;
-			width: 10rem;
-			position: absolute;
-			animation: orbit 40s infinite ease-in both;
+			.astronaut {
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				height: 10rem;
+				width: 10rem;
+				position: absolute;
+				animation: orbit 40s infinite ease-in both;
+			}
 		}
 		.logo {
 			height: 12rem;
