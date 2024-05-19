@@ -176,11 +176,10 @@
 			display: flex;
 			justify-content: center;
 			align-items: center;
-			background-image: url('/img/icons/astronaut.svg');
 			height: 10rem;
 			width: 10rem;
 			position: absolute;
-			animation: orbt 40s infinite ease-in both;
+			animation: orbit 40s infinite ease-in both;
 		}
 		.logo {
 			height: 12rem;
