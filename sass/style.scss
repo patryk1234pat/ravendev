@@ -2,26 +2,43 @@
 
 @font-face {
 	font-family: 'custom400';
-	src: url('../assets/fonts/Poppins-Regular.woff') format('woff');
+	src: url('../assets/fonts/Poppins-Regular.woff2') format('woff2'),
+		url('../assets/fonts/Poppins-Regular.woff') format('woff');
 }
 
 @font-face {
 	font-family: 'custom600';
-	src: url('../assets/fonts/Poppins-SemiBold.woff') format('woff');
+	src: url('../assets/fonts/Poppins-SemiBold.woff2') format('woff2'),
+		url('../assets/fonts/Poppins-SemiBold.woff') format('woff');
 }
+
+@font-face {
+	font-family: 'custom700';
+
+	src: url('../assets/fonts/Poppins-Bold.woff2') format('woff2'),
+		url('../assets/fonts/Poppins-Bold.woff') format('woff');
+}
+
 @font-face {
 	font-family: 'custom800';
-	src: url('../assets/fonts/Poppins-ExtraBold.woff') format('woff');
+
+	src: url('../assets/fonts/Poppins-ExtraBold.woff2') format('woff2'),
+		url('../assets/fonts/Poppins-ExtraBold.woff') format('woff');
 }
 
 @font-face {
 	font-family: 'customOpensans';
-	src: url('../assets/fonts/OpenSans-SemiBold.woff') format('woff');
+
+	src: url('../assets/fonts/OpenSans-SemiBold.woff2') format('woff2'),
+		url('../assets/fonts/OpenSans-SemiBold.woff') format('woff');
 }
 
 @font-face {
 	font-family: 'customYellowtail';
 	src: url('../assets/fonts/Yellowtail-Regular.woff') format('woff');
+
+	src: url('../assets/fonts/Yellowtail-Regular.woff2') format('woff2'),
+		url('../assets/fonts/Yellowtail-Regular.woff') format('woff');
 }
 
 *,

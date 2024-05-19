@@ -2,34 +2,44 @@
 
 @font-face {
 	font-family: 'custom400';
-	src: url('../assets/fonts/Poppins-Regular.woff') format('woff');
+	src: url('../assets/fonts/Poppins-Regular.woff2') format('woff2'),
+		url('../assets/fonts/Poppins-Regular.woff') format('woff');
 }
 
 @font-face {
 	font-family: 'custom600';
-	src: url('../assets/fonts/Poppins-SemiBold.woff') format('woff');
+	src: url('../assets/fonts/Poppins-SemiBold.woff2') format('woff2'),
+		url('../assets/fonts/Poppins-SemiBold.woff') format('woff');
 }
 
 @font-face {
 	font-family: 'custom700';
-	src: url('../assets/fonts/Poppins-Bold.woff') format('woff');
+
+	src: url('../assets/fonts/Poppins-Bold.woff2') format('woff2'),
+		url('../assets/fonts/Poppins-Bold.woff') format('woff');
 }
 
 @font-face {
 	font-family: 'custom800';
-	src: url('../assets/fonts/Poppins-ExtraBold.woff') format('woff');
+
+	src: url('../assets/fonts/Poppins-ExtraBold.woff2') format('woff2'),
+		url('../assets/fonts/Poppins-ExtraBold.woff') format('woff');
 }
 
 @font-face {
 	font-family: 'customOpensans';
-	src: url('../assets/fonts/OpenSans-SemiBold.woff') format('woff');
+
+	src: url('../assets/fonts/OpenSans-SemiBold.woff2') format('woff2'),
+		url('../assets/fonts/OpenSans-SemiBold.woff') format('woff');
 }
 
 @font-face {
 	font-family: 'customYellowtail';
 	src: url('../assets/fonts/Yellowtail-Regular.woff') format('woff');
-}
 
+	src: url('../assets/fonts/Yellowtail-Regular.woff2') format('woff2'),
+		url('../assets/fonts/Yellowtail-Regular.woff') format('woff');
+}
 
 *,
 *::after,
@@ -286,8 +296,9 @@ table {
 
 		ul {
 			list-style: none;
-			li { padding: 1rem;
-				a { 
+			li {
+				padding: 1rem;
+				a {
 					padding: 1rem;
 					width: 100%;
 					color: $text-color-dark;
@@ -352,60 +363,60 @@ main {
 		}
 
 		.h2 {
-            margin-bottom: 3rem;
-            border-left: 3px solid $h2-blue-color;
+			margin-bottom: 3rem;
+			border-left: 3px solid $h2-blue-color;
 			h2 {
 				font-size: 2.2rem;
-                margin: 0 0 0 2rem;
+				margin: 0 0 0 2rem;
 				line-height: 2.7rem;
 			}
 		}
 
-        .second-article {
-            margin: 4rem 0 4rem 0;
-        }
+		.second-article {
+			margin: 4rem 0 4rem 0;
+		}
 
-        h3 {
-            font-size: 1.6rem;
-            color: $easier-black;
+		h3 {
+			font-size: 1.6rem;
+			color: $easier-black;
 			font-family: 'custom700';
-        }
+		}
 
-        ul {
-            display: block;
-            list-style-type: disc;
-            margin-block-start: 1rem;
-            padding-inline-start: 3rcap;
-            unicode-bidi: isolate;
-            margin-bottom: 1rem;
-            li {
-                color: $easier-black;
-                line-height: 2.8rem;
-                font-size: 1.4rem;
-                margin-bottom: 1rem;
+		ul {
+			display: block;
+			list-style-type: disc;
+			margin-block-start: 1rem;
+			padding-inline-start: 3rcap;
+			unicode-bidi: isolate;
+			margin-bottom: 1rem;
+			li {
+				color: $easier-black;
+				line-height: 2.8rem;
+				font-size: 1.4rem;
+				margin-bottom: 1rem;
 				a {
 					text-decoration: underline;
 					color: $h2-blue-color;
 				}
-            }
-        }
+			}
+		}
 
 		.paragraph {
 			width: 100%;
 			font-size: 1.7rem;
 			color: $easier-black;
 			line-height: 2.8rem;
-            margin-bottom: 2.5rem;
+			margin-bottom: 2.5rem;
 
-            span {
-                color: $h2-blue-color;
-                font-family: 'custom700';
-            }
+			span {
+				color: $h2-blue-color;
+				font-family: 'custom700';
+			}
 
-            a {
-                text-decoration: underline;
-                color: $h2-blue-color;
-            }
+			a {
+				text-decoration: underline;
+				color: $h2-blue-color;
+			}
 		}
 
 		.owner-photo {
