@@ -17,11 +17,11 @@ const swooshInnerLight = document.querySelector('.swoosh-one');
 const swooshInnerDark = document.querySelector('.swoosh-two');
 const logoDarkModeText = document.querySelector('.asd');
 
-let darkMode = sessionStorage.getItem('darkMode');
+let darkMode = localStorage.getItem('darkMode');
 
 const enableDarkMode = () => {
 	body.classList.add('dark-mode');
-	sessionStorage.setItem('darkMode', 'enabled');
+	localStorage.setItem('darkMode', 'enabled');
 	swooshLight.classList.add('d-none');
 	swooshDark.classList.remove('d-none');
 
@@ -36,7 +36,7 @@ const enableDarkMode = () => {
 
 const disableDarkMode = () => {
 	body.classList.remove('dark-mode');
-	sessionStorage.setItem('darkMode', null);
+	localStorage.setItem('darkMode', null);
 	swooshDark.classList.add('d-none');
 	swooshLight.classList.remove('d-none');
 
@@ -61,7 +61,7 @@ navBackground.addEventListener('click', handleNav);
 hide.addEventListener('click', handleNav);
 
 colorSchemeBtn.addEventListener('click', () => {
-	darkMode = sessionStorage.getItem('darkMode');
+	darkMode = localStorage.getItem('darkMode');
 	if (darkMode !== 'enabled') {
 		enableDarkMode();
 	} else {
@@ -69,7 +69,7 @@ colorSchemeBtn.addEventListener('click', () => {
 	}
 });
 colorSchemeBtn2.addEventListener('click', () => {
-	darkMode = sessionStorage.getItem('darkMode');
+	darkMode = localStorage.getItem('darkMode');
 	if (darkMode !== 'enabled') {
 		enableDarkMode();
 	} else {

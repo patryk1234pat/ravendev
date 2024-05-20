@@ -17,11 +17,11 @@ const colorSchemeBtn2TextLight = body.querySelector('.light-text');
 const swooshInnerLight = body.querySelector('.swoosh-one');
 const swooshInnerDark = body.querySelector('.swoosh-two');
 
-let darkMode = sessionStorage.getItem('darkMode');
+let darkMode = localStorage.getItem('darkMode');
 
 const enableDarkMode = () => {
 	body.classList.add('dark-mode');
-	sessionStorage.setItem('darkMode', 'enabled');
+	localStorage.setItem('darkMode', 'enabled');
 	colorSchemeBtnTextDark.classList.remove('d-none');
 	colorSchemeBtnTextLight.classList.add('d-none');
 	colorSchemeBtn2TextDark.classList.remove('d-none');
@@ -37,7 +37,7 @@ const enableDarkMode = () => {
 
 const disableDarkMode = () => {
 	body.classList.remove('dark-mode');
-	sessionStorage.setItem('darkMode', null);
+	localStorage.setItem('darkMode', null);
 
 	swooshInnerLight.classList.remove('d-none');
 	swooshInnerDark.classList.add('d-none');
@@ -64,7 +64,7 @@ burgerBtn.addEventListener('click', handleNav);
 navBackground.addEventListener('click', handleNav);
 
 colorSchemeBtn.addEventListener('click', () => {
-	darkMode = sessionStorage.getItem('darkMode');
+	darkMode = localStorage.getItem('darkMode');
 	if (darkMode !== 'enabled') {
 		enableDarkMode();
 	} else {
@@ -72,7 +72,7 @@ colorSchemeBtn.addEventListener('click', () => {
 	}
 });
 colorSchemeBtn2.addEventListener('click', () => {
-	darkMode = sessionStorage.getItem('darkMode');
+	darkMode = localStorage.getItem('darkMode');
 	if (darkMode !== 'enabled') {
 		enableDarkMode();
 	} else {

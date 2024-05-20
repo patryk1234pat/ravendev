@@ -20,33 +20,29 @@ const swooshInnerDark = body.querySelector('.swoosh-two');
 
 const msgStatus = document.querySelector('.msg-status');
 
-
-
-
-
 if (document.location.search === '?mail_status=sent') {
-    msgStatus.classList.add('succes')
-    msgStatus.textContent = 'Wiadomość wysłana!'
+	msgStatus.classList.add('succes');
+	msgStatus.textContent = 'Wiadomość wysłana!';
 
-    setTimeout(() => {
-        msgStatus.classList.remove('succes')
-    }, 3000);
+	setTimeout(() => {
+		msgStatus.classList.remove('succes');
+	}, 3000);
 }
 
 if (document.location.search === '?mail_status=error') {
-    msgStatus.classList.add('error')
-    msgStatus.textContent = 'Wystąpił błąd'
+	msgStatus.classList.add('error');
+	msgStatus.textContent = 'Wystąpił błąd';
 
-    setTimeout(() => {
-        msgStatus.classList.remove('error')
-    }, 3000);
+	setTimeout(() => {
+		msgStatus.classList.remove('error');
+	}, 3000);
 }
 
-let darkMode = sessionStorage.getItem('darkMode');
+let darkMode = localStorage.getItem('darkMode');
 
 const enableDarkMode = () => {
 	body.classList.add('dark-mode');
-	sessionStorage.setItem('darkMode', 'enabled');
+	localStorage.setItem('darkMode', 'enabled');
 	colorSchemeBtnTextDark.classList.remove('d-none');
 	colorSchemeBtnTextLight.classList.add('d-none');
 	colorSchemeBtn2TextDark.classList.remove('d-none');
@@ -62,7 +58,7 @@ const enableDarkMode = () => {
 
 const disableDarkMode = () => {
 	body.classList.remove('dark-mode');
-	sessionStorage.setItem('darkMode', null);
+	localStorage.setItem('darkMode', null);
 
 	swooshInnerLight.classList.remove('d-none');
 	swooshInnerDark.classList.add('d-none');
@@ -90,7 +86,7 @@ navBackground.addEventListener('click', handleNav);
 hide.addEventListener('click', handleNav);
 
 colorSchemeBtn.addEventListener('click', () => {
-	darkMode = sessionStorage.getItem('darkMode');
+	darkMode = localStorage.getItem('darkMode');
 	if (darkMode !== 'enabled') {
 		enableDarkMode();
 	} else {
@@ -98,7 +94,7 @@ colorSchemeBtn.addEventListener('click', () => {
 	}
 });
 colorSchemeBtn2.addEventListener('click', () => {
-	darkMode = sessionStorage.getItem('darkMode');
+	darkMode = localStorage.getItem('darkMode');
 	if (darkMode !== 'enabled') {
 		enableDarkMode();
 	} else {
