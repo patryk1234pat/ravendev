@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="pl">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>O nas</title>
+		<meta name="descripion" content="abc" />
+		<link rel="stylesheet" href="./css/article.css" />
+		<link rel="stylesheet" href="./css/blog-dark.css" />
+	</head>
+	<body class="aboutus-body">
+		<header class="header">
+			<div class="header__bg-img">
+				<img src="./img/forest-small.jpg" alt="" />
+			</div>
+			<div class="header__bg-shadow"></div>
+			<div class="header__bg-img-dark d-none">
+				<img src="./img/galaxy-small.jpg" alt="" />
+			</div>
+			<div class="header__bg-shadow-dark d-none"></div>
+			<button class="burger-btn" aria-label="menu">
+				<div class="burger-btn__box">
+					<div class="burger-btn__bar1"></div>
+					<div class="burger-btn__bar2"></div>
+					<div class="burger-btn__bar3"></div>
+				</div>
+			</button>
+			<button
+				class="color-scheme-btn"
+				aria-label="zmiana koloru strony na ciemny"
+			>
+				<div class="color-scheme-btn__box">
+					<div class="color-scheme-btn__pill">
+						<div class="color-scheme-btn__circle"></div>
+					</div>
+				</div>
+				<p class="light">TRYB JASNY</p>
+				<p class="dark d-none">TRYB CIEMNY</p>
+			</button>
+
+			<nav class="nav-mobile d-flex">
+				<ul class="">
+					<li class=""><a href="index.html">Strona Główna</a></li>
+					<li><a href="onas.html">O nas</a></li>
+					<li><a href="uslugi.html">Usługi</a></li>
+					<li>
+						<a href="index.html#portfolio">Portfolio</a>
+					</li>
+					<li><a href="blog.html">Blog</a></li>
+					<li><a href="kontakt.html">Kontakt</a></li>
+				</ul>
+			</nav>
+			<div class="nav-mobile-background"></div>
+			<div class="wrapper">
+				<div class="logo">
+					<div class="logo__clickable">
+						<div class="text">
+							<p>Po Zmroku</p>
+						</div>
+						<a href="index.html"
+							><img
+								src="./img/icons/logoRavenDev.svg"
+								alt="logo firmy Raven Dev"
+						/></a>
+					</div>
+				</div>
+
+				<div class="header__text">
+					<p>
+						Blog <br />
+						18 Maj 2024
+					</p>
+				</div>
+			</div>
+		</header>
+		<main>
+			<section class="blog">
+				<article class="wrapper">
+					<div class="owner-photo">
+						<img src="./img/mouse-small.jpg" alt="" />
+					</div>
+
+					<h1>
+						Jak zoptymalizować podstawowe wskaźniki witryny i zwiększyć szybkość
+						strony?
+					</h1>
+					<div class="items">
+						<div class="item">
+							<img src="./img/me.jpg" alt="" />
+							<div class="item__text">
+								<p>PATRYK KRUK</p>
+								<p><span>18.05.2024</span></p>
+							</div>
+						</div>
+					</div>
+					<hr />
+					<p class="paragraph">
+						Zainteresowałem się optymalizacją wyników szybkości strony
+						internetowej po tym, jak Google ogłosił nowe wskaźniki
+						<a href="https://web.dev/articles/vitals?hl=pl" target="_blank"
+							>Core Vitals</a
+						>
+						i to, w jaki sposób będą one w przyszłości głównym czynnikiem
+						rankingowym. Zasadniczo faworyzowane są strony internetowe, które
+						zapewniają najszybszą i najlepszą obsługę mobilną. I właśnie to Ci
+						teraz pokażę, czyli jak to zrobić.
+					</p>
+					<div class="h2 second-article">
+						<h2>Optymalizacja zasobów</h2>
+					</div>
+					<p class="paragraph">
+						Ogólnie rzecz biorąc, wiele sprowadza się do optymalizacji zasobów,
+						czyli na przykład posiadania obrazów o tym samym rozmiarze, w jakim
+						są wyświetlane. Czyli powinniśmy unikać zmniejszania szerokości
+						obrazów z 1000 pikseli do 300 pikseli w CSSie, a zamiast tego mieć
+						już obraz skompresowany do tych 300px. W ten sposób można
+						zaoszczędzić do 80% rozmiaru pliku. Używam
+						<a href="https://compressor.io/">Compressor.io</a> do kompresji
+						wszystkich moich obrazów. Płacę za subskrypcję Pro, dzięki czemu
+						mogę przesłać 100 zdjęć do skompresowania na raz. Używam go od lat i
+						polecam.
+					</p>
+					<p class="paragraph">
+						To samo się tyczy obrazów tła. Dlaczego zdjęcie stockowe o
+						szerokości 2300 pikseli ma się ładować na ekranie telefonu o
+						szerokości 400 pikseli? Zmień rozmiar tego olbrzyma na szerokość 500
+						pikseli i skompresuj go. W ten sposób z 2,3MB zrobi się około 37kb
+						lub mniej. OGROMNE zmniejszenie rozmiaru i czasu ładowania.
+						Następnie w wersji witryny na tablet i komputer stacjonarny
+						wystarczy zmienić obraz tła na większy obraz o rozdzielczości 2300
+						pikseli. Widziałem witrynę internetową kogoś, kto ładował wiele
+						obrazów o szerokości 4000 pikseli jako tło, przez co witryna
+						działała strasznie wolno. Nie wystarczy tego skompresować. Ponieważ
+						nawet jeśli skompresuje 70%, 70% z 4 MB to nadal około 1,2 MB, co
+						jest ogromne dla urządzenia mobilnego. Zmień rozmiar obrazów i
+						załaduj mniejsze na urządzenia mobilne, a większe na tablety i
+						komputery stacjonarne, a następnie skompresuj je.
+					</p>
+					<p class="paragraph">
+						Następnie należy wybrać obrazy o odpowiednim rozmiarze dla
+						odpowiedniego rozmiaru ekranu. Możesz użyć @mediaqueries, ale robi
+						to też atrybut „srcset”. Możesz o tym przeczytać
+						<a
+							href="https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Responsive_images"
+							target="_blank"
+							>tutaj</a
+						>, w Mozilla Developer Network. Polega to na udostępnieniu listy
+						obrazów o różnych rozmiarach do załadowania na ekranach o
+						rozmiarach, które chcesz, i użyciu „src” jako obrazu zastępczego. W
+						ten sposób, jeśli masz obraz o szerokości 700 pikseli w kodzie HTML
+						na komputerze, możesz załadować jego wersję o szerokości 350 pikseli
+						na ekrany o rozdzielczości poniżej 480 pikseli lub cokolwiek innego
+						i załadować mniejszy plik, żeby skrócić czas ładowania.
+					</p>
+					<p class="paragraph">
+						Gdy już to wszystko zrobisz, upewnij się, że dodałeś do swoich
+						obrazów odpowiednie atrybuty wysokości i szerokości, ponieważ Google
+						chce je zobaczyć na każdym z nich. To pomaga przydzielić miejsce na
+						obraz przed jego załadowaniem i pomaga ograniczyć przesuwanie się
+						treści na stronie podczas jej ładowania.
+					</p>
+					<div class="h2 second-article">
+						<h2>Powolne ładowanie</h2>
+					</div>
+
+					<p class="paragraph">
+						Następne, co można zrobić to użyć atrybut
+						<span>loading="lazy"</span>, który jest obsługiwany przez większość
+						przeglądarek. Dzięki temu można odstawić ładowanie konkretnych
+						obrazów na później bez konieczności wykonywania wielu wymyślnych
+						operacji w JavaScript. Nie używaj tego na obrazach znajdujących się
+						na samej górze strony. Spowoduje to widoczne dla użytkownika zmiany
+						układu treści. Zatem jakiekolwiek obrazy wyświetlane na ekranie
+						podczas pierwszego ładowania witryny nie powinny być ładowane z
+						opóźnieniem.
+					</p>
+					<div class="h2 second-article">
+						<h2>
+							Usuń jQuery, Google Fonts i wszystkie inne niepotrzebne linki CDN
+						</h2>
+					</div>
+
+					<p class="paragraph">
+						Na wszystko jest czas i miejsce, a czas jQuery skończył się 8 lat
+						temu i teraz jest na ławce rezerwowych. Przełączanie klas i wszystko
+						inne można teraz obsłużyć w JavaScript, i naprawdę nie ma już sensu
+						używać JQuery. Jego kod jest strasznie wzdęty, a jego usunięcie
+						sprawi, że Twoja witryna będzie bezpieczniejsza i będzie ładować się
+						znacznie szybciej. Usuń to i tyle! Google PageSpeed oznacza to jako
+						coś, co należy usunąć, aby poprawić swój wynik, więc wszyscy
+						powinniśmy przyzwyczaić się do pracy bez jQuery, chyba że jest to
+						absolutnie konieczne.
+					</p>
+					<p class="paragraph">
+						Następne są linki CDN do czcionek Google. Zamiast je linkować w
+						sekcji "head" strony, pobierz swoje czcionki lokalnie, jeśli nie są
+						to standardowe czcionki w przeglądarkach. Używam @font-face do
+						lokalnego ładowania czcionek. Wszystkie pobrane pliki przechowuję w
+						folderze czcionek, a następnie ładuję je do moich arkuszy CSS. W ten
+						sposób mogę wyeliminować użycie CDN Google Fonts, co eliminuje je
+						jako zasób blokujący renderowanie. W ten sposób można przyspieszyć
+						ładowanie strony nawet o 2 sekundy! Polecam film instruktażowy
+						dostępny
+						<a href="https://youtu.be/zK-yy6C2Nck?si=b5-8p8fNtsqL4Sz5">tutaj</a
+						>.
+					</p>
+					<div class="h2 second-article">
+						<h2>Odłóż zbędny JavaScript na później</h2>
+					</div>
+					<p class="paragraph">
+						We wszystkich tagach skryptu dodaj atrybut <span>defer</span> do
+						otwierającego tagu skryptu, co spowoduje „odroczenie” jego ładowania
+						do czasu PO załadowaniu witryny. W ten sposób JavaScript nie
+						przeszkadza witrynie w ładowaniu najpierw kodu HTML i CSS.
+						Cierpliwie czeka na swoją kolej, aż wszystko inne się załaduje.
+					</p>
+					<div class="h2 second-article">
+						<h2>
+							Zamiast plików PNG używaj plików SVG tak często, jak to możliwe
+						</h2>
+					</div>
+					<p class="paragraph">
+						Użyj jak największej liczby plików SVG zamiast formatu PNG. SVG są
+						znacznie mniejsze i ładują się znacznie szybciej. Używam
+						<a href="https://www.flaticon.com/">Flaticon</a>, aby uzyskać
+						wszystkie moje grafiki i ikony SVG. Mogę dostosować ich kolory i
+						pobrać w pliku SVG. Fajna sprawa. Zastępuje to również Fontawesome,
+						ponieważ jest to kolejny link CDN, którego nie musisz już ładować.
+						Zamiast używać Fontawesome, po prostu załaduj potrzebne ikony jako
+						SVG. Jest to znacznie lżejsze niż użycie Fontawesome.
+					</p>
+					<p class="paragraph">
+						Jeśli możesz, zatrudnij kogoś z
+						<a
+							href="https://useme.com/pl/?utm_term=useme&utm_campaign=Brand+Defense&utm_source=google&utm_medium=cpc&hsa_acc=5080654840&hsa_cam=9642732609&hsa_grp=102784262601&hsa_ad=651858431193&hsa_src=g&hsa_tgt=kwd-451501061255&hsa_kw=useme&hsa_mt=e&hsa_net=adwords&hsa_ver=3&gad_source=1&gclid=Cj0KCQjw6auyBhDzARIsALIo6v8iHAQKuC1kuZX0WUle2-PdPGG2YCa-SrMWAjAYVHlQT9YN2EC4YHkaAjqMEALw_wcB"
+							target="_blank"
+							>Useme</a
+						>, kto tworzy grafiki SVG, aby przekonwertował logo Twoich klientów
+						na pliki SVG. To jest znacznie bardziej zoptymalizowane i
+						skalowalne. Możesz zastąpić plik PNG o wielkości 36kb lub więcej na
+						SVG o wielkości 2kb. To jest warte każdego grosza. Można znaleźć
+						niedrogie opcje za mniej niż 500zł za grafikę. Świetna inwestycja.
+					</p>
+					<p class="paragraph">
+						Zawsze dobrym pomysłem jest przekonwertowanie logo klientów na
+						format SVG, a następnie przekazanie im tego do wykorzystania w
+						naklejkach, wizytówkach czy koszulkach. Bardzo im się to spodoba.
+					</p>
+					<div class="h2 second-article">
+						<h2>Google Lighthouse</h2>
+					</div>
+					<p class="paragraph">
+						Kiedy już wszystko zostanie zrobione, sprawdź swoje wyniki Google
+						Lighthouse w inspektorze narzędzi programistycznych i popraw co się
+						da. Zwykle wystarczy sprawdzić pewne kwestie związane z
+						dostępnością, takie jak dodanie atrybutów aria-label do linków
+						niezawierających tekstu lub znaczników alt na obrazach lub poprawy
+						problemów z kontrastem. Gdy uzyskasz wynik szybkości strony
+						wynoszący ponad 96 i prawie 100 w przypadku Lighthouse, Twoja
+						witryna będzie odpowiednio zoptymalizowana i stworzona tak, aby
+						robiła wrażenie.
+					</p>
+					<p class="paragraph">
+						Oto kroki optymalizacyjne, które wykonuję za każdym razem, gdy
+						kończę tworzenie witryny internetowej. Chciałem to szczegółowo
+						opisać dla każdego, kto szuka szczegółowej „procedury”, czyli co i
+						jak zrobić, bez całego żargonu i skomplikowanych, długich opisów.
+						Mam nadzieję, że to pomoże!
+					</p>
+				</article>
+			</section>
+		</main>
+		<footer class="footer">
+			<div class="swoosh">
+				<img class="swoosh-one one" src="./img/icons/swoosh-inner.svg" alt="" />
+				<img
+					class="swoosh-two twos d-none"
+					src="./img/icons/swoosh-inner-dark.svg"
+					alt=""
+				/>
+			</div>
+
+			<div class="wrapper">
+				<div class="lamp">
+					<div class="cable"></div>
+					<div class="triangle"></div>
+					<div class="bulb"></div>
+					<button
+						class="color-scheme-btn2"
+						aria-label="zmiana koloru strony na ciemny"
+					>
+						<div class="color-scheme-btn2__box">
+							<div class="color-scheme-btn2__pill">
+								<div class="color-scheme-btn2__circle"></div>
+							</div>
+						</div>
+						<p class="light-text">
+							TRYB <br />
+							JASNY
+						</p>
+						<p class="dark-text d-none">
+							TRYB <br />
+							CIEMNY
+						</p>
+					</button>
+				</div>
+
+				<div class="logo">
+					<div class="logo__clickable">
+						<img
+							src="./img/icons/logoRavenDev.svg"
+							alt="logo firmy Raven Dev"
+						/>
+					</div>
+				</div>
+				<div class="contact">
+					<a href="mailto:patrykkruk58@gmail.com" target="_blank"
+						>patrykkruk58@gmail.com</a
+					>
+					<br /><br />
+					<a href="tel:780179553" target="_blank">TEL: 780179553</a>
+				</div>
+				<h2>Nawigacja</h2>
+				<hr />
+				<a href="index.html">Strona Główna</a>
+				<a href="onas.html">O nas</a>
+				<a href="uslugi.html">Usługi</a>
+				<a href="index.html#portfolio">Portfolio</a>
+				<a href="blog.html">Blog</a>
+				<a href="kontakt.html">Kontakt</a>
+				<h2>Usługi</h2>
+				<hr />
+				<a href="">Web Design</a>
+				<a href="">Utrzymanie Strony</a>
+				<a href="">SEO</a>
+				<a href="">Tworzenie Treści</a>
+				<a href="">Logo Design</a>
+			</div>
+			<div class="brand">
+				<p>Copyright &copy; 2024 | Raven Dev | Wszelkie Prawa Zastrzeżone</p>
+			</div>
+		</footer>
+		<script src="./js/article.js"></script>
+	</body>
+</html>
