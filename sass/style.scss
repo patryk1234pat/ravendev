@@ -226,41 +226,41 @@ table {
 		right: 0;
 		width: 7rem;
 		height: 7rem;
-		background: none;
 		border: 1px solid transparent;
-		cursor: pointer;
 		display: flex;
 		flex-direction: column;
 		justify-content: space-evenly;
 		align-items: center;
+		background: none;
 		color: $secondary-color;
+		cursor: pointer;
 
 		&__box {
+			width: 3rem;
+			height: 3rem;
 			display: flex;
 			flex-direction: column;
 			justify-content: center;
 			align-items: center;
-			width: 3rem;
-			height: 3rem;
 		}
 
 		&__pill {
 			position: relative;
 			width: 4rem;
 			height: 1.6rem;
-			background-color: #e6e6e6;
-			border-radius: 8px;
 			display: flex;
 			align-items: center;
+			border-radius: 8px;
+			background-color: #e6e6e6;
 		}
-		.color-scheme-btn__circle {
+		&__circle {
 			position: absolute;
 			left: 0;
 			height: 2.2rem;
 			width: 2.2rem;
 			border-radius: 50%;
 			background-color: $secondary-color;
-			box-shadow: 0px 0px 3px 0px black;
+			box-shadow: 0px 0px 3px 0px #000;
 			transition: left 0.3s;
 		}
 	}
@@ -615,6 +615,7 @@ main {
 		}
 		.owner-photo {
 			background-color: #55beff;
+			box-shadow: 0 0 25px 15px rgba(0, 0, 0, 0.1);
 			border-radius: 25%;
 			margin-bottom: 6rem;
 			height: 33rem;

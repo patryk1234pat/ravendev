@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="pl">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>O nas</title>
+		<meta name="descripion" content="abc" />
+		<link rel="stylesheet" href="./css/article.css" />
+		<link rel="stylesheet" href="./css/blog-dark.css" />
+	</head>
+	<body class="aboutus-body">
+		<header class="header">
+			<div class="header__bg-img">
+				<img src="./img/forest-small.jpg" alt="" />
+			</div>
+			<div class="header__bg-shadow"></div>
+			<div class="header__bg-img-dark d-none">
+				<img src="./img/galaxy-small.jpg" alt="" />
+			</div>
+			<div class="header__bg-shadow-dark d-none"></div>
+			<button class="burger-btn" aria-label="menu">
+				<div class="burger-btn__box">
+					<div class="burger-btn__bar1"></div>
+					<div class="burger-btn__bar2"></div>
+					<div class="burger-btn__bar3"></div>
+				</div>
+			</button>
+			<button
+				class="color-scheme-btn"
+				aria-label="zmiana koloru strony na ciemny"
+			>
+				<div class="color-scheme-btn__box">
+					<div class="color-scheme-btn__pill">
+						<div class="color-scheme-btn__circle"></div>
+					</div>
+				</div>
+				<p class="light">TRYB JASNY</p>
+				<p class="dark d-none">TRYB CIEMNY</p>
+			</button>
+
+			<nav class="nav-mobile d-flex">
+				<ul class="">
+					<li class=""><a href="index.html">Strona Główna</a></li>
+					<li><a href="onas.html">O nas</a></li>
+					<li><a href="uslugi.html">Usługi</a></li>
+					<li>
+						<a href="index.html#portfolio">Portfolio</a>
+					</li>
+					<li><a href="blog.html">Blog</a></li>
+					<li><a href="kontakt.html">Kontakt</a></li>
+				</ul>
+			</nav>
+			<div class="nav-mobile-background"></div>
+			<div class="wrapper">
+				<div class="logo">
+					<div class="logo__clickable">
+						<div class="text">
+							<p>Po Zmroku</p>
+						</div>
+						<a href="index.html"
+							><img
+								src="./img/icons/logoRavenDev.svg"
+								alt="logo firmy Raven Dev"
+						/></a>
+					</div>
+				</div>
+
+				<div class="header__text">
+					<p>
+						Blog <br />
+						18 Maj 2024
+					</p>
+				</div>
+			</div>
+		</header>
+		<main>
+			<section class="blog">
+				<article class="wrapper">
+					<div class="owner-photo">
+						<img src="./img/moon.jpg" alt="" />
+					</div>
+
+					<h1>Jak dodać tryb ciemny (dark-mode) do strony internetowej?</h1>
+					<div class="items">
+						<div class="item">
+							<img src="./img/me.jpg" alt="" />
+							<div class="item__text">
+								<p>PATRYK KRUK</p>
+								<p><span>18.05.2024</span></p>
+							</div>
+						</div>
+					</div>
+					<hr />
+					<div class="h2">
+						<h2>
+							Dodawanie trybu ciemnego do Twojej strony w mniej niż 5 minut
+						</h2>
+					</div>
+					<p class="paragraph">
+						W tym artykule pokażę Ci, jak łatwo i bez frameworków dodać
+						działający tryb ciemny do swojej witryny w mniej niż 5 minut i
+						udostępnię Ci cały kod - łącznie z przyciskiem.
+					</p>
+					<p class="paragraph">
+						Aby od razu przejść do rzeczy, oto kod umożliwiający dodanie trybu
+						ciemnego do Twojej witryny. Zalecam posiadanie osobnego arkusza
+						stylów dark.scss dla wszystkich stylów trybu ciemnego. Wszystko, co
+						musisz zrobić, to skopiować i wkleić kody HTML, SCSS i JS do swojego
+						projektu i użyć tego selektora w pliku dark.scss, aby wybrać klasę,
+						w której chcesz dodać style trybu ciemnego:
+					</p>
+					<div class="code">
+						<code>
+							body.dark-mode .targetowanyElement { <br />
+							&nbsp; &nbsp; &nbsp; background-color: #000000; <br />
+							}
+						</code>
+					</div>
+
+					<div class="h2 second-article">
+						<h2>HTML dla przycisku</h2>
+					</div>
+
+					<pre
+						class="code"
+					><code><span><</span>button class="color-scheme-btn" aria-label="zmiana koloru strony na ciemny"><br><span>&nbsp;&nbsp;&nbsp;<</span>div class="color-scheme-btn__box"> <br><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<</span>div class="color-scheme-btn__pill"><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span><</span>div class="color-scheme-btn__circle"><span><</span>/div><br><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<</span>/div><br><span>&nbsp;&nbsp;&nbsp;<</span>/div><br><span><</span>/button></code>
+					</pre>
+
+					<div class="h2 second-article">
+						<h2>SCSS dla przycisku</h2>
+					</div>
+
+					<div class="code">
+						<code>
+							.color-scheme-btn { <br />
+							&nbsp; &nbsp; &nbsp;position: absolute;<br />
+							&nbsp; &nbsp; &nbsp;top: 2rem;<br />
+							&nbsp; &nbsp; &nbsp;right: 0;<br />
+							&nbsp; &nbsp; &nbsp;width: 7rem;<br />
+							&nbsp; &nbsp; &nbsp;height: 7rem;<br />
+							&nbsp; &nbsp; &nbsp;border: 1px solid transparent;<br />
+							&nbsp; &nbsp; &nbsp;display: flex;<br />
+							&nbsp; &nbsp; &nbsp;flex-direction: column;<br />
+							&nbsp; &nbsp; &nbsp;justify-content: space-evenly;<br />
+							&nbsp; &nbsp; &nbsp;align-items: center;<br />
+							&nbsp; &nbsp; &nbsp;background: none;<br />
+							&nbsp; &nbsp; &nbsp;color: #fff;<br />
+							&nbsp; &nbsp; &nbsp;cursor: pointer; <br />
+							<br />
+							&nbsp; &nbsp; &nbsp;&__box { <br />
+							&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;width: 3rem;<br />
+							&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;height: 3rem;<br />
+							&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;display: flex;<br />
+							&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;flex-direction: column;<br />
+							&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;justify-content:
+							center;<br />
+							&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;align-items: center;<br />
+							&nbsp; &nbsp; &nbsp;} <br />
+							<br />
+							&nbsp; &nbsp; &nbsp;&__pill { <br />
+							&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;position: relative;<br />
+							&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;width: 4rem;<br />
+							&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;height: 1.6rem;<br />
+							&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;display: flex;<br />
+							&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;align-items: center;<br />
+							&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;border-radius: 8px;<br />
+							&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;background-color:
+							#e6e6e6;<br />
+							&nbsp; &nbsp; &nbsp;} <br /><br />
+							&nbsp; &nbsp; &nbsp;&__circle {<br />
+							&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;position: absolute;<br />
+							&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;left: 0;<br />
+							&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;height: 2.2rem;<br />
+							&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;width: 2.2rem;<br />
+							&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;border-radius: 50%;<br />
+							&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;background-color: #fff;<br />
+							&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;box-shadow: 0px 0px 3px
+							0px #000;<br />
+							&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;transition: left 0.3s;<br />
+							&nbsp; &nbsp; &nbsp;} <br />
+							}
+						</code>
+					</div>
+					<div class="h2 second-article">
+						<h2>SCSS dla przycisku w pliku dark.scss</h2>
+					</div>
+
+					<div class="code">
+						<code>
+							.color-scheme-btn { <br />
+							&nbsp; &nbsp; &nbsp;&__pill { <br />
+							&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;background-color: #43b7ff;
+							<br />
+							&nbsp; &nbsp; &nbsp;} <br />
+							<br />
+							&nbsp; &nbsp; &nbsp;&__circle { <br />
+							&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;left: 2rem; <br />
+							&nbsp; &nbsp; &nbsp;} <br />
+							}
+						</code>
+					</div>
+
+					<p class="paragraph">
+						Skopiuj i wklej ten kod do własnego pliku "dark.scss". Zapisz tam
+						style dla trybu ciemnego i upewnij się, że linkujesz arkusz dark.css
+						w nagłówku HTML (head) pod linkiem do głównego CSSa po to, żeby po
+						dodaniu klasy "dark-mode" za pomocą przycisku, style głównego CSSa
+						były nadpisane przez "dark.css". W tym kodzie zmieniłem kolor "pill" i pozycje "circle". Dzięki temu na każdej podstronie w witrynie, przycisk pozostanie w pozycji włączonej. To samo tyczy się styli dla każdego elementu, które nadasz w pliku "dark.css".
+					</p>
+					<div class="h2 second-article">
+						<h2>JAVASCRIPT</h2>
+					</div>
+                    <p class="paragraph">Najpierw ściągnijmy nasze body i nasz przycisk:</p>
+                    <div class="code">
+						<code>
+							const body = document.querySelector('body'); <br>
+                            const colorSchemeBtn = body.querySelector('.color-scheme-btn');
+						</code>
+					</div>
+                    
+                    
+					
+					<p class="paragraph">
+						Następnie pozwólmy przeglądarce użytkownika zapisać ustawienie naszego trybu, żeby tryb ciemny pozostawał uruchomiony na każdej stronie w witrynie:
+					</p>
+
+                    <div class="code">
+						<code>
+							let darkMode = sessionStorage.getItem('darkMode');
+						</code>
+					</div>
+					<p class="paragraph">
+						Jeśli chcesz, żeby tryb ciemny pozostał włączony nawet jak użytkownik opuści stronę to zamiast sessionStorage możesz użyć localStorage. W ten sposób zapisujemy ustawienia w witrynie lokalnie w przeglądarce użytkownika i tryb ciemny pozostanie włączony nawet jak użytkownik opuści stronę i wróci do niej po dłuższym czasie.
+					</p>
+					<p class="paragraph">
+						Teraz napiszmy funkcję, która będzie dodawać i usuwać klasę "dark-mode" z naszego body:
+					</p>
+                    <div class="code">
+						<code>
+							const enableDarkMode = () => { <br>
+                                &nbsp; &nbsp; &nbsp;body.classList.add("dark-mode"); <br>
+                                &nbsp; &nbsp; &nbsp;sessionStorage.setItem("darkMode", "enabled") <br>
+                            } <br> <br>
+							const disableDarkMode = () => { <br>
+                                &nbsp; &nbsp; &nbsp;body.classList.remove("dark-mode"); <br>
+                                &nbsp; &nbsp; &nbsp;sessionStorage.setItem("darkMode", null) <br>
+                            } <br><br>
+                            if (darkMode == "enabled") { <br>
+                                &nbsp; &nbsp; &nbsp;enableDarkMode(); <br>
+                            }
+						</code>
+					</div>
+					<p class="paragraph">
+						Teraz podepnijmy nasłuchiwanie na kliknięcie przycisku, żeby wywołać funkcję:
+					</p>
+                    <div class="code">
+						<code>
+							colorSchemeBtn.addEventListener('click', () => { <br>
+                                &nbsp; &nbsp; &nbsp;darkMode = sessionStorage.getItem('darkMode'); <br>
+                                &nbsp; &nbsp; &nbsp;if (darkMode !== 'enabled') { <br>
+                                    &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;enableDarkMode(); <br>
+                                    &nbsp; &nbsp; &nbsp;} else { <br>
+                                    &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;disableDarkMode(); <br>
+                                    &nbsp; &nbsp; &nbsp;} <br>
+                            });
+						</code>
+					</div>
+					<p class="paragraph">
+						Wszystko, co musisz zrobić, to dodać przycisk HTML tam, gdzie chcesz, żeby dodawał plik "dark.css". Zrób tak na każdej stronie, żeby można było przełączać tryby z każdego miejsca. 
+					</p>
+					<p class="paragraph">
+						Jeśli nie masz doświadczenia z JavaScriptem to polecam tworzyć osobne pliki .js dla każdej strony/podstrony, żeby uniknąć błędów związanych ze ściąganiem plików, które na jednej stronie istnieją, a na drugiej już nie. 
+					</p>
+					<p class="paragraph">
+						Co się teraz dzieje to to, że ustalamy nowe style w zależności od tego, czy body ma w sobie klasę trybu ciemnego, czy też nie. Kod zasadniczo mówi, że jeśli ciało nie ma klasy „trybu ciemnego” to wybierz ten element i dodaj do niego te klasę. Kiedy body nie ma klasy trybu ciemnego, kod ten nie zostanie uruchomiony, więc style nigdy nie zostaną zmienione na ciemne. Ten kod można uruchomić tylko wtedy, gdy klasa trybu ciemnego znajduje się w body. Zatem wszystko, co musimy zrobić dla każdego stylu trybu ciemnego, to poprzedzić selektor słowami „body.dark-mode” i to wszystko - dodałaś/eś style trybu ciemnego! Przycisk przełączania, który podałem w powyższym kodzie, wykonuje całą pracę, więc za każdym razem, gdy jest przełączany, klasa "dark-mode" jest dodawana i usuwana z body, więc tryb ciemny jest włączany i wyłączany. To wszystko, co musisz zrobić. Żadnych zbędnych frameworków. Po prostu dobry, staroświecki Vanilla Code.
+					</p>
+					<p class="paragraph">
+						Prawdopodobnie spędzisz najwięcej czasu umieszczając przycisk na pasku nawigacyjnym lub gdziekolwiek indziej. Najłatwiejszym rozwiązaniem jest nadanie mu position: absolute. 
+					</p>
+					<p class="paragraph">
+						Pamiętaj, żeby umieścić przycisk na samej górze kodu, żeby był pierwszą rzeczą, na której skupi się czytnik ekranu. Poprawiamy wtedy nasze accessibility, a do tego przyspieszamy ładowanie się FCP, czyli pierwszego co widzi użytkownik po otwarciu naszej strony.
+					</p>
+					<div class="h2 second-article">
+						<h2>
+							Dlaczego powinniśmy dodawać tryb ciemny do naszych witryn?
+						</h2>
+					</div>
+
+					<p class="paragraph">
+						Ostatnimi czasy dodanie trybu ciemnego do witryny internetowej zaczyna zyskiwać na popularności zwłaszcza w Ameryce Północnej. Do niedawna dostępność sieci była po prostu przyjemną funkcją, którą można było mieć, jeśli posiadało się pieniądze, ale teraz staje się bardziej koniecznością. Tryb ciemny może pomóc w rozwiązaniu wielu problemów z dostępnością Internetu w witrynie, eliminując problemy z kontrastem, dostosowując się do potrzeb tych, którzy chcą oglądać wszystko przy mniejszej jasności i mniejszej obecności białego światła.
+					</p>
+					<p class="paragraph">
+						Jeśli nigdy nie słyszałaś/eś o dostępności sieci, witaj w nowym świecie. Dostępność sieci ma związek ze sposobem, w jaki osoby z niepełnosprawnością wzrokową, motoryczną/ruchową, słuchową, z ryzykiem napadów padaczkowych oraz z niepełnosprawnością poznawczą/intelektualną korzystają z sieci. Tryb ciemny umożliwia programistom poprawianie tekstu o niskim współczynniku kontrastu w stosunku do tła, dzięki czemu osoby wrażliwe na światło nie będą miały większych problemów z czytaniem Twojej witryny.
+					</p>
+					<p class="paragraph">
+						Na przykład, gdy pracujesz z marką firmy, często nie możesz po prostu zmienić koloru marki, aby uczynić ją bardziej dostępną, więc zamiast zmieniać kolor marki w tekście, zmieniamy tło, na którym znajduje się tekst. Oczywiście tryb ciemny nie polega tylko na zmianie tła na czarne, ale na przekształceniu strony internetowej i jej zawartości w użyteczny, piękny układ.
+					</p>
+					<p class="paragraph">
+						Wyobraź sobie, że elementy witryny są ułożone jeden na drugim. Najniższa warstwa (korpus) będzie najciemniejsza. Jeśli na wierzchu znajduje się element karty, tło tej karty będzie jaśniejsze, a jeśli wewnątrz tej karty będzie inny ciemny element, to będzie jaśniejszy niż karta. To dobra zasada, której należy przestrzegać podczas tworzenia ciemnego motywu. Wygląda to o wiele lepiej, gdy użyjesz hierarchii wizualnej, aby pokazać głębię. Najciemniejsze elementy schodzą na dół, a ich kolor staje się coraz jaśniejszy w miarę układania się jeden na drugim.
+					</p>
+					<p class="paragraph">
+						Dodanie trybu ciemnego do niestandardowej witryny internetowej jest moim zdaniem jednym z tych nowych trendów w tworzeniu stron internetowych, które warto wypróbować we wszystkich swoich witrynach. Nie tylko poprawia to dostępność Twojej witryny, ale także dodaje jej efektu „wow”. Tryb ciemny z pewnością wyróżni Twojego klienta na tle konkurencji i pokaże firmę bardziej przyszłościowo myślącą, która poważnie podchodzi do każdego aspektu swojej działalności, łącznie ze stroną internetową.
+					</p>
+				</article>
+			</section>
+		</main>
+		<footer class="footer">
+			<div class="swoosh">
+				<img class="swoosh-one one" src="./img/icons/swoosh-inner.svg" alt="" />
+				<img
+					class="swoosh-two twos d-none"
+					src="./img/icons/swoosh-inner-dark.svg"
+					alt=""
+				/>
+			</div>
+
+			<div class="wrapper">
+				<div class="lamp">
+					<div class="cable"></div>
+					<div class="triangle"></div>
+					<div class="bulb"></div>
+					<button
+						class="color-scheme-btn2"
+						aria-label="zmiana koloru strony na ciemny"
+					>
+						<div class="color-scheme-btn2__box">
+							<div class="color-scheme-btn2__pill">
+								<div class="color-scheme-btn2__circle"></div>
+							</div>
+						</div>
+						<p class="light-text">
+							TRYB <br />
+							JASNY
+						</p>
+						<p class="dark-text d-none">
+							TRYB <br />
+							CIEMNY
+						</p>
+					</button>
+				</div>
+
+				<div class="logo">
+					<div class="logo__clickable">
+						<img
+							src="./img/icons/logoRavenDev.svg"
+							alt="logo firmy Raven Dev"
+						/>
+					</div>
+				</div>
+				<div class="contact">
+					<a href="mailto:patrykkruk58@gmail.com" target="_blank"
+						>patrykkruk58@gmail.com</a
+					>
+					<br /><br />
+					<a href="tel:780179553" target="_blank">TEL: 780179553</a>
+				</div>
+				<h2>Nawigacja</h2>
+				<hr />
+				<a href="index.html">Strona Główna</a>
+				<a href="onas.html">O nas</a>
+				<a href="uslugi.html">Usługi</a>
+				<a href="index.html#portfolio">Portfolio</a>
+				<a href="blog.html">Blog</a>
+				<a href="kontakt.html">Kontakt</a>
+				<h2>Usługi</h2>
+				<hr />
+				<a href="">Web Design</a>
+				<a href="">Utrzymanie Strony</a>
+				<a href="">SEO</a>
+				<a href="">Tworzenie Treści</a>
+				<a href="">Logo Design</a>
+			</div>
+			<div class="brand">
+				<p>Copyright &copy; 2024 | Raven Dev | Wszelkie Prawa Zastrzeżone</p>
+			</div>
+		</footer>
+		<script src="./js/article.js"></script>
+	</body>
+</html>

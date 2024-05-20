@@ -416,6 +416,24 @@ main {
   margin-top: 1rem;
   margin-bottom: 3rem;
 }
+.blog .wrapper .code {
+  background-color: #272822;
+  padding: 1rem;
+  margin-bottom: 2.5rem;
+  overflow: auto;
+  border-radius: 0.3rem;
+}
+.blog .wrapper .code code {
+  color: #f8f8f2;
+  background: 0 0;
+  text-shadow: 0 1px rgba(0, 0, 0, 0.3);
+  font-size: 1rem;
+  text-align: left;
+  line-height: 1.5;
+  hyphens: none;
+  word-wrap: nowrap;
+  white-space: nowrap;
+}
 
 .d-none {
   display: none;
