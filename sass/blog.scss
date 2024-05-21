@@ -480,22 +480,28 @@ main {
 				color: $secondary-color;
 			}
 		}
-		h2 {
-			font-size: 2.4rem;
-			margin: 2rem 0;
-			font-family: 'custom700';
-		}
+		.item {
+			display: flex;
+			flex-direction: column;
+			h2 {
+				font-size: 2.4rem;
+				margin: 2rem 0;
+				font-family: 'custom800';
+			}
 
-		hr {
-			margin-bottom: 2rem;
-			width: 50%;
-		}
+			hr {
+				margin-bottom: 2rem;
+				width: 50%;
+			}
 
-		a {
-			color: $secondary-color;
-			margin-bottom: 2rem;
+			a {
+				color: $secondary-color;
+				margin-bottom: 2rem;
+			}
 		}
 	}
+
+	
 	.brand {
 		display: flex;
 		justify-content: center;
@@ -592,4 +598,184 @@ main {
 
 .d-none {
 	display: none;
+}
+
+@media (min-width: 575px) {
+	.header {
+		.burger-btn {
+			right: 2rem;
+		}
+		.color-scheme-btn {
+			right: 2rem;
+		}
+
+		.wrapper {
+			padding: 0 5rem;
+		}
+		&__text {
+			h1 {
+				font-size: 5rem;
+			}
+		}
+	}
+
+	.footer {
+		.lamp {
+			right: 5rem;
+		}
+	}
+}
+
+@media (min-width: 990px) {
+	.header {
+		.wrapper {
+			margin: 0 auto;
+			width: 100%;
+			max-width: 1200px;
+			.logo {
+				&__clickable {
+					a {
+						height: 60%;
+					}
+				}
+			}
+		}
+
+		.burger-btn {
+			right: 2rem;
+		}
+		.color-scheme-btn {
+			right: 2rem;
+		}
+
+		&__bg-img {
+			background-image: url('/img/forest-big.jpg');
+		}
+		&__bg-img-dark {
+			background-image: url('/img/galaxy-big.jpg');
+		}
+	}
+
+	.footer {
+		.wrapper {
+			display: flex;
+			justify-content: space-evenly;
+			flex-direction: row;
+			flex-flow: wrap;
+			gap: 3rem;
+			.logo {
+				&__clickable {
+					img {
+						height: 60%;
+					}
+				}
+			}
+
+			.footer {
+				.lamp {
+					right: 15rem;
+				}
+			}
+		}
+	}
+}
+
+@media (min-width: 1200px) {
+	.header {
+		height: 40rem;
+
+		&__bg-img,
+		&__bg-img-dark,
+		&__bg-shadow,
+		&__bg-shadow-dark {
+			height: 40rem;
+		}
+	}
+
+	.wrapper {
+		margin: 0 auto;
+		width: 100%;
+		max-width: 1200px;
+	}
+
+	.aboutme {
+		.wrapper {
+			text-align: center;
+			h2 {
+				width: 100%;
+				margin-top: 10rem;
+			}
+		}
+
+		.items-float {
+			display: flex;
+			justify-content: space-around;
+			flex-flow: wrap;
+			gap: 5rem;
+
+			.owner-photo {
+				max-width: none;
+				width: 50rem;
+				height: auto;
+			}
+
+			:nth-child(1) {
+				align-self: center;
+			}
+			:nth-child(2) {
+				max-width: 50%;
+				h2 {
+					text-align: left;
+					max-width: none;
+				}
+				p {
+					text-align: left;
+				}
+			}
+		}
+
+		.items {
+			display: flex;
+			flex-direction: row;
+			gap: 3rem;
+		}
+	}
+
+	.contact-section {
+		padding-top: 10rem;
+		.wrapper {
+			display: flex;
+			flex-direction: row;
+			justify-content: center;
+			gap: 5rem;
+			:first-child {
+				align-self: flex-start;
+			}
+		}
+	}
+}
+
+@media (min-width: 1400px) {
+	.footer {
+		.lamp {
+			top: 10rem;
+			right: 15rem;
+		}
+	}
+}
+@media (min-width: 1700px) {
+	.footer {
+		.lamp {
+			top: 10rem;
+			right: 20rem;
+		}
+	}
+}
+@media (min-width: 2000px) {
+	.footer {
+		.lamp {
+			top: 25rem;
+			right: 50rem;
+		}
+	}
 }

@@ -116,6 +116,12 @@
   display: none;
 }
 
+@media (min-width: 990px) {
+  .header .wrapper .logo__clickable .text {
+    left: 18rem;
+    bottom: 1.4rem;
+  }
+}
 @keyframes glow {
   0% {
     box-shadow: 0px 0px 10px 0px #43b7ff, inset 0px 0px 10px 0px #43b7ff;
