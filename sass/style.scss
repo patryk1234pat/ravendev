@@ -102,8 +102,7 @@ table {
 
 .wrapper {
 	margin: 0 auto;
-	width: 100%;
-	max-width: 1200px;
+	max-width: 800px;
 }
 
 .header {
@@ -118,9 +117,9 @@ table {
 		display: none;
 	}
 
-	.wrapper {
+	.wrapper { z-index: 1;
+		position: relative;
 		padding: 0 2rem 0 2rem;
-		width: 100%;
 	}
 	.logo {
 		height: 12rem;
@@ -144,7 +143,7 @@ table {
 		}
 	}
 
-	&__text {
+	&__text { 
 		margin-top: 5rem;
 		h1 {
 			font-family: 'custom800';
@@ -160,7 +159,7 @@ table {
 		.header-button {
 			border-radius: 0.5rem;
 			width: 15rem;
-			height: 4rem;
+			height: 5rem;
 			font-size: 1.2rem;
 			background-color: #fff;
 			transition: background-color 0.3s;
@@ -168,20 +167,20 @@ table {
 		}
 	}
 
-	.swoosh {
-		position: relative;
+	.two {
+		position: absolute;
 		transform: scaleX(-1);
+		padding-left: 2rem;
+		height: 50vw;
+		max-height: 50rem;
+		bottom: -16rem;
+		right: 0;
+		z-index: 1;
+	}
 
-		.one {
-			width: 100%;
-		}
-		.two {
-			position: absolute;
-			top: 0;
-			left: 0;
-			height: 20rem;
-			margin-left: 2rem;
-		}
+	.swoosh {
+		transform: scaleX(-1);
+		z-index: 0;
 	}
 
 	.burger-btn {
@@ -234,6 +233,7 @@ table {
 		background: none;
 		color: $secondary-color;
 		cursor: pointer;
+		z-index: 100;
 
 		&__box {
 			width: 3rem;
@@ -348,7 +348,7 @@ table {
 
 main {
 	position: relative;
-	top: -5px;
+	top: -0.5rem;
 	background-color: $secondary-color;
 }
 
@@ -440,6 +440,7 @@ main {
 		p {
 			margin-top: 1rem;
 			font-size: 1.6rem;
+			max-width: 40rem;
 			color: $text-color-dark;
 		}
 
@@ -451,6 +452,7 @@ main {
 				&__text {
 					display: flex;
 					flex-direction: column;
+					max-width: 40rem;
 					h3 {
 						margin-top: 3rem;
 						font-size: 1.9rem;
@@ -523,9 +525,8 @@ main {
 				border-radius: 0.8rem;
 				border-bottom: 5px solid $h2-blue-color;
 				img {
-					width: 100%;
-					height: 16rem;
 					margin-bottom: 3rem;
+					width: 100%;
 				}
 
 				h3 {
@@ -617,7 +618,7 @@ main {
 			background-color: #55beff;
 			box-shadow: 0 0 25px 15px rgba(0, 0, 0, 0.1);
 			border-radius: 25%;
-			margin-bottom: 6rem;
+			margin-bottom: 3rem;
 			height: 33rem;
 			width: 33rem;
 			display: flex;
@@ -760,20 +761,24 @@ main {
 				color: $secondary-color;
 			}
 		}
-		h2 {
-			font-size: 2.4rem;
-			margin: 2rem 0;
-			font-family: 'custom800';
-		}
+		.item {
+			display: flex;
+			flex-direction: column;
+			h2 {
+				font-size: 2.4rem;
+				margin: 2rem 0;
+				font-family: 'custom800';
+			}
 
-		hr {
-			margin-bottom: 2rem;
-			width: 50%;
-		}
+			hr {
+				margin-bottom: 2rem;
+				width: 50%;
+			}
 
-		a {
-			color: $secondary-color;
-			margin-bottom: 2rem;
+			a {
+				color: $secondary-color;
+				margin-bottom: 2rem;
+			}
 		}
 	}
 	.brand {
@@ -872,4 +877,541 @@ main {
 
 .d-none {
 	display: none;
+}
+
+@media (min-width: 365px) {
+	.header {
+		.two {
+			bottom: -18rem;
+		}
+	}
+}
+@media (min-width: 385px) {
+	.header {
+		.two {
+			bottom: -20rem;
+		}
+	}
+}
+
+@media (min-width: 575px) {
+	main {
+		top: -8.5rem;
+	}
+	.header {
+		.burger-btn {
+			right: 2rem;
+		}
+		.color-scheme-btn {
+			right: 2rem;
+		}
+
+		.wrapper {
+			padding: 0 5rem;
+		}
+		&__text {
+			max-width: 50rem;
+			h1 {
+				font-size: 5rem;
+			}
+
+			p {
+				font-size: 2rem;
+				line-height: 3.5rem;
+			}
+		}
+
+		.two {
+			bottom: -27rem;
+		}
+
+		.swoosh {
+			position: relative;
+			bottom: 8rem;
+		}
+	}
+
+	.about {
+		padding-top: 20rem;
+		h2 {
+			font-size: 3.2rem;
+		}
+
+		.wrapper {
+			p {
+				max-width: 57rem;
+				font-size: 1.8rem;
+			}
+
+			.items {
+				max-width: 37rem;
+			}
+		}
+	}
+
+	.pricing {
+		padding-top: 10rem;
+		.wrapper {
+			.piggybank-img {
+				max-width: 40rem;
+			}
+			h2 {
+				font-size: 3.2rem;
+			}
+
+			p {
+				margin-top: 1.5rem;
+				font-size: 1.8rem;
+			}
+
+			.items {
+				margin-top: 5rem;
+				display: flex;
+				flex-flow: wrap;
+				gap: 3rem;
+				.item {
+					max-width: 35rem;
+				}
+			}
+		}
+	}
+
+	.portfolio {
+		padding-top: 10rem;
+		h2 {
+			font-size: 3.2rem;
+		}
+	}
+	.aboutme {
+		padding-top: 10rem;
+		h2 {
+			font-size: 3.2rem;
+		}
+
+		.wrapper {
+			p {
+				max-width: 60rem;
+				margin-bottom: 8.5rem;
+				font-size: 1.8rem;
+			}
+		}
+	}
+
+	.blog {
+		padding-top: 10rem;
+		h2 {
+			font-size: 3.2rem;
+		}
+	}
+
+	.footer {
+		.lamp {
+			right: 5rem;
+		}
+	}
+}
+
+@media (min-width: 800px) and (max-width: 990px) {
+	.header {
+		.two {
+			bottom: -40rem;
+			right: 2rem;
+		}
+	}
+
+	.portfolio {
+		.wrapper {
+			.items {
+				display: flex;
+				flex-flow: row wrap;
+				justify-content: space-between;
+				gap: 3rem;
+				:first-child {
+					max-width: none;
+					p {
+						max-width: none;
+					}
+				}
+				:nth-child(2),
+				:nth-child(3) {
+					max-width: 45%;
+					p {
+						max-width: none;
+					}
+				}
+
+				.item {
+					display: block;
+					height: auto;
+					.glue-together {
+						margin-bottom: 1.5rem;
+					}
+					button {
+						width: 16.5rem;
+						height: auto;
+					}
+					p {
+						margin-bottom: 2rem;
+					}
+				}
+			}
+		}
+	}
+	.footer {
+		.lamp {
+			right: 10rem;
+		}
+	}
+}
+
+@media (min-width: 990px) {
+	.header {
+		.two {
+			bottom: -33rem;
+			right: 2rem;
+		}
+	}
+	
+
+	.header {
+		.wrapper {
+			margin: 0 auto;
+			width: 100%;
+			max-width: 1200px;
+			.logo {
+				&__clickable {
+					a {
+						height: 60%;
+					}
+				}
+			}
+		}
+
+		.burger-btn {
+			right: 2rem;
+		}
+		.color-scheme-btn {
+			right: 2rem;
+		}
+
+		&__text {
+			max-width: 50rem;
+			h1 {
+				font-size: 4.8rem;
+			}
+
+			p {
+				font-size: 1.6rem;
+				line-height: 2.5rem;
+			}
+		}
+	}
+
+	.about {
+		padding-top: 0rem;
+		h2 {
+			font-size: 4rem;
+		}
+
+		.wrapper {
+			p {
+				max-width: 57rem;
+				font-size: 1.8rem;
+			}
+
+			.items {
+				max-width: none;
+				display: flex;
+				justify-content: space-between;
+				gap: 5rem;
+
+				.item {
+					margin-top: 10rem;
+				}
+			}
+		}
+	}
+
+	.pricing {
+		padding-top: 10rem;
+		.wrapper {
+			.piggybank-img {
+				max-width: 50rem;
+			}
+			h2 {
+				font-size: 4rem;
+			}
+
+			p {
+				margin-top: 1.5rem;
+				font-size: 1.8rem;
+			}
+
+			.items {
+				margin-top: 5rem;
+				display: flex;
+				flex-flow: wrap;
+				gap: 3rem;
+				.item {
+					max-width: 35rem;
+				}
+			}
+		}
+	}
+
+	.portfolio {
+		padding-top: 10rem;
+		h2 {
+			font-size: 4rem;
+		}
+	}
+	.aboutme {
+		padding-top: 10rem;
+		h2 {
+			font-size: 4rem;
+		}
+
+		.wrapper {
+			p {
+				max-width: 60rem;
+				margin-bottom: 8.5rem;
+				font-size: 1.8rem;
+			}
+		}
+	}
+
+	.blog {
+		padding-top: 10rem;
+		h2 {
+			font-size: 4rem;
+		}
+	}
+
+	.portfolio {
+		.wrapper {
+			.items {
+				display: flex;
+				flex-flow: row wrap;
+				justify-content: space-between;
+				gap: 3rem;
+
+				:nth-child(1),
+				:nth-child(2),
+				:nth-child(3) {
+					max-width: 30%;
+					height: auto;
+					p {
+						max-width: none;
+					}
+				}
+
+				.item {
+					display: block;
+					height: auto;
+
+					img {
+						max-width: none;
+					}
+
+					.glue-together {
+						margin-bottom: 1.5rem;
+					}
+					button {
+						width: 16.5rem;
+						height: auto;
+					}
+					p {
+						margin-bottom: 2rem;
+					}
+				}
+			}
+		}
+	}
+
+	
+
+	.footer {
+		.wrapper {
+			display: flex;
+			justify-content: space-evenly;
+			flex-direction: row;
+			flex-flow: wrap;
+			gap: 3rem;
+			.logo {
+				&__clickable {
+					img {
+						height: 60%;
+					}
+				}
+			}
+
+			.footer {
+				.lamp {
+					right: 15rem;
+				}
+			}
+		}
+	}
+}
+
+@media (min-width: 1200px) {
+	main {
+		top: -30.5rem;
+	}
+
+	.wrapper {
+		margin: 0 auto;
+		width: 100%;
+		max-width: 1200px;
+	}
+	.header {
+		.two {
+			bottom: -5rem;
+			right: 2rem;
+		}
+
+		.swoosh {
+			position: relative;
+			bottom: 10rem;
+		}
+	}
+
+	.about {
+		padding-top: 0rem;
+		h2 {
+			font-size: 4rem;
+		}
+
+		.wrapper {
+			p {
+				max-width: 57rem;
+				font-size: 1.8rem;
+			}
+
+			.items {
+				max-width: none;
+				display: flex;
+				justify-content: space-between;
+				gap: 5rem;
+
+				.item {
+					margin-top: 10rem;
+				}
+			}
+		}
+	}
+
+	.pricing {
+		padding-top: 10rem;
+		.wrapper {
+			padding: 0 2rem;
+			display: flex;
+			flex-flow: wrap;
+			text-align: start;
+			.image {
+				width: 50%;
+				align-self: center;
+			}
+
+			.text {
+				width: 50%;
+			}
+			.piggybank-img {
+				max-width: 50rem;
+			}
+			h2 {
+				font-size: 4rem;
+			}
+
+			p {
+				margin-top: 1.5rem;
+				font-size: 1.8rem;
+			}
+
+			.items {
+				margin-top: 5rem;
+				display: flex;
+				flex-flow: wrap;
+				gap: 3rem;
+				.item {
+					width: 47%;
+					max-width: 35rem;
+				}
+			}
+		}
+	}
+
+	.blog {
+		.wrapper {
+			padding: 0 5rem;
+			.items {
+				display: flex;
+				flex-flow: row wrap;
+				justify-content: space-between;
+				gap: 3rem;
+				.item {
+					max-width: 30%;
+					height: auto;
+				}
+			}
+		}
+	}
+}
+
+@media (min-width: 1400px) {
+	main {
+		top: -50.5rem;
+	}
+
+	.header {
+		.swoosh {
+			position: relative;
+			bottom: 25rem;
+		}
+	}
+
+	.footer {
+		.lamp {
+			top: 10rem;
+			right: 15rem;
+		}
+	}
+}
+@media (min-width: 1700px) {
+	main {
+		top: -75.5rem;
+	}
+
+	.header {
+		.swoosh {
+			position: relative;
+			bottom: 40rem;
+		}
+	}
+
+	.footer {
+		.lamp {
+			top: 10rem;
+			right: 20rem;
+		}
+	}
+}
+@media (min-width: 2000px) {
+	main {
+		top: -85.5rem;
+	}
+
+	.header {
+		.swoosh {
+			position: relative;
+			bottom: 50rem;
+		}
+	}
+
+	.footer {
+		.lamp {
+			top: 25rem;
+			right: 50rem;
+		}
+	}
 }
