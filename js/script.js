@@ -6,6 +6,7 @@ const colorSchemeBtnPill = document.querySelector('.color-scheme-btn__circle');
 const nav = document.querySelector('.nav-mobile');
 const navBackground = document.querySelector('.nav-mobile-background');
 const hide = document.querySelector('.hide');
+const hideTwo = document.querySelector('.hide2');
 const colorSchemeBtnTextDark = document.querySelector('.dark');
 const colorSchemeBtnTextLight = document.querySelector('.light');
 const colorSchemeBtn2TextDark = document.querySelector('.dark-text');
@@ -59,6 +60,7 @@ const handleNav = () => {
 burgerBtn.addEventListener('click', handleNav);
 navBackground.addEventListener('click', handleNav);
 hide.addEventListener('click', handleNav);
+hideTwo.addEventListener('click', handleNav);
 
 colorSchemeBtn.addEventListener('click', () => {
 	darkMode = localStorage.getItem('darkMode');
